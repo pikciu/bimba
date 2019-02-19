@@ -79,7 +79,6 @@
 		385737121D4B642B00C8D772 /* LineBollards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385737111D4B642B00C8D772 /* LineBollards.swift */; };
 		385737141D4B69B500C8D772 /* GroupedDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385737131D4B69B500C8D772 /* GroupedDirections.swift */; };
 		385737161D4B6A1500C8D772 /* GroupedDirectionsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385737151D4B6A1500C8D772 /* GroupedDirectionsMapper.swift */; };
-		3857371C1D4B6D4A00C8D772 /* SearchQueryHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857371B1D4B6D4A00C8D772 /* SearchQueryHandlerTests.swift */; };
 		386898AE1D4F9F7F004CA51B /* GetBollardsByStopPointQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386898AC1D4F9F7F004CA51B /* GetBollardsByStopPointQuery.swift */; };
 		386898AF1D4F9F7F004CA51B /* GetBollardsByStopPointQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386898AD1D4F9F7F004CA51B /* GetBollardsByStopPointQueryHandler.swift */; };
 		386898B31D4FA81F004CA51B /* GetBollardsByLineQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386898B11D4FA81F004CA51B /* GetBollardsByLineQuery.swift */; };
@@ -99,7 +98,6 @@
 		3882051B1D5340600000F58E /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882051A1D5340600000F58E /* UIColorExtensions.swift */; };
 		388844581E2E6AF300B3A559 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3888445A1E2E6AF300B3A559 /* Localizable.strings */; };
 		3895023B1D550BAC00877A8D /* GroupBollardDirectionsConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895023A1D550BAC00877A8D /* GroupBollardDirectionsConverter.swift */; };
-		38967E411FFE3FD200CB44F4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38967E401FFE3FD200CB44F4 /* Info.plist */; };
 		38967E441FFE40E500CB44F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38967E461FFE40E500CB44F4 /* InfoPlist.strings */; };
 		38A68B021D50C57A00BBC087 /* StopPointPushpinsToAnnotationsConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A68B011D50C57A00BBC087 /* StopPointPushpinsToAnnotationsConverter.swift */; };
 		38A68B041D50C59700BBC087 /* StopPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A68B031D50C59700BBC087 /* StopPointAnnotation.swift */; };
@@ -141,7 +139,7 @@
 		38B163A61D6225CD00D512F2 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B163A41D6225CD00D512F2 /* MessageBubbleView.swift */; };
 		38B163A71D6225CD00D512F2 /* MessageBubbleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38B163A51D6225CD00D512F2 /* MessageBubbleView.xib */; };
 		38B163A91D623D1600D512F2 /* IsNilConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B163A81D623D1600D512F2 /* IsNilConverter.swift */; };
-		38B880881E2932A000D05572 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38B880871E2932A000D05572 /* GoogleService-Info.plist */; };
+		38B30933221C2BEA00F5648E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38B30932221C2BEA00F5648E /* GoogleService-Info.plist */; };
 		38D700001D50103600937FD2 /* BollardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFFA1D50103600937FD2 /* BollardViewModel.swift */; };
 		38D7FFE61D50081700937FD2 /* BollardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFE41D50081700937FD2 /* BollardCell.swift */; };
 		38D7FFE71D50081700937FD2 /* BollardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D7FFE51D50081700937FD2 /* BollardCell.xib */; };
@@ -230,7 +228,6 @@
 		38F78BDC1D555916006EB5C8 /* CLLocationToCoordinatesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F78BDB1D555916006EB5C8 /* CLLocationToCoordinatesConverter.swift */; };
 		38FE8D791D4F44DB00E6B5BF /* Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8D781D4F44DB00E6B5BF /* Caching.swift */; };
 		38FE8D7B1D4F470C00E6B5BF /* StopPointPushpinsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8D7A1D4F470C00E6B5BF /* StopPointPushpinsCache.swift */; };
-		38FE8D7D1D4F49F900E6B5BF /* GetStopPointPushpinsQueryHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8D7C1D4F49F900E6B5BF /* GetStopPointPushpinsQueryHandlerTests.swift */; };
 		38FE8D831D4F55F100E6B5BF /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FE8D7F1D4F55F100E6B5BF /* Favorite.storyboard */; };
 		38FE8D841D4F55F100E6B5BF /* FavoriteViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8D801D4F55F100E6B5BF /* FavoriteViewConfigurator.swift */; };
 		38FE8D851D4F55F100E6B5BF /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8D811D4F55F100E6B5BF /* FavoriteViewController.swift */; };
@@ -256,127 +253,10 @@
 		38FE8E0D1D4F919700E6B5BF /* BollardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8E071D4F919700E6B5BF /* BollardsViewModel.swift */; };
 		38FE8E0F1D4F932800E6B5BF /* SearchNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8E0E1D4F932800E6B5BF /* SearchNavigationControllerDelegate.swift */; };
 		38FE8E111D4F937700E6B5BF /* SearchNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8E101D4F937700E6B5BF /* SearchNavigationController.swift */; };
-		ABA6F11A1F413546E980D45D /* Pods_pekaWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F7561DF0DB91EE3EFC7B5 /* Pods_pekaWidget.framework */; };
-		D1074F321E4C5E0600E85A59 /* WidgetDependencyInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1074F301E4C5D3500E85A59 /* WidgetDependencyInstaller.swift */; };
-		D1074F331E4C5F3700E85A59 /* RestApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3918D1D4A5AE2005F4A42 /* RestApiProvider.swift */; };
-		D1074F341E4C5F5000E85A59 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3918F1D4A5B28005F4A42 /* ApiProvider.swift */; };
-		D1074F351E4C5F5B00E85A59 /* HttpHeadersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3916B1D4A56ED005F4A42 /* HttpHeadersProvider.swift */; };
-		D1074F361E4C5F7400E85A59 /* FormBodyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38403F961D4B798B006AB84C /* FormBodyBuilder.swift */; };
-		D1074F371E4C5FC600E85A59 /* HttpBodyParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3916D1D4A5702005F4A42 /* HttpBodyParameter.swift */; };
-		D1074F381E4C5FCE00E85A59 /* BodyRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E2C1221D523DAC0071C9E7 /* BodyRequestBuilder.swift */; };
-		D1074F391E4C5FD700E85A59 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391731D4A57DD005F4A42 /* RequestBuilder.swift */; };
-		D1074F3A1E4C5FDF00E85A59 /* ApiProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391911D4A5C5D005F4A42 /* ApiProviderError.swift */; };
-		D1074F3B1E4C5FED00E85A59 /* QueryRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E2C1241D523DB70071C9E7 /* QueryRequestBuilder.swift */; };
-		D1074F3C1E4C5FF400E85A59 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3916F1D4A576C005F4A42 /* HttpMethod.swift */; };
-		D1074F3D1E4C600200E85A59 /* HttpResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391711D4A57A0005F4A42 /* HttpResponseCode.swift */; };
-		D1074F3E1E4C602E00E85A59 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391751D4A5814005F4A42 /* StringExtensions.swift */; };
-		D1074F3F1E4C61CA00E85A59 /* PekaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388205181D533E1E0000F58E /* PekaNavigationController.swift */; };
-		D1074F401E4C61ED00E85A59 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882051A1D5340600000F58E /* UIColorExtensions.swift */; };
-		D1074F411E4C91F800E85A59 /* GetStopPointPushpinsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736D71D4B470A00C8D772 /* GetStopPointPushpinsQuery.swift */; };
-		D1074F421E4C91F800E85A59 /* GetStopPointPushpinsQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736D81D4B470A00C8D772 /* GetStopPointPushpinsQueryHandler.swift */; };
-		D1074F431E4C921500E85A59 /* StopPointPushpinMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736D01D4B43C500C8D772 /* StopPointPushpinMapper.swift */; };
-		D1074F441E4C921F00E85A59 /* GroupStopPointsConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E3326D1D52784E001A5077 /* GroupStopPointsConverter.swift */; };
-		D1074F451E4C9A0100E85A59 /* GetTimesQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFF01D500DED00937FD2 /* GetTimesQuery.swift */; };
-		D1074F461E4C9A0100E85A59 /* GetTimesQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFF11D500DED00937FD2 /* GetTimesQueryHandler.swift */; };
-		D1074F471E4C9A0D00E85A59 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857370C1D4B619C00C8D772 /* Time.swift */; };
-		D1074F481E4C9A0D00E85A59 /* TimeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857370A1D4B618B00C8D772 /* TimeMapper.swift */; };
-		D1074F491E4C9A2000E85A59 /* GetBollardMessageQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ABF50E1D51F23A00B6E9F7 /* GetBollardMessageQuery.swift */; };
-		D1074F4A1E4C9A2000E85A59 /* GetBollardMessageQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ABF50F1D51F23A00B6E9F7 /* GetBollardMessageQueryHandler.swift */; };
-		D1074F4B1E4C9A3600E85A59 /* Bollard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385737001D4B5F1900C8D772 /* Bollard.swift */; };
-		D1074F4C1E4C9A3600E85A59 /* BollardMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385737021D4B5F6900C8D772 /* BollardMapper.swift */; };
-		D1074F4D1E4C9A3600E85A59 /* BollardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFE41D50081700937FD2 /* BollardCell.swift */; };
-		D1074F4E1E4C9A3600E85A59 /* BollardCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFE51D50081700937FD2 /* BollardCell.xib */; };
-		D1074F4F1E4C9A4500E85A59 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391561D4A528A005F4A42 /* NibLoadableView.swift */; };
-		D1074F501E4C9A4C00E85A59 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391521D4A525C005F4A42 /* Configurable.swift */; };
-		D1074F511E4C9A5300E85A59 /* DirectionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFED1D500C3800937FD2 /* DirectionDescription.swift */; };
-		D1074F521E4C9A5D00E85A59 /* FavoriteStateToImageConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3833CF9F1D535233000B74C2 /* FavoriteStateToImageConverter.swift */; };
-		D1074F531E4C9A6400E85A59 /* DateMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E3326F1D529BB0001A5077 /* DateMapper.swift */; };
-		D1074F541E4C9A7100E85A59 /* StopPointNameRemoveNumberConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3855871D1D54DCCC0011C6BE /* StopPointNameRemoveNumberConverter.swift */; };
-		D1074F551E4C9A7800E85A59 /* RequestBodyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736F51D4B531A00C8D772 /* RequestBodyBuilder.swift */; };
-		D1074F561E4C9A8500E85A59 /* MessageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B1639F1D621EE200D512F2 /* MessageMapper.swift */; };
-		D1074F571E4C9A9400E85A59 /* XibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391581D4A52A6005F4A42 /* XibLoader.swift */; };
-		D1074F581E4C9AA600E85A59 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3833CFA11D5352D7000B74C2 /* UIImageExtensions.swift */; };
-		D1074F591E4C9ADC00E85A59 /* GetBollardQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE801D511C620020678C /* GetBollardQuery.swift */; };
-		D1074F5A1E4C9ADC00E85A59 /* GetBollardQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE811D511C620020678C /* GetBollardQueryHandler.swift */; };
-		D1074F5B1E4C9AE600E85A59 /* ToOptionalConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B163A11D6221E800D512F2 /* ToOptionalConverter.swift */; };
-		D1074F5C1E4C9AF800E85A59 /* FavoriteBollardComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3855871F1D54E7570011C6BE /* FavoriteBollardComparator.swift */; };
-		D1074F5D1E4C9B0800E85A59 /* FavoriteBollardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826AE791D50E4340020678C /* FavoriteBollardsRepository.swift */; };
-		D1074F5E1E4C9CF400E85A59 /* PekaApiProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736F71D4B56AA00C8D772 /* PekaApiProviderExtension.swift */; };
-		D1074F5F1E4C9D8400E85A59 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFE91D500BCF00937FD2 /* TimeCell.swift */; };
-		D1074F601E4C9D8400E85A59 /* TimeCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 38D7FFEA1D500BCF00937FD2 /* TimeCell.xib */; };
-		D1074F611E4C9D9800E85A59 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391661D4A5645005F4A42 /* UITableViewExtensions.swift */; };
-		D1074F621E4C9DA200E85A59 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3915A1D4A52C0005F4A42 /* ReusableView.swift */; };
-		D1074F631E4C9DAD00E85A59 /* DepartureTimeToStringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3833CFA31D535F30000B74C2 /* DepartureTimeToStringConverter.swift */; };
-		D1074F641E4DB55500E85A59 /* PekaHttpHeadersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736DD1D4B4A1A00C8D772 /* PekaHttpHeadersProvider.swift */; };
-		D1074F651E4DB5A400E85A59 /* FormUrlEncodedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38403F9A1D4B7CBA006AB84C /* FormUrlEncodedBuilder.swift */; };
-		D1074F661E4DB7AA00E85A59 /* DisableEditingTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3833CFA71D538029000B74C2 /* DisableEditingTableViewDelegate.swift */; };
 		D1074F6A1E4DC88400E85A59 /* WidgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1074F681E4DC88400E85A59 /* WidgetCell.swift */; };
 		D1074F6B1E4DC88400E85A59 /* WidgetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1074F691E4DC88400E85A59 /* WidgetCell.xib */; };
-		D1074F6C1E4DCA6100E85A59 /* WidgetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1074F681E4DC88400E85A59 /* WidgetCell.swift */; };
-		D1074F6D1E4DCA6100E85A59 /* WidgetCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = D1074F691E4DC88400E85A59 /* WidgetCell.xib */; };
-		D1074F891E4DE97000E85A59 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3888445A1E2E6AF300B3A559 /* Localizable.strings */; };
-		D193D2B21E36075E000D9BD9 /* GetNearestStopQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ABF5301D5219DA00B6E9F7 /* GetNearestStopQuery.swift */; };
-		D193D2B31E36075E000D9BD9 /* GetNearestStopQueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ABF5311D5219DA00B6E9F7 /* GetNearestStopQueryHandler.swift */; };
-		D193D2B41E36075E000D9BD9 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736DB1D4B47B300C8D772 /* ApiConfig.swift */; };
-		D193D2B51E36075E000D9BD9 /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391801D4A58F9005F4A42 /* Executor.swift */; };
-		D193D2B61E36075E000D9BD9 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391781D4A58D9005F4A42 /* Query.swift */; };
-		D193D2B71E36075E000D9BD9 /* QueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391791D4A58D9005F4A42 /* QueryHandler.swift */; };
-		D193D2B81E36075E000D9BD9 /* FindNearesStopConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F78BD71D555252006EB5C8 /* FindNearesStopConverter.swift */; };
-		D193D2B91E36075E000D9BD9 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391601D4A53A9005F4A42 /* ArrayExtensions.swift */; };
-		D193D2BB1E36075E000D9BD9 /* SwinjectContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391951D4A5CFF005F4A42 /* SwinjectContainerExtensions.swift */; };
-		D193D2BC1E36075E000D9BD9 /* Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8D781D4F44DB00E6B5BF /* Caching.swift */; };
-		D193D2BD1E36075E000D9BD9 /* ArrayMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3918B1D4A59FF005F4A42 /* ArrayMapper.swift */; };
-		D193D2BE1E36075E000D9BD9 /* WrappedObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736F31D4B4F0E00C8D772 /* WrappedObjectMapper.swift */; };
-		D193D2BF1E360796000D9BD9 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736C41D4B40F700C8D772 /* Coordinates.swift */; };
-		D193D2C01E360796000D9BD9 /* CoordinatesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736C91D4B418600C8D772 /* CoordinatesMapper.swift */; };
-		D193D2C11E3607B5000D9BD9 /* StopPointMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736D41D4B463B00C8D772 /* StopPointMapper.swift */; };
-		D193D2C21E3607B5000D9BD9 /* StopPointPushpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736CE1D4B437E00C8D772 /* StopPointPushpin.swift */; };
-		D193D2C31E3607C6000D9BD9 /* ObjectMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391851D4A59BC005F4A42 /* ObjectMappable.swift */; };
-		D193D2C41E3607D0000D9BD9 /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872714B1D52A1710074B570 /* RouteType.swift */; };
-		D193D2C51E3607E5000D9BD9 /* StopPointPushpinsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE8D7A1D4F470C00E6B5BF /* StopPointPushpinsCache.swift */; };
-		D193D2C61E3607ED000D9BD9 /* Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391541D4A5271005F4A42 /* Convertible.swift */; };
-		D193D2C71E360803000D9BD9 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3917C1D4A58EE005F4A42 /* Command.swift */; };
-		D193D2C81E360803000D9BD9 /* CommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F3917D1D4A58EE005F4A42 /* CommandHandler.swift */; };
-		D193D2C91E360809000D9BD9 /* Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391621D4A54F3005F4A42 /* Filtering.swift */; };
-		D193D2CA1E36082A000D9BD9 /* StopPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385736CC1D4B434700C8D772 /* StopPoint.swift */; };
-		D193D2CB1E360833000D9BD9 /* JsonMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391871D4A59DE005F4A42 /* JsonMappable.swift */; };
-		D193D2CC1E360A23000D9BD9 /* ObservableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F391681D4A5664005F4A42 /* ObservableExtensions.swift */; };
-		D193D2CD1E360A85000D9BD9 /* VariableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3844220F1D4A5F9B007B44FA /* VariableExtensions.swift */; };
-		D193D2CE1E360B61000D9BD9 /* NearestStopPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C423271E3206CA004973D0 /* NearestStopPointViewController.swift */; };
-		D193D2CF1E360B61000D9BD9 /* NearestStopPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C423351E32558D004973D0 /* NearestStopPointViewModel.swift */; };
-		D193D2D01E360BF8000D9BD9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F7778C1D50861A0070265E /* LocationManager.swift */; };
-		D193D2D11E36156E000D9BD9 /* PekaLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F7778E1D5086C70070265E /* PekaLocationManager.swift */; };
-		D193D2D21E361611000D9BD9 /* CLLocationToCoordinatesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F78BDB1D555916006EB5C8 /* CLLocationToCoordinatesConverter.swift */; };
-		D193D2D31E361665000D9BD9 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E895891E27C0FE00B9E097 /* CLLocationManager+Rx.swift */; };
-		D193D2D41E361676000D9BD9 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8958B1E27C3DF00B9E097 /* RxCLLocationManagerDelegateProxy.swift */; };
-		D193D2D51E3616C9000D9BD9 /* MKMapView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E895841E27B99B00B9E097 /* MKMapView+Rx.swift */; };
-		D193D2D61E3616E3000D9BD9 /* RxMKMapViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E895861E27B99B00B9E097 /* RxMKMapViewDelegateProxy.swift */; };
-		D1C423251E3206CA004973D0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C423241E3206CA004973D0 /* NotificationCenter.framework */; };
-		D1C423281E3206CA004973D0 /* NearestStopPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C423271E3206CA004973D0 /* NearestStopPointViewController.swift */; };
-		D1C4232B1E3206CA004973D0 /* NearestStopPoint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C423291E3206CA004973D0 /* NearestStopPoint.storyboard */; };
-		D1C4232F1E3206CA004973D0 /* pekaWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1C423231E3206C9004973D0 /* pekaWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D1C423341E324335004973D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DAC1CB1D4A49F4001DF664 /* Assets.xcassets */; };
-		D1C423361E32558D004973D0 /* NearestStopPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C423351E32558D004973D0 /* NearestStopPointViewModel.swift */; };
-		DDCA5DF07725D04D42D3BC28 /* Pods_pekaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA520050966D3BB131EDAFE /* Pods_pekaTests.framework */; };
 		F58146E762DAE6DA0ACC5F91 /* Pods_peka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C69FE4B7E69D0F004F07DB7 /* Pods_peka.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		38DAC1D61D4A49F4001DF664 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38DAC1B91D4A49F4001DF664 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 38DAC1C01D4A49F4001DF664;
-			remoteInfo = peka;
-		};
-		D1C4232D1E3206CA004973D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38DAC1B91D4A49F4001DF664 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D1C423221E3206C9004973D0;
-			remoteInfo = pekaWidget;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D1C423331E3206CA004973D0 /* Embed App Extensions */ = {
@@ -385,7 +265,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D1C4232F1E3206CA004973D0 /* pekaWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +273,6 @@
 
 /* Begin PBXFileReference section */
 		0C69FE4B7E69D0F004F07DB7 /* Pods_peka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_peka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		263E1854A96347164565C55F /* Pods-pekaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pekaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pekaTests/Pods-pekaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3824C13E1E2CC3C40087D542 /* AdBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
 		3824C1421E2CC7930087D542 /* AdsSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsSettings.swift; sourceTree = "<group>"; };
 		3826AE761D50E1490020678C /* BollardRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BollardRealm.swift; sourceTree = "<group>"; };
@@ -467,8 +345,6 @@
 		385737111D4B642B00C8D772 /* LineBollards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBollards.swift; sourceTree = "<group>"; };
 		385737131D4B69B500C8D772 /* GroupedDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupedDirections.swift; sourceTree = "<group>"; };
 		385737151D4B6A1500C8D772 /* GroupedDirectionsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupedDirectionsMapper.swift; sourceTree = "<group>"; };
-		3857371A1D4B6D4A00C8D772 /* pekaTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pekaTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		3857371B1D4B6D4A00C8D772 /* SearchQueryHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQueryHandlerTests.swift; sourceTree = "<group>"; };
 		386898AC1D4F9F7F004CA51B /* GetBollardsByStopPointQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBollardsByStopPointQuery.swift; sourceTree = "<group>"; };
 		386898AD1D4F9F7F004CA51B /* GetBollardsByStopPointQueryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBollardsByStopPointQueryHandler.swift; sourceTree = "<group>"; };
 		386898B11D4FA81F004CA51B /* GetBollardsByLineQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBollardsByLineQuery.swift; sourceTree = "<group>"; };
@@ -533,7 +409,7 @@
 		38B163A41D6225CD00D512F2 /* MessageBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
 		38B163A51D6225CD00D512F2 /* MessageBubbleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageBubbleView.xib; sourceTree = "<group>"; };
 		38B163A81D623D1600D512F2 /* IsNilConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsNilConverter.swift; sourceTree = "<group>"; };
-		38B880871E2932A000D05572 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		38B30932221C2BEA00F5648E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38D7FFE41D50081700937FD2 /* BollardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BollardCell.swift; sourceTree = "<group>"; };
 		38D7FFE51D50081700937FD2 /* BollardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BollardCell.xib; sourceTree = "<group>"; };
 		38D7FFE91D500BCF00937FD2 /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
@@ -551,8 +427,6 @@
 		38DAC1C11D4A49F4001DF664 /* peka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DAC1C41D4A49F4001DF664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38DAC1CB1D4A49F4001DF664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		38DAC1D51D4A49F4001DF664 /* pekaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pekaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38DAC1DB1D4A49F4001DF664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38DAC1FC1D4A4B7D001DF664 /* Hub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hub.storyboard; sourceTree = "<group>"; };
 		38DAC1FD1D4A4B7D001DF664 /* HubViewConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewConfigurator.swift; sourceTree = "<group>"; };
 		38DAC1FE1D4A4B7D001DF664 /* HubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
@@ -626,7 +500,6 @@
 		38F78BDB1D555916006EB5C8 /* CLLocationToCoordinatesConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationToCoordinatesConverter.swift; sourceTree = "<group>"; };
 		38FE8D781D4F44DB00E6B5BF /* Caching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caching.swift; sourceTree = "<group>"; };
 		38FE8D7A1D4F470C00E6B5BF /* StopPointPushpinsCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopPointPushpinsCache.swift; sourceTree = "<group>"; };
-		38FE8D7C1D4F49F900E6B5BF /* GetStopPointPushpinsQueryHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStopPointPushpinsQueryHandlerTests.swift; sourceTree = "<group>"; };
 		38FE8D7F1D4F55F100E6B5BF /* Favorite.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
 		38FE8D801D4F55F100E6B5BF /* FavoriteViewConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewConfigurator.swift; sourceTree = "<group>"; };
 		38FE8D811D4F55F100E6B5BF /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
@@ -654,20 +527,10 @@
 		38FE8E101D4F937700E6B5BF /* SearchNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchNavigationController.swift; sourceTree = "<group>"; };
 		3DD5637EB6E58D6DB8BF16E1 /* Pods-peka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peka.release.xcconfig"; path = "Pods/Target Support Files/Pods-peka/Pods-peka.release.xcconfig"; sourceTree = "<group>"; };
 		459517C145CE71468CF27A37 /* Pods-peka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-peka/Pods-peka.debug.xcconfig"; sourceTree = "<group>"; };
-		557F7561DF0DB91EE3EFC7B5 /* Pods_pekaWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pekaWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A75947E3757F05569707599 /* Pods-pekaWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pekaWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pekaWidget/Pods-pekaWidget.debug.xcconfig"; sourceTree = "<group>"; };
-		9628844EC4934B069C5EC9C7 /* Pods-pekaWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pekaWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-pekaWidget/Pods-pekaWidget.release.xcconfig"; sourceTree = "<group>"; };
-		9EA520050966D3BB131EDAFE /* Pods_pekaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pekaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1074F301E4C5D3500E85A59 /* WidgetDependencyInstaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetDependencyInstaller.swift; sourceTree = "<group>"; };
 		D1074F681E4DC88400E85A59 /* WidgetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetCell.swift; sourceTree = "<group>"; };
 		D1074F691E4DC88400E85A59 /* WidgetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WidgetCell.xib; sourceTree = "<group>"; };
-		D1C423231E3206C9004973D0 /* pekaWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pekaWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C423241E3206CA004973D0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		D1C423271E3206CA004973D0 /* NearestStopPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestStopPointViewController.swift; sourceTree = "<group>"; };
-		D1C4232A1E3206CA004973D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NearestStopPoint.storyboard; sourceTree = "<group>"; };
-		D1C4232C1E3206CA004973D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1C423351E32558D004973D0 /* NearestStopPointViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearestStopPointViewModel.swift; sourceTree = "<group>"; };
-		F5DB40B2BE57C38384049AA8 /* Pods-pekaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pekaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pekaTests/Pods-pekaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -678,23 +541,6 @@
 				38F7778A1D5083100070265E /* CoreLocation.framework in Frameworks */,
 				38F777881D507F490070265E /* MapKit.framework in Frameworks */,
 				F58146E762DAE6DA0ACC5F91 /* Pods_peka.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38DAC1D21D4A49F4001DF664 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DDCA5DF07725D04D42D3BC28 /* Pods_pekaTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1C423201E3206C9004973D0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D1C423251E3206CA004973D0 /* NotificationCenter.framework in Frameworks */,
-				ABA6F11A1F413546E980D45D /* Pods_pekaWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,15 +736,6 @@
 				3857370F1D4B641B00C8D772 /* LineBollardsMapper.swift */,
 			);
 			path = LineBollards;
-			sourceTree = "<group>";
-		};
-		385737191D4B6CFC00C8D772 /* BLL */ = {
-			isa = PBXGroup;
-			children = (
-				38FE8D7C1D4F49F900E6B5BF /* GetStopPointPushpinsQueryHandlerTests.swift */,
-				3857371B1D4B6D4A00C8D772 /* SearchQueryHandlerTests.swift */,
-			);
-			path = BLL;
 			sourceTree = "<group>";
 		};
 		386898AB1D4F9F25004CA51B /* GetBollardsByStopPoint */ = {
@@ -1133,8 +970,6 @@
 				B1C719E493AEF8D3A3B6330A /* Pods */,
 				38DAC1C21D4A49F4001DF664 /* Products */,
 				38DAC1C31D4A49F4001DF664 /* peka */,
-				38DAC1D81D4A49F4001DF664 /* pekaTests */,
-				D1C423261E3206CA004973D0 /* pekaWidget */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1142,8 +977,6 @@
 			isa = PBXGroup;
 			children = (
 				38DAC1C11D4A49F4001DF664 /* peka.app */,
-				38DAC1D51D4A49F4001DF664 /* pekaTests.xctest */,
-				D1C423231E3206C9004973D0 /* pekaWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1161,23 +994,13 @@
 				38DAC1C41D4A49F4001DF664 /* AppDelegate.swift */,
 				38A84F4B1E2CE30800D8FE0B /* Constants.swift */,
 				38F391971D4A5D1F005F4A42 /* DependencyInstaller.swift */,
-				38B880871E2932A000D05572 /* GoogleService-Info.plist */,
 				D1074F301E4C5D3500E85A59 /* WidgetDependencyInstaller.swift */,
 				38AB745A1E2FD95C001C1840 /* peka.entitlements */,
 				38967E401FFE3FD200CB44F4 /* Info.plist */,
 				38967E461FFE40E500CB44F4 /* InfoPlist.strings */,
+				38B30932221C2BEA00F5648E /* GoogleService-Info.plist */,
 			);
 			path = peka;
-			sourceTree = "<group>";
-		};
-		38DAC1D81D4A49F4001DF664 /* pekaTests */ = {
-			isa = PBXGroup;
-			children = (
-				385737191D4B6CFC00C8D772 /* BLL */,
-				38DAC1DB1D4A49F4001DF664 /* Info.plist */,
-				3857371A1D4B6D4A00C8D772 /* pekaTests-Bridging-Header.h */,
-			);
-			path = pekaTests;
 			sourceTree = "<group>";
 		};
 		38DAC1E41D4A4A0C001DF664 /* BLL */ = {
@@ -1555,10 +1378,6 @@
 			children = (
 				459517C145CE71468CF27A37 /* Pods-peka.debug.xcconfig */,
 				3DD5637EB6E58D6DB8BF16E1 /* Pods-peka.release.xcconfig */,
-				263E1854A96347164565C55F /* Pods-pekaTests.debug.xcconfig */,
-				F5DB40B2BE57C38384049AA8 /* Pods-pekaTests.release.xcconfig */,
-				8A75947E3757F05569707599 /* Pods-pekaWidget.debug.xcconfig */,
-				9628844EC4934B069C5EC9C7 /* Pods-pekaWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1572,26 +1391,13 @@
 			path = Widget;
 			sourceTree = "<group>";
 		};
-		D1C423261E3206CA004973D0 /* pekaWidget */ = {
-			isa = PBXGroup;
-			children = (
-				D1C4232C1E3206CA004973D0 /* Info.plist */,
-				D1C423291E3206CA004973D0 /* NearestStopPoint.storyboard */,
-				D1C423271E3206CA004973D0 /* NearestStopPointViewController.swift */,
-				D1C423351E32558D004973D0 /* NearestStopPointViewModel.swift */,
-			);
-			path = pekaWidget;
-			sourceTree = "<group>";
-		};
 		D5CB4B0F6A4A0D388E4CE91C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				38F777891D5083100070265E /* CoreLocation.framework */,
 				38F777871D507F490070265E /* MapKit.framework */,
 				0C69FE4B7E69D0F004F07DB7 /* Pods_peka.framework */,
-				9EA520050966D3BB131EDAFE /* Pods_pekaTests.framework */,
 				D1C423241E3206CA004973D0 /* NotificationCenter.framework */,
-				557F7561DF0DB91EE3EFC7B5 /* Pods_pekaWidget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1608,59 +1414,17 @@
 				38DAC1BE1D4A49F4001DF664 /* Frameworks */,
 				38DAC1BF1D4A49F4001DF664 /* Resources */,
 				87F0CAE7EEA76105A3A9C538 /* [CP] Embed Pods Frameworks */,
-				F3058A542D1E4ED8620E88B0 /* [CP] Copy Pods Resources */,
 				38B880861E2910B900D05572 /* ShellScript */,
 				D1C423331E3206CA004973D0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D1C4232E1E3206CA004973D0 /* PBXTargetDependency */,
 			);
 			name = peka;
 			productName = peka;
 			productReference = 38DAC1C11D4A49F4001DF664 /* peka.app */;
 			productType = "com.apple.product-type.application";
-		};
-		38DAC1D41D4A49F4001DF664 /* pekaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38DAC1E11D4A49F4001DF664 /* Build configuration list for PBXNativeTarget "pekaTests" */;
-			buildPhases = (
-				C4F746E2C519419F59894B41 /* [CP] Check Pods Manifest.lock */,
-				38DAC1D11D4A49F4001DF664 /* Sources */,
-				38DAC1D21D4A49F4001DF664 /* Frameworks */,
-				38DAC1D31D4A49F4001DF664 /* Resources */,
-				BB6E55E40E10753E43C2081F /* [CP] Embed Pods Frameworks */,
-				4ED3ED39C0786FE864691F60 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				38DAC1D71D4A49F4001DF664 /* PBXTargetDependency */,
-			);
-			name = pekaTests;
-			productName = pekaTests;
-			productReference = 38DAC1D51D4A49F4001DF664 /* pekaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D1C423221E3206C9004973D0 /* pekaWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D1C423321E3206CA004973D0 /* Build configuration list for PBXNativeTarget "pekaWidget" */;
-			buildPhases = (
-				958097843D8D3E2C8CF19574 /* [CP] Check Pods Manifest.lock */,
-				D1C4231F1E3206C9004973D0 /* Sources */,
-				D1C423201E3206C9004973D0 /* Frameworks */,
-				D1C423211E3206C9004973D0 /* Resources */,
-				7150448C75F9BDE71CB84B8D /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = pekaWidget;
-			productName = pekaWidget;
-			productReference = D1C423231E3206C9004973D0 /* pekaWidget.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -1669,29 +1433,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = WhallaLabs;
 				TargetAttributes = {
 					38DAC1C01D4A49F4001DF664 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 7B5S8VZN35;
+						DevelopmentTeam = 99R4D8SSEQ;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
 							};
 						};
-					};
-					38DAC1D41D4A49F4001DF664 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = 38DAC1C01D4A49F4001DF664;
-					};
-					D1C423221E3206C9004973D0 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 7B5S8VZN35;
-						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1709,8 +1463,6 @@
 			projectRoot = "";
 			targets = (
 				38DAC1C01D4A49F4001DF664 /* peka */,
-				38DAC1D41D4A49F4001DF664 /* pekaTests */,
-				D1C423221E3206C9004973D0 /* pekaWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -1728,7 +1480,6 @@
 				38D7FFE71D50081700937FD2 /* BollardCell.xib in Resources */,
 				38D7FFFB1D50103600937FD2 /* Bollard.storyboard in Resources */,
 				38A84F451E2CD8BA00D8FE0B /* Settings.storyboard in Resources */,
-				38967E411FFE3FD200CB44F4 /* Info.plist in Resources */,
 				3833CFAD1D539270000B74C2 /* SearchBarView.xib in Resources */,
 				38EFD2E31E2FDDA300A932CE /* LaunchScreen.storyboard in Resources */,
 				D1074F6B1E4DC88400E85A59 /* WidgetCell.xib in Resources */,
@@ -1738,30 +1489,13 @@
 				38FE8DFB1D4F825300E6B5BF /* SearchResultCell.xib in Resources */,
 				38A84F561E2CE93500D8FE0B /* RemoveAds.storyboard in Resources */,
 				38B163A71D6225CD00D512F2 /* MessageBubbleView.xib in Resources */,
+				38B30933221C2BEA00F5648E /* GoogleService-Info.plist in Resources */,
 				38DAC1CC1D4A49F4001DF664 /* Assets.xcassets in Resources */,
 				38967E441FFE40E500CB44F4 /* InfoPlist.strings in Resources */,
 				38FE8D831D4F55F100E6B5BF /* Favorite.storyboard in Resources */,
 				3855871C1D54D5F00011C6BE /* DirectionHeader.xib in Resources */,
-				38B880881E2932A000D05572 /* GoogleService-Info.plist in Resources */,
 				38FE8D8C1D4F561100E6B5BF /* Search.storyboard in Resources */,
 				382705F01E28D71D00C1BB14 /* ImageHeaderView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38DAC1D31D4A49F4001DF664 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1C423211E3206C9004973D0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D1074F891E4DE97000E85A59 /* Localizable.strings in Resources */,
-				D1C423341E324335004973D0 /* Assets.xcassets in Resources */,
-				D1C4232B1E3206CA004973D0 /* NearestStopPoint.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1797,37 +1531,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" b3fc4491cd6a901d7129c0b3a0485f25908fb069 dc4094b4edec62874e1fd753fb590e0dffce814a583c85d02c4ffa836df86756";
-		};
-		4ED3ED39C0786FE864691F60 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pekaTests/Pods-pekaTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7150448C75F9BDE71CB84B8D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pekaWidget/Pods-pekaWidget-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 6fd0a296c89417b56ada757e3783e73b26245727 c2bceb7697b13ed0e3c1aa368d277836b2fcad4e2e8855b0fdc94db1069f841c";
 		};
 		87F0CAE7EEA76105A3A9C538 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1835,8 +1539,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-peka/Pods-peka-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-peka/Pods-peka-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -1849,10 +1553,11 @@
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -1865,101 +1570,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-peka/Pods-peka-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		958097843D8D3E2C8CF19574 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pekaWidget-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB6E55E40E10753E43C2081F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-pekaTests/Pods-pekaTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
-				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pekaTests/Pods-pekaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C4F746E2C519419F59894B41 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pekaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3058A542D1E4ED8620E88B0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-peka/Pods-peka-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-peka/Pods-peka-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1969,8 +1584,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D193D2CE1E360B61000D9BD9 /* NearestStopPointViewController.swift in Sources */,
-				D193D2CF1E360B61000D9BD9 /* NearestStopPointViewModel.swift in Sources */,
 				3833CFA81D538029000B74C2 /* DisableEditingTableViewDelegate.swift in Sources */,
 				38A84F4C1E2CE30800D8FE0B /* Constants.swift in Sources */,
 				38F3917B1D4A58D9005F4A42 /* QueryHandler.swift in Sources */,
@@ -2196,127 +1809,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38DAC1D11D4A49F4001DF664 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3857371C1D4B6D4A00C8D772 /* SearchQueryHandlerTests.swift in Sources */,
-				38FE8D7D1D4F49F900E6B5BF /* GetStopPointPushpinsQueryHandlerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D1C4231F1E3206C9004973D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D1074F6C1E4DCA6100E85A59 /* WidgetCell.swift in Sources */,
-				D1074F6D1E4DCA6100E85A59 /* WidgetCell.xib in Sources */,
-				D1074F661E4DB7AA00E85A59 /* DisableEditingTableViewDelegate.swift in Sources */,
-				D1074F651E4DB5A400E85A59 /* FormUrlEncodedBuilder.swift in Sources */,
-				D1074F641E4DB55500E85A59 /* PekaHttpHeadersProvider.swift in Sources */,
-				D1074F631E4C9DAD00E85A59 /* DepartureTimeToStringConverter.swift in Sources */,
-				D1074F621E4C9DA200E85A59 /* ReusableView.swift in Sources */,
-				D1074F611E4C9D9800E85A59 /* UITableViewExtensions.swift in Sources */,
-				D1074F5F1E4C9D8400E85A59 /* TimeCell.swift in Sources */,
-				D1074F601E4C9D8400E85A59 /* TimeCell.xib in Sources */,
-				D1074F5E1E4C9CF400E85A59 /* PekaApiProviderExtension.swift in Sources */,
-				D1074F5D1E4C9B0800E85A59 /* FavoriteBollardsRepository.swift in Sources */,
-				D1074F5C1E4C9AF800E85A59 /* FavoriteBollardComparator.swift in Sources */,
-				D1074F5B1E4C9AE600E85A59 /* ToOptionalConverter.swift in Sources */,
-				D1074F591E4C9ADC00E85A59 /* GetBollardQuery.swift in Sources */,
-				D1074F5A1E4C9ADC00E85A59 /* GetBollardQueryHandler.swift in Sources */,
-				D1074F581E4C9AA600E85A59 /* UIImageExtensions.swift in Sources */,
-				D1074F571E4C9A9400E85A59 /* XibLoader.swift in Sources */,
-				D1074F561E4C9A8500E85A59 /* MessageMapper.swift in Sources */,
-				D1074F551E4C9A7800E85A59 /* RequestBodyBuilder.swift in Sources */,
-				D1074F541E4C9A7100E85A59 /* StopPointNameRemoveNumberConverter.swift in Sources */,
-				D1074F531E4C9A6400E85A59 /* DateMapper.swift in Sources */,
-				D1074F521E4C9A5D00E85A59 /* FavoriteStateToImageConverter.swift in Sources */,
-				D1074F511E4C9A5300E85A59 /* DirectionDescription.swift in Sources */,
-				D1074F501E4C9A4C00E85A59 /* Configurable.swift in Sources */,
-				D1074F4F1E4C9A4500E85A59 /* NibLoadableView.swift in Sources */,
-				D1074F4B1E4C9A3600E85A59 /* Bollard.swift in Sources */,
-				D1074F4C1E4C9A3600E85A59 /* BollardMapper.swift in Sources */,
-				D1074F4D1E4C9A3600E85A59 /* BollardCell.swift in Sources */,
-				D1074F4E1E4C9A3600E85A59 /* BollardCell.xib in Sources */,
-				D1074F491E4C9A2000E85A59 /* GetBollardMessageQuery.swift in Sources */,
-				D1074F4A1E4C9A2000E85A59 /* GetBollardMessageQueryHandler.swift in Sources */,
-				D1074F471E4C9A0D00E85A59 /* Time.swift in Sources */,
-				D1074F481E4C9A0D00E85A59 /* TimeMapper.swift in Sources */,
-				D1074F451E4C9A0100E85A59 /* GetTimesQuery.swift in Sources */,
-				D1074F461E4C9A0100E85A59 /* GetTimesQueryHandler.swift in Sources */,
-				D1074F441E4C921F00E85A59 /* GroupStopPointsConverter.swift in Sources */,
-				D1074F431E4C921500E85A59 /* StopPointPushpinMapper.swift in Sources */,
-				D1074F411E4C91F800E85A59 /* GetStopPointPushpinsQuery.swift in Sources */,
-				D1074F421E4C91F800E85A59 /* GetStopPointPushpinsQueryHandler.swift in Sources */,
-				D1074F401E4C61ED00E85A59 /* UIColorExtensions.swift in Sources */,
-				D1074F3F1E4C61CA00E85A59 /* PekaNavigationController.swift in Sources */,
-				D1074F3E1E4C602E00E85A59 /* StringExtensions.swift in Sources */,
-				D1074F3D1E4C600200E85A59 /* HttpResponseCode.swift in Sources */,
-				D1074F3C1E4C5FF400E85A59 /* HttpMethod.swift in Sources */,
-				D1074F3B1E4C5FED00E85A59 /* QueryRequestBuilder.swift in Sources */,
-				D1074F3A1E4C5FDF00E85A59 /* ApiProviderError.swift in Sources */,
-				D1074F391E4C5FD700E85A59 /* RequestBuilder.swift in Sources */,
-				D1074F381E4C5FCE00E85A59 /* BodyRequestBuilder.swift in Sources */,
-				D1074F371E4C5FC600E85A59 /* HttpBodyParameter.swift in Sources */,
-				D1074F361E4C5F7400E85A59 /* FormBodyBuilder.swift in Sources */,
-				D1074F351E4C5F5B00E85A59 /* HttpHeadersProvider.swift in Sources */,
-				D1074F341E4C5F5000E85A59 /* ApiProvider.swift in Sources */,
-				D1074F331E4C5F3700E85A59 /* RestApiProvider.swift in Sources */,
-				D1074F321E4C5E0600E85A59 /* WidgetDependencyInstaller.swift in Sources */,
-				D193D2D61E3616E3000D9BD9 /* RxMKMapViewDelegateProxy.swift in Sources */,
-				D193D2D51E3616C9000D9BD9 /* MKMapView+Rx.swift in Sources */,
-				D193D2D41E361676000D9BD9 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
-				D193D2D31E361665000D9BD9 /* CLLocationManager+Rx.swift in Sources */,
-				D193D2D21E361611000D9BD9 /* CLLocationToCoordinatesConverter.swift in Sources */,
-				D193D2D11E36156E000D9BD9 /* PekaLocationManager.swift in Sources */,
-				D193D2D01E360BF8000D9BD9 /* LocationManager.swift in Sources */,
-				D193D2CD1E360A85000D9BD9 /* VariableExtensions.swift in Sources */,
-				D193D2CC1E360A23000D9BD9 /* ObservableExtensions.swift in Sources */,
-				D193D2CB1E360833000D9BD9 /* JsonMappable.swift in Sources */,
-				D193D2CA1E36082A000D9BD9 /* StopPoint.swift in Sources */,
-				D193D2C91E360809000D9BD9 /* Filtering.swift in Sources */,
-				D193D2C71E360803000D9BD9 /* Command.swift in Sources */,
-				D193D2C81E360803000D9BD9 /* CommandHandler.swift in Sources */,
-				D193D2C61E3607ED000D9BD9 /* Convertible.swift in Sources */,
-				D193D2C51E3607E5000D9BD9 /* StopPointPushpinsCache.swift in Sources */,
-				D193D2C41E3607D0000D9BD9 /* RouteType.swift in Sources */,
-				D193D2C31E3607C6000D9BD9 /* ObjectMappable.swift in Sources */,
-				D193D2C11E3607B5000D9BD9 /* StopPointMapper.swift in Sources */,
-				D193D2C21E3607B5000D9BD9 /* StopPointPushpin.swift in Sources */,
-				D193D2BF1E360796000D9BD9 /* Coordinates.swift in Sources */,
-				D193D2C01E360796000D9BD9 /* CoordinatesMapper.swift in Sources */,
-				D193D2B21E36075E000D9BD9 /* GetNearestStopQuery.swift in Sources */,
-				D193D2B31E36075E000D9BD9 /* GetNearestStopQueryHandler.swift in Sources */,
-				D193D2B41E36075E000D9BD9 /* ApiConfig.swift in Sources */,
-				D193D2B51E36075E000D9BD9 /* Executor.swift in Sources */,
-				D193D2B61E36075E000D9BD9 /* Query.swift in Sources */,
-				D193D2B71E36075E000D9BD9 /* QueryHandler.swift in Sources */,
-				D193D2B81E36075E000D9BD9 /* FindNearesStopConverter.swift in Sources */,
-				D193D2B91E36075E000D9BD9 /* ArrayExtensions.swift in Sources */,
-				D193D2BB1E36075E000D9BD9 /* SwinjectContainerExtensions.swift in Sources */,
-				D193D2BC1E36075E000D9BD9 /* Caching.swift in Sources */,
-				D193D2BD1E36075E000D9BD9 /* ArrayMapper.swift in Sources */,
-				D193D2BE1E36075E000D9BD9 /* WrappedObjectMapper.swift in Sources */,
-				D1C423361E32558D004973D0 /* NearestStopPointViewModel.swift in Sources */,
-				D1C423281E3206CA004973D0 /* NearestStopPointViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		38DAC1D71D4A49F4001DF664 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 38DAC1C01D4A49F4001DF664 /* peka */;
-			targetProxy = 38DAC1D61D4A49F4001DF664 /* PBXContainerItemProxy */;
-		};
-		D1C4232E1E3206CA004973D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D1C423221E3206C9004973D0 /* pekaWidget */;
-			targetProxy = D1C4232D1E3206CA004973D0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3888445A1E2E6AF300B3A559 /* Localizable.strings */ = {
@@ -2338,15 +1831,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D1C423291E3206CA004973D0 /* NearestStopPoint.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1C4232A1E3206CA004973D0 /* Base */,
-			);
-			name = NearestStopPoint.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -2364,12 +1848,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -2418,12 +1904,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -2461,16 +1949,15 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = peka/peka.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7B5S8VZN35;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99R4D8SSEQ;
 				INFOPLIST_FILE = peka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whallalabs.peka;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3ddc877e-2635-49fc-b715-b36f99e1c7ef";
-				PROVISIONING_PROFILE_SPECIFIER = "Gdzie ta bimba Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -2488,98 +1975,15 @@
 				CODE_SIGN_ENTITLEMENTS = peka/peka.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7B5S8VZN35;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99R4D8SSEQ;
 				INFOPLIST_FILE = peka/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whallalabs.peka;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4aef6a6f-fa47-436f-a2d7-b44933e85d49";
-				PROVISIONING_PROFILE_SPECIFIER = "Gdzie ta bimba";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		38DAC1E21D4A49F4001DF664 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 263E1854A96347164565C55F /* Pods-pekaTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = pekaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whallalabs.pekaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "pekaTests/pekaTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/peka.app/peka";
-			};
-			name = Debug;
-		};
-		38DAC1E31D4A49F4001DF664 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5DB40B2BE57C38384049AA8 /* Pods-pekaTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = pekaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whallalabs.pekaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "pekaTests/pekaTests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/peka.app/peka";
-			};
-			name = Release;
-		};
-		D1C423301E3206CA004973D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A75947E3757F05569707599 /* Pods-pekaWidget.debug.xcconfig */;
-			buildSettings = {
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7B5S8VZN35;
-				INFOPLIST_FILE = pekaWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whallalabs.peka.pekaWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e6d513c1-c9a4-43ff-9bf3-cf70f02f966e";
-				PROVISIONING_PROFILE_SPECIFIER = "Bimba widget dev";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		D1C423311E3206CA004973D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9628844EC4934B069C5EC9C7 /* Pods-pekaWidget.release.xcconfig */;
-			buildSettings = {
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 7B5S8VZN35;
-				INFOPLIST_FILE = pekaWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.whallalabs.peka.pekaWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e40a5eba-bb85-4bce-813b-48eb44b2909c";
-				PROVISIONING_PROFILE_SPECIFIER = "Bimba widget";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -2602,24 +2006,6 @@
 			buildConfigurations = (
 				38DAC1DF1D4A49F4001DF664 /* Debug */,
 				38DAC1E01D4A49F4001DF664 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		38DAC1E11D4A49F4001DF664 /* Build configuration list for PBXNativeTarget "pekaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				38DAC1E21D4A49F4001DF664 /* Debug */,
-				38DAC1E31D4A49F4001DF664 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D1C423321E3206CA004973D0 /* Build configuration list for PBXNativeTarget "pekaWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D1C423301E3206CA004973D0 /* Debug */,
-				D1C423311E3206CA004973D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
