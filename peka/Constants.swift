@@ -9,18 +9,18 @@
 import Foundation
 
 struct Constants {
-    static let appID = "1195530580"
+    static let appID = "1496494157"
     static let itunesURL = "https://itunes.apple.com/pl/app/id" + Constants.appID
     static let appstoreURL = "itms-apps://itunes.apple.com/app/id"  + Constants.appID
     
     struct AdMob {
         static let appId = "ca-app-pub-1986565751919761~4812865538"
         
-        #if DEBUG
+    #if DEBUG
         static let bannerUnitId = "ca-app-pub-3940256099942544/2934735716"
-        #else
+    #else
         static let bannerUnitId = "ca-app-pub-1986565751919761/7766331939"
-        #endif
+    #endif
     }
     
     struct InApp {
