@@ -1,34 +1,36 @@
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
+platform :ios, '12.0'
 use_frameworks!
 
 inhibit_all_warnings!
 
-target 'peka' do
-pod 'PKHUD', '~> 4.1'
+workspace 'Bimba.xcworkspace'
+
+def shared_pods 
+
+	pod 'RxSwift'
+	pod 'RxRelay'
+	pod 'RxOptional'
+	pod 'RxSwiftExt'
+	pod 'Swinject'
 end
 
+target 'App' do
+	project 'App/App.xcodeproj'
 
-target 'pekaWidget' do
+	shared_pods
 
+	pod 'RxCocoa'
+	pod 'RxCells'
 end
 
-pod 'RxSwift'
-pod 'RxCocoa'
-pod 'RxOptional'
-pod 'Swinject'
-pod 'SwinjectStoryboard'
-pod 'SwiftyJSON'
-pod 'RxDataSources', '~> 1.0'
-#pod 'RxMKMapView'
-pod 'RealmSwift', '~> 2.10.2'
-pod 'RxRealm'
-#pod 'FBAnnotationClusteringSwift'
-pod 'TTTAttributedLabel'
+target 'Domain' do
+	project 'Domain/Domain.xcodeproj'
 
-pod 'Fabric', '~> 1.10.0'
-pod 'Crashlytics', '~> 3.14.0'
+	shared_pods
+end
 
-pod 'Firebase/Core'
-pod 'Firebase/Analytics'
-pod 'Firebase/AdMob'
+target 'Data' do
+	project 'Data/Data.xcodeproj'
+
+	shared_pods
+end

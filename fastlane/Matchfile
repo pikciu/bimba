@@ -1,4 +1,0 @@
-git_url "git@github.com:pikciu/apple-code-signing.git"
-
-app_identifier ["com.pikciu.bimba", "com.pikciu.bimba.widget"]
-username "tomasz.pikc@gmail.com"

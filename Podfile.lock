@@ -1,186 +1,62 @@
 PODS:
-  - Crashlytics (3.14.0):
-    - Fabric (~> 1.10.2)
-  - Fabric (1.10.2)
-  - Firebase/AdMob (6.15.0):
-    - Firebase/CoreOnly
-    - Google-Mobile-Ads-SDK (~> 7.50)
-  - Firebase/Analytics (6.15.0):
-    - Firebase/Core
-  - Firebase/Core (6.15.0):
-    - Firebase/CoreOnly
-    - FirebaseAnalytics (= 6.2.1)
-  - Firebase/CoreOnly (6.15.0):
-    - FirebaseCore (= 6.6.0)
-  - FirebaseAnalytics (6.2.1):
-    - FirebaseCore (~> 6.6)
-    - FirebaseInstanceID (~> 4.3)
-    - GoogleAppMeasurement (= 6.2.1)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (= 0.3.9011)
-  - FirebaseCore (6.6.0):
-    - FirebaseCoreDiagnostics (~> 1.2)
-    - FirebaseCoreDiagnosticsInterop (~> 1.2)
-    - GoogleUtilities/Environment (~> 6.5)
-    - GoogleUtilities/Logger (~> 6.5)
-  - FirebaseCoreDiagnostics (1.2.0):
-    - FirebaseCoreDiagnosticsInterop (~> 1.2)
-    - GoogleDataTransportCCTSupport (~> 1.3)
-    - GoogleUtilities/Environment (~> 6.5)
-    - GoogleUtilities/Logger (~> 6.5)
-    - nanopb (~> 0.3.901)
-  - FirebaseCoreDiagnosticsInterop (1.2.0)
-  - FirebaseInstallations (1.1.0):
-    - FirebaseCore (~> 6.6)
-    - GoogleUtilities/UserDefaults (~> 6.5)
-    - PromisesObjC (~> 1.2)
-  - FirebaseInstanceID (4.3.0):
-    - FirebaseCore (~> 6.6)
-    - FirebaseInstallations (~> 1.0)
-    - GoogleUtilities/Environment (~> 6.5)
-    - GoogleUtilities/UserDefaults (~> 6.5)
-  - Google-Mobile-Ads-SDK (7.53.1):
-    - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.2.1):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (= 0.3.9011)
-  - GoogleDataTransport (3.3.0)
-  - GoogleDataTransportCCTSupport (1.3.0):
-    - GoogleDataTransport (~> 3.3)
-    - nanopb (~> 0.3.901)
-  - GoogleUtilities/AppDelegateSwizzler (6.5.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.5.0)
-  - GoogleUtilities/Logger (6.5.0):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.5.0):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.5.0):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.5.0)"
-  - GoogleUtilities/Reachability (6.5.0):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (6.5.0):
-    - GoogleUtilities/Logger
-  - nanopb (0.3.9011):
-    - nanopb/decode (= 0.3.9011)
-    - nanopb/encode (= 0.3.9011)
-  - nanopb/decode (0.3.9011)
-  - nanopb/encode (0.3.9011)
-  - PKHUD (4.1.0)
-  - PromisesObjC (1.2.8)
-  - Realm (2.10.2):
-    - Realm/Headers (= 2.10.2)
-  - Realm/Headers (2.10.2)
-  - RealmSwift (2.10.2):
-    - Realm (= 2.10.2)
-  - RxCocoa (3.1.0):
-    - RxSwift (~> 3.1)
-  - RxDataSources (1.0.2):
-    - RxCocoa (~> 3.0)
-    - RxSwift (~> 3.0)
-  - RxOptional (3.1.3):
-    - RxCocoa
-    - RxSwift
-  - RxRealm (0.4.1):
-    - RealmSwift (~> 2.1)
-    - RxSwift (~> 3.1)
-  - RxSwift (3.1.0)
-  - SwiftyJSON (3.1.4)
-  - Swinject (2.0.0)
-  - SwinjectStoryboard (1.0.0):
-    - Swinject (= 2.0.0)
-  - TTTAttributedLabel (2.0.0)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
+  - RxCells (0.5.0):
+    - Reusable (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxOptional (4.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - Swinject (2.7.1)
 
 DEPENDENCIES:
-  - Crashlytics (~> 3.14.0)
-  - Fabric (~> 1.10.0)
-  - Firebase/AdMob
-  - Firebase/Analytics
-  - Firebase/Core
-  - PKHUD (~> 4.1)
-  - RealmSwift (~> 2.10.2)
+  - RxCells
   - RxCocoa
-  - RxDataSources (~> 1.0)
   - RxOptional
-  - RxRealm
+  - RxRelay
   - RxSwift
-  - SwiftyJSON
+  - RxSwiftExt
   - Swinject
-  - SwinjectStoryboard
-  - TTTAttributedLabel
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Crashlytics
-    - Fabric
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseCore
-    - FirebaseCoreDiagnostics
-    - FirebaseCoreDiagnosticsInterop
-    - FirebaseInstallations
-    - FirebaseInstanceID
-    - Google-Mobile-Ads-SDK
-    - GoogleAppMeasurement
-    - GoogleDataTransport
-    - GoogleDataTransportCCTSupport
-    - GoogleUtilities
-    - nanopb
-    - PKHUD
-    - PromisesObjC
-    - Realm
-    - RealmSwift
+  trunk:
+    - Reusable
+    - RxCells
     - RxCocoa
-    - RxDataSources
     - RxOptional
-    - RxRealm
+    - RxRelay
     - RxSwift
-    - SwiftyJSON
+    - RxSwiftExt
     - Swinject
-    - SwinjectStoryboard
-    - TTTAttributedLabel
 
 SPEC CHECKSUMS:
-  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
-  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
-  Firebase: 5d77105d9740a07ca6b16927ca971db7e860faaf
-  FirebaseAnalytics: e83e64b1231dedcd9ddd4bdecd9bcfd6ba341679
-  FirebaseCore: 4aeb81ff53dcd9a3634ca725dc1fb8c2a4622046
-  FirebaseCoreDiagnostics: 5e78803ab276bc5b50340e3c539c06c3de35c649
-  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
-  FirebaseInstallations: 575cd32f2aec0feeb0e44f5d0110a09e5e60b47b
-  FirebaseInstanceID: 6668efc1655a4052c083f287a7141f1ead12f9c2
-  Google-Mobile-Ads-SDK: fac081606dbd438d8db57198b83ba8b5f875a601
-  GoogleAppMeasurement: a08a43b8677b95ed51fcef880e36737334d804fd
-  GoogleDataTransport: 574a983e829327d7c18f2627f65d9e80164ea8a4
-  GoogleDataTransportCCTSupport: cad3cd6cdbdbad6b5c2c9206ec413402755faaaa
-  GoogleUtilities: f8de7ddf8c706f58e9b405d53e38bbdaa2731e5a
-  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  PKHUD: a0ecdee9f67d9b462c0c5e4ba38400292ea6ae6e
-  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
-  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
-  RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
-  RxCocoa: 50d7564866da9299161e86a263ce12a0873904d8
-  RxDataSources: 1de77880bf5b7fcee42102adcd5a5d65e5b81541
-  RxOptional: b97b59183af80d1e729ac9e51d09a10be668d6a8
-  RxRealm: 5ff7bbc8ccf44067cf83e0ddfb6402af417f9332
-  RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
-  SwinjectStoryboard: 8e0d3c0202b64172bdf915d55e8dc83d9c4e7863
-  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  RxCells: bdf6673a05f8ee58b3dd7b28c3e236da7b5e0e98
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 474b7c688eff3e99a0ff5b4adb85d7ba63951015
+PODFILE CHECKSUM: 46886bf1db2e3f8513bdd15be0e9a6e722fd6281
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
