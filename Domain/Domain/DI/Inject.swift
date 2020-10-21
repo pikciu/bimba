@@ -10,6 +10,6 @@ public final class Inject<T> {
     }
     
     public var wrappedValue: T {
-        return value
+        value
     }
 }

@@ -9,5 +9,7 @@ public protocol VMRepository {
     
     func searchStreets(query: String) -> Observable<[Street]>
     
-    func searchStopPoints(query: String) -> Observable<[StopPoint]>
+    func searchStopPoints(query: String) -> Observable<[StopPointGroup]>
+    
+    func routes(for line: String) -> Observable<[Route]>
 }

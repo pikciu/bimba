@@ -1,7 +1,7 @@
 import Foundation
 
 public enum SearchResult {
-    case stopPoint(StopPoint)
+    case stopPoint(StopPointGroup)
     case line(String)
     case street(Street)
 }

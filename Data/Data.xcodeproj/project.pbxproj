@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		36E6C83FAD1E53CDF2A6E596 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35ACD84088282A8C6D19A6FB /* Pods_Data.framework */; };
+		3832936E2540AE9B002E1271 /* NameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832936D2540AE9B002E1271 /* NameRequest.swift */; };
+		383293702540AF8D002E1271 /* DirectionsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832936F2540AF8D002E1271 /* DirectionsDTO.swift */; };
+		383293722540B02E002E1271 /* DirectionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293712540B02E002E1271 /* DirectionDTO.swift */; };
+		383293742540B04F002E1271 /* StopPointDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293732540B04F002E1271 /* StopPointDTO.swift */; };
 		38338D08253DF4CF00F55D60 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D07253DF4CF00F55D60 /* SearchRequest.swift */; };
 		38338D10253DF7E900F55D60 /* VMResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */; };
 		38338D12253DF8E700F55D60 /* ArrayMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D11253DF8E700F55D60 /* ArrayMapper.swift */; };
 		38338D14253DF95500F55D60 /* StreetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D13253DF95500F55D60 /* StreetDTO.swift */; };
 		38338D16253DF9A700F55D60 /* SkipMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D15253DF9A700F55D60 /* SkipMapper.swift */; };
-		38338D18253DFA6700F55D60 /* StopPointDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D17253DFA6700F55D60 /* StopPointDTO.swift */; };
+		38338D18253DFA6700F55D60 /* StopPointGroupDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */; };
 		38338D1D253DFB4200F55D60 /* LineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D1C253DFB4200F55D60 /* LineDTO.swift */; };
 		384A31F5253C883400438F7D /* EncodableRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31F1253C883400438F7D /* EncodableRequestType.swift */; };
 		384A31F6253C883400438F7D /* JSONEncodableRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31F2253C883400438F7D /* JSONEncodableRequestType.swift */; };
@@ -44,7 +48,7 @@
 		384A3266253CE3C900438F7D /* JSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3265253CE3C900438F7D /* JSONMapper.swift */; };
 		384A327A253CE6D900438F7D /* DepartureTimesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3279253CE6D900438F7D /* DepartureTimesDTO.swift */; };
 		384A327F253CE82C00438F7D /* DateTimeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A327E253CE82C00438F7D /* DateTimeMapper.swift */; };
-		384A3283253CE9DB00438F7D /* GetDepartureTimesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3282253CE9DB00438F7D /* GetDepartureTimesRequest.swift */; };
+		384A3283253CE9DB00438F7D /* StopPointRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3282253CE9DB00438F7D /* StopPointRequest.swift */; };
 		384A3285253CECD100438F7D /* VMRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3284253CECD100438F7D /* VMRepository.swift */; };
 		384A3287253CECF700438F7D /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3286253CECF700438F7D /* DataModule.swift */; };
 		38773908253DDE76007C1207 /* StopPointRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38773907253DDE76007C1207 /* StopPointRemoteRepository.swift */; };
@@ -73,12 +77,16 @@
 
 /* Begin PBXFileReference section */
 		35ACD84088282A8C6D19A6FB /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3832936D2540AE9B002E1271 /* NameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRequest.swift; sourceTree = "<group>"; };
+		3832936F2540AF8D002E1271 /* DirectionsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsDTO.swift; sourceTree = "<group>"; };
+		383293712540B02E002E1271 /* DirectionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionDTO.swift; sourceTree = "<group>"; };
+		383293732540B04F002E1271 /* StopPointDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointDTO.swift; sourceTree = "<group>"; };
 		38338D07253DF4CF00F55D60 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
 		38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMResponseDTO.swift; sourceTree = "<group>"; };
 		38338D11253DF8E700F55D60 /* ArrayMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayMapper.swift; sourceTree = "<group>"; };
 		38338D13253DF95500F55D60 /* StreetDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDTO.swift; sourceTree = "<group>"; };
 		38338D15253DF9A700F55D60 /* SkipMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipMapper.swift; sourceTree = "<group>"; };
-		38338D17253DFA6700F55D60 /* StopPointDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointDTO.swift; sourceTree = "<group>"; };
+		38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointGroupDTO.swift; sourceTree = "<group>"; };
 		38338D1C253DFB4200F55D60 /* LineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDTO.swift; sourceTree = "<group>"; };
 		384A31F1253C883400438F7D /* EncodableRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableRequestType.swift; sourceTree = "<group>"; };
 		384A31F2253C883400438F7D /* JSONEncodableRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableRequestType.swift; sourceTree = "<group>"; };
@@ -109,7 +117,7 @@
 		384A3265253CE3C900438F7D /* JSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapper.swift; sourceTree = "<group>"; };
 		384A3279253CE6D900438F7D /* DepartureTimesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureTimesDTO.swift; sourceTree = "<group>"; };
 		384A327E253CE82C00438F7D /* DateTimeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeMapper.swift; sourceTree = "<group>"; };
-		384A3282253CE9DB00438F7D /* GetDepartureTimesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDepartureTimesRequest.swift; sourceTree = "<group>"; };
+		384A3282253CE9DB00438F7D /* StopPointRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointRequest.swift; sourceTree = "<group>"; };
 		384A3284253CECD100438F7D /* VMRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMRepository.swift; sourceTree = "<group>"; };
 		384A3286253CECF700438F7D /* DataModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
 		38773907253DDE76007C1207 /* StopPointRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointRemoteRepository.swift; sourceTree = "<group>"; };
@@ -262,8 +270,11 @@
 				38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */,
 				38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */,
 				38338D13253DF95500F55D60 /* StreetDTO.swift */,
-				38338D17253DFA6700F55D60 /* StopPointDTO.swift */,
+				38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */,
 				38338D1C253DFB4200F55D60 /* LineDTO.swift */,
+				3832936F2540AF8D002E1271 /* DirectionsDTO.swift */,
+				383293712540B02E002E1271 /* DirectionDTO.swift */,
+				383293732540B04F002E1271 /* StopPointDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,9 +291,10 @@
 		384A3281253CE9CD00438F7D /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				384A3282253CE9DB00438F7D /* GetDepartureTimesRequest.swift */,
+				384A3282253CE9DB00438F7D /* StopPointRequest.swift */,
 				3877390E253DDF86007C1207 /* GetStopPointsRequest.swift */,
 				38338D07253DF4CF00F55D60 /* SearchRequest.swift */,
+				3832936D2540AE9B002E1271 /* NameRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -455,10 +467,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				384A3240253C970800438F7D /* NestedData.swift in Sources */,
-				38338D18253DFA6700F55D60 /* StopPointDTO.swift in Sources */,
+				38338D18253DFA6700F55D60 /* StopPointGroupDTO.swift in Sources */,
 				3877390F253DDF86007C1207 /* GetStopPointsRequest.swift in Sources */,
 				384A3207253C885700438F7D /* EndpointType.swift in Sources */,
 				384A3252253C981A00438F7D /* Byte+Control.swift in Sources */,
+				383293702540AF8D002E1271 /* DirectionsDTO.swift in Sources */,
 				384A31FB253C884900438F7D /* JSONEncoder.swift in Sources */,
 				384A3256253C991400438F7D /* URLEncodedFormRequestType.swift in Sources */,
 				384A324D253C973200438F7D /* URLEncodedFormError.swift in Sources */,
@@ -470,6 +483,7 @@
 				3877390D253DDEFA007C1207 /* StopPointsEndpoint.swift in Sources */,
 				384A31FC253C884900438F7D /* RequestBodyEncoder.swift in Sources */,
 				384A3247253C971E00438F7D /* URLEncodedFormData.swift in Sources */,
+				383293722540B02E002E1271 /* DirectionDTO.swift in Sources */,
 				38338D16253DF9A700F55D60 /* SkipMapper.swift in Sources */,
 				384A3287253CECF700438F7D /* DataModule.swift in Sources */,
 				384A31F7253C883400438F7D /* Request.swift in Sources */,
@@ -481,12 +495,14 @@
 				384A3205253C885700438F7D /* HTTPError.swift in Sources */,
 				38338D08253DF4CF00F55D60 /* SearchRequest.swift in Sources */,
 				384A3254253C985200438F7D /* Bytes.swift in Sources */,
+				3832936E2540AE9B002E1271 /* NameRequest.swift in Sources */,
 				384A3206253C885700438F7D /* HTTPClient.swift in Sources */,
 				384A3264253CE3AF00438F7D /* ArrayDecoder.swift in Sources */,
 				384A3249253C971E00438F7D /* URLEncodedFormSerializer.swift in Sources */,
 				384A3248253C971E00438F7D /* URLEncodedFormDataConvertible.swift in Sources */,
 				384A31F6253C883400438F7D /* JSONEncodableRequestType.swift in Sources */,
-				384A3283253CE9DB00438F7D /* GetDepartureTimesRequest.swift in Sources */,
+				384A3283253CE9DB00438F7D /* StopPointRequest.swift in Sources */,
+				383293742540B04F002E1271 /* StopPointDTO.swift in Sources */,
 				38338D14253DF95500F55D60 /* StreetDTO.swift in Sources */,
 				384A3250253C97B200438F7D /* BasicKey.swift in Sources */,
 				38773911253DDFF2007C1207 /* StopPointsDetailsDTO.swift in Sources */,

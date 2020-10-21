@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		383293622540AA61002E1271 /* StopPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293612540AA61002E1271 /* StopPoint.swift */; };
+		383293652540AAFB002E1271 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293642540AAFB002E1271 /* Route.swift */; };
+		383293692540AC9E002E1271 /* GetRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293682540AC9E002E1271 /* GetRoutes.swift */; };
+		383293762540B29E002E1271 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293752540B29E002E1271 /* Direction.swift */; };
 		38338D05253DF3E600F55D60 /* GetStopPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D04253DF3E600F55D60 /* GetStopPoints.swift */; };
 		38338D0A253DF64A00F55D60 /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D09253DF64A00F55D60 /* Street.swift */; };
-		38338D0D253DF69B00F55D60 /* StopPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D0C253DF69B00F55D60 /* StopPoint.swift */; };
+		38338D0D253DF69B00F55D60 /* StopPointGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D0C253DF69B00F55D60 /* StopPointGroup.swift */; };
 		38338D1A253DFAEC00F55D60 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D19253DFAEC00F55D60 /* SearchResult.swift */; };
 		38338D1F253DFB8C00F55D60 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D1E253DFB8C00F55D60 /* Search.swift */; };
 		384A3222253C8F2000438F7D /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3220253C8F2000438F7D /* Container.swift */; };
@@ -36,9 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		383293612540AA61002E1271 /* StopPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPoint.swift; sourceTree = "<group>"; };
+		383293642540AAFB002E1271 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		383293682540AC9E002E1271 /* GetRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoutes.swift; sourceTree = "<group>"; };
+		383293752540B29E002E1271 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		38338D04253DF3E600F55D60 /* GetStopPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStopPoints.swift; sourceTree = "<group>"; };
 		38338D09253DF64A00F55D60 /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
-		38338D0C253DF69B00F55D60 /* StopPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPoint.swift; sourceTree = "<group>"; };
+		38338D0C253DF69B00F55D60 /* StopPointGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointGroup.swift; sourceTree = "<group>"; };
 		38338D19253DFAEC00F55D60 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		38338D1E253DFB8C00F55D60 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		384A3220253C8F2000438F7D /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
@@ -119,8 +127,11 @@
 				384A3275253CE5B500438F7D /* DepartureTime.swift */,
 				38773900253DDA7C007C1207 /* StopPointDetails.swift */,
 				38338D09253DF64A00F55D60 /* Street.swift */,
-				38338D0C253DF69B00F55D60 /* StopPoint.swift */,
+				38338D0C253DF69B00F55D60 /* StopPointGroup.swift */,
 				38338D19253DFAEC00F55D60 /* SearchResult.swift */,
+				383293612540AA61002E1271 /* StopPoint.swift */,
+				383293642540AAFB002E1271 /* Route.swift */,
+				383293752540B29E002E1271 /* Direction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +161,7 @@
 				384A328F253CEE2E00438F7D /* GetDepartureTimes.swift */,
 				38338D04253DF3E600F55D60 /* GetStopPoints.swift */,
 				38338D1E253DFB8C00F55D60 /* Search.swift */,
+				383293682540AC9E002E1271 /* GetRoutes.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -317,13 +329,17 @@
 				384A3289253CEDD600438F7D /* Inject.swift in Sources */,
 				384A3222253C8F2000438F7D /* Container.swift in Sources */,
 				384A3276253CE5B500438F7D /* DepartureTime.swift in Sources */,
+				383293762540B29E002E1271 /* Direction.swift in Sources */,
+				383293652540AAFB002E1271 /* Route.swift in Sources */,
 				38338D0A253DF64A00F55D60 /* Street.swift in Sources */,
 				384A322E253C8FA900438F7D /* LogLevel.swift in Sources */,
 				384A3269253CE40500438F7D /* AppError.swift in Sources */,
 				38773905253DDD93007C1207 /* StopPointLocalRepository.swift in Sources */,
-				38338D0D253DF69B00F55D60 /* StopPoint.swift in Sources */,
+				383293622540AA61002E1271 /* StopPoint.swift in Sources */,
+				38338D0D253DF69B00F55D60 /* StopPointGroup.swift in Sources */,
 				384A325B253CE35F00438F7D /* Mapper.swift in Sources */,
 				384A322B253C8FA900438F7D /* LogDestination.swift in Sources */,
+				383293692540AC9E002E1271 /* GetRoutes.swift in Sources */,
 				384A3273253CE55100438F7D /* VMRepository.swift in Sources */,
 				384A322D253C8FA900438F7D /* ConsoleLogDestination.swift in Sources */,
 				384A3223253C8F2000438F7D /* Module.swift in Sources */,
