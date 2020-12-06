@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		384A31ED253C726500438F7D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31EC253C726500438F7D /* TabBarViewController.swift */; };
+		38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */; };
+		38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754C257D3A6500D2F1A8 /* TimesUI.swift */; };
+		38BD7551257D3DD700D2F1A8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7550257D3DD700D2F1A8 /* View.swift */; };
+		38BD7553257D3E0B00D2F1A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7552257D3E0B00D2F1A8 /* ViewController.swift */; };
+		38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD755B257D3F8B00D2F1A8 /* FavoritesViewController.swift */; };
+		38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD755C257D3F8B00D2F1A8 /* FavoritesUI.swift */; };
+		38BD7568257D400000D2F1A8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7566257D400000D2F1A8 /* SearchViewController.swift */; };
+		38BD7569257D400000D2F1A8 /* SearchUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7567257D400000D2F1A8 /* SearchUI.swift */; };
+		38BD7573257D406600D2F1A8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7571257D406600D2F1A8 /* MapViewController.swift */; };
+		38BD7574257D406600D2F1A8 /* MapUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7572257D406600D2F1A8 /* MapUI.swift */; };
+		38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */; };
 		38CA52D1253C50D000AD5AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA52D0253C50D000AD5AEC /* AppDelegate.swift */; };
 		38CA52DA253C50D300AD5AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA52D9253C50D300AD5AEC /* Assets.xcassets */; };
 		38CA533A253C6C4E00AD5AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */; };
@@ -36,6 +47,17 @@
 
 /* Begin PBXFileReference section */
 		384A31EC253C726500438F7D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
+		38BD754C257D3A6500D2F1A8 /* TimesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesUI.swift; sourceTree = "<group>"; };
+		38BD7550257D3DD700D2F1A8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		38BD7552257D3E0B00D2F1A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38BD755B257D3F8B00D2F1A8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		38BD755C257D3F8B00D2F1A8 /* FavoritesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesUI.swift; sourceTree = "<group>"; };
+		38BD7566257D400000D2F1A8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		38BD7567257D400000D2F1A8 /* SearchUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUI.swift; sourceTree = "<group>"; };
+		38BD7571257D406600D2F1A8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		38BD7572257D406600D2F1A8 /* MapUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUI.swift; sourceTree = "<group>"; };
+		38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		38CA52CD253C50D000AD5AEC /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA52D0253C50D000AD5AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38CA52D9253C50D300AD5AEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +88,11 @@
 		384A31E9253C6F5800438F7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38BD7570257D406000D2F1A8 /* Map */,
+				38BD7565257D3FFA00D2F1A8 /* Search */,
+				38BD755A257D3F8400D2F1A8 /* Favorites */,
+				38BD754F257D3DD100D2F1A8 /* Base */,
+				38BD7536257D383E00D2F1A8 /* Times */,
 				384A31EB253C724E00438F7D /* TabBar */,
 				38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */,
 				38CA5339253C6C4E00AD5AEC /* Main.storyboard */,
@@ -90,6 +117,59 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		38BD7536257D383E00D2F1A8 /* Times */ = {
+			isa = PBXGroup;
+			children = (
+				38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */,
+				38BD754C257D3A6500D2F1A8 /* TimesUI.swift */,
+			);
+			path = Times;
+			sourceTree = "<group>";
+		};
+		38BD754F257D3DD100D2F1A8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				38BD7550257D3DD700D2F1A8 /* View.swift */,
+				38BD7552257D3E0B00D2F1A8 /* ViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		38BD755A257D3F8400D2F1A8 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				38BD755B257D3F8B00D2F1A8 /* FavoritesViewController.swift */,
+				38BD755C257D3F8B00D2F1A8 /* FavoritesUI.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		38BD7565257D3FFA00D2F1A8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				38BD7566257D400000D2F1A8 /* SearchViewController.swift */,
+				38BD7567257D400000D2F1A8 /* SearchUI.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		38BD7570257D406000D2F1A8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				38BD7571257D406600D2F1A8 /* MapViewController.swift */,
+				38BD7572257D406600D2F1A8 /* MapUI.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		38BD7575257D418100D2F1A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		38CA52C4253C50D000AD5AEC = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +191,7 @@
 		38CA52CF253C50D000AD5AEC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				38BD7575257D418100D2F1A8 /* Extensions */,
 				384A31EA253C6F7900438F7D /* Resources */,
 				384A31E9253C6F5800438F7D /* Views */,
 				38CA52DE253C50D300AD5AEC /* Info.plist */,
@@ -253,7 +334,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BD7573257D406600D2F1A8 /* MapViewController.swift in Sources */,
+				38BD7553257D3E0B00D2F1A8 /* ViewController.swift in Sources */,
+				38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */,
+				38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */,
+				38BD7568257D400000D2F1A8 /* SearchViewController.swift in Sources */,
 				384A31ED253C726500438F7D /* TabBarViewController.swift in Sources */,
+				38BD7551257D3DD700D2F1A8 /* View.swift in Sources */,
+				38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */,
+				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
+				38BD7569257D400000D2F1A8 /* SearchUI.swift in Sources */,
+				38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */,
+				38BD7574257D406600D2F1A8 /* MapUI.swift in Sources */,
 				38CA52D1253C50D000AD5AEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

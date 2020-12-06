@@ -8,9 +8,12 @@ workspace 'Bimba.xcworkspace'
 def shared_pods 
 
 	pod 'RxSwift'
+	pod 'RxCocoa'
 	pod 'RxRelay'
 	pod 'RxOptional'
 	pod 'RxSwiftExt'
+	pod 'RxSwiftUtilities'
+
 	pod 'Swinject'
 end
 
@@ -19,7 +22,6 @@ target 'App' do
 
 	shared_pods
 
-	pod 'RxCocoa'
 	pod 'RxCells'
 end
 
@@ -33,4 +35,13 @@ target 'Data' do
 	project 'Data/Data.xcodeproj'
 
 	shared_pods
+end
+
+
+post_install do |installer|
+	installer.pods_project.targets.each do |target|
+		target.build_configurations.each do |config|
+			config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+		end
+	end
 end
