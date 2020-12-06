@@ -8,5 +8,6 @@ public struct DataModule: Module {
             .inObjectScope(.container)
         
         container.register(Domain.VMRepository.self) { _ in VMRepository() }
+        container.register(Domain.StopPointRemoteRepository.self) { _ in StopPointRemoteRepository() }
     }
 }

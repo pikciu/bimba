@@ -23,6 +23,7 @@ target 'App' do
 	shared_pods
 
 	pod 'RxCells'
+	pod 'RxMKMapView'
 end
 
 target 'Domain' do

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		384A31ED253C726500438F7D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31EC253C726500438F7D /* TabBarViewController.swift */; };
+		384A31ED253C726500438F7D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31EC253C726500438F7D /* MainViewController.swift */; };
 		38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */; };
 		38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754C257D3A6500D2F1A8 /* TimesUI.swift */; };
 		38BD7551257D3DD700D2F1A8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7550257D3DD700D2F1A8 /* View.swift */; };
@@ -19,6 +19,9 @@
 		38BD7573257D406600D2F1A8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7571257D406600D2F1A8 /* MapViewController.swift */; };
 		38BD7574257D406600D2F1A8 /* MapUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7572257D406600D2F1A8 /* MapUI.swift */; };
 		38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */; };
+		38BD757F257D42FC00D2F1A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38BD7581257D42FC00D2F1A8 /* Localizable.strings */; };
+		38BD7585257D444800D2F1A8 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7583257D444800D2F1A8 /* L10n.swift */; };
+		38BD7586257D444800D2F1A8 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7584257D444800D2F1A8 /* Assets.swift */; };
 		38CA52D1253C50D000AD5AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA52D0253C50D000AD5AEC /* AppDelegate.swift */; };
 		38CA52DA253C50D300AD5AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA52D9253C50D300AD5AEC /* Assets.xcassets */; };
 		38CA533A253C6C4E00AD5AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */; };
@@ -46,7 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		384A31EC253C726500438F7D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		384A31EC253C726500438F7D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		38BD754C257D3A6500D2F1A8 /* TimesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesUI.swift; sourceTree = "<group>"; };
 		38BD7550257D3DD700D2F1A8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		38BD7571257D406600D2F1A8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		38BD7572257D406600D2F1A8 /* MapUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUI.swift; sourceTree = "<group>"; };
 		38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		38BD7580257D42FC00D2F1A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38BD7583257D444800D2F1A8 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		38BD7584257D444800D2F1A8 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		38CA52CD253C50D000AD5AEC /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA52D0253C50D000AD5AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38CA52D9253C50D300AD5AEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,15 +94,15 @@
 		384A31E9253C6F5800438F7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38BD754F257D3DD100D2F1A8 /* Base */,
+				38BD755A257D3F8400D2F1A8 /* Favorites */,
+				384A31EB253C724E00438F7D /* Main */,
 				38BD7570257D406000D2F1A8 /* Map */,
 				38BD7565257D3FFA00D2F1A8 /* Search */,
-				38BD755A257D3F8400D2F1A8 /* Favorites */,
-				38BD754F257D3DD100D2F1A8 /* Base */,
 				38BD7536257D383E00D2F1A8 /* Times */,
-				384A31EB253C724E00438F7D /* TabBar */,
+				38CA52D0253C50D000AD5AEC /* AppDelegate.swift */,
 				38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */,
 				38CA5339253C6C4E00AD5AEC /* Main.storyboard */,
-				38CA52D0253C50D000AD5AEC /* AppDelegate.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,24 +110,27 @@
 		384A31EA253C6F7900438F7D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				38BD7584257D444800D2F1A8 /* Assets.swift */,
 				38CA52D9253C50D300AD5AEC /* Assets.xcassets */,
+				38BD7583257D444800D2F1A8 /* L10n.swift */,
+				38BD7581257D42FC00D2F1A8 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		384A31EB253C724E00438F7D /* TabBar */ = {
+		384A31EB253C724E00438F7D /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				384A31EC253C726500438F7D /* TabBarViewController.swift */,
+				384A31EC253C726500438F7D /* MainViewController.swift */,
 			);
-			path = TabBar;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		38BD7536257D383E00D2F1A8 /* Times */ = {
 			isa = PBXGroup;
 			children = (
-				38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */,
 				38BD754C257D3A6500D2F1A8 /* TimesUI.swift */,
+				38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */,
 			);
 			path = Times;
 			sourceTree = "<group>";
@@ -138,8 +147,8 @@
 		38BD755A257D3F8400D2F1A8 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				38BD755B257D3F8B00D2F1A8 /* FavoritesViewController.swift */,
 				38BD755C257D3F8B00D2F1A8 /* FavoritesUI.swift */,
+				38BD755B257D3F8B00D2F1A8 /* FavoritesViewController.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -147,8 +156,8 @@
 		38BD7565257D3FFA00D2F1A8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				38BD7566257D400000D2F1A8 /* SearchViewController.swift */,
 				38BD7567257D400000D2F1A8 /* SearchUI.swift */,
+				38BD7566257D400000D2F1A8 /* SearchViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -156,8 +165,8 @@
 		38BD7570257D406000D2F1A8 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				38BD7571257D406600D2F1A8 /* MapViewController.swift */,
 				38BD7572257D406600D2F1A8 /* MapUI.swift */,
+				38BD7571257D406600D2F1A8 /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -174,9 +183,9 @@
 			isa = PBXGroup;
 			children = (
 				38CA52CF253C50D000AD5AEC /* App */,
-				38CA52CE253C50D000AD5AEC /* Products */,
 				38CA533D253C6CAC00AD5AEC /* Frameworks */,
 				EF8E4F971375E09648571BD1 /* Pods */,
+				38CA52CE253C50D000AD5AEC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,6 +236,7 @@
 			buildConfigurationList = 38CA52E1253C50D300AD5AEC /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				83E358BED7A92E0AE0723A21 /* [CP] Check Pods Manifest.lock */,
+				38BD7582257D43B900D2F1A8 /* swiftgen */,
 				38CA52C9253C50D000AD5AEC /* Sources */,
 				38CA52CA253C50D000AD5AEC /* Frameworks */,
 				38CA52CB253C50D000AD5AEC /* Resources */,
@@ -280,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CA533B253C6C4E00AD5AEC /* Main.storyboard in Resources */,
+				38BD757F257D42FC00D2F1A8 /* Localizable.strings in Resources */,
 				38CA52DA253C50D300AD5AEC /* Assets.xcassets in Resources */,
 				38CA533A253C6C4E00AD5AEC /* LaunchScreen.storyboard in Resources */,
 			);
@@ -288,6 +299,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		38BD7582257D43B900D2F1A8 /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen\nelse\n    echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
 		83E358BED7A92E0AE0723A21 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,9 +367,11 @@
 				38BD7553257D3E0B00D2F1A8 /* ViewController.swift in Sources */,
 				38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */,
 				38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */,
+				38BD7585257D444800D2F1A8 /* L10n.swift in Sources */,
 				38BD7568257D400000D2F1A8 /* SearchViewController.swift in Sources */,
-				384A31ED253C726500438F7D /* TabBarViewController.swift in Sources */,
+				384A31ED253C726500438F7D /* MainViewController.swift in Sources */,
 				38BD7551257D3DD700D2F1A8 /* View.swift in Sources */,
+				38BD7586257D444800D2F1A8 /* Assets.swift in Sources */,
 				38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */,
 				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
 				38BD7569257D400000D2F1A8 /* SearchUI.swift in Sources */,
@@ -351,6 +382,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38BD7581257D42FC00D2F1A8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38BD7580257D42FC00D2F1A8 /* en */,
+			);
+			name = Localizable.strings;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		38CA52DF253C50D300AD5AEC /* Debug */ = {

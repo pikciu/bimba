@@ -108,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				384A3220253C8F2000438F7D /* Container.swift */,
-				384A3221253C8F2000438F7D /* Module.swift */,
 				384A3288253CEDD600438F7D /* Inject.swift */,
+				384A3221253C8F2000438F7D /* Module.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				384A3226253C8F9200438F7D /* Logger */,
+				384A327B253CE7E300438F7D /* DateTimeFormatter.swift */,
 				384A325A253CE35F00438F7D /* Mapper.swift */,
 				384A3260253CE39A00438F7D /* Transformer.swift */,
-				384A327B253CE7E300438F7D /* DateTimeFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -130,8 +130,8 @@
 			children = (
 				384A3229253C8FA900438F7D /* ConsoleLogDestination.swift */,
 				384A3227253C8FA900438F7D /* LogDestination.swift */,
-				384A3228253C8FA900438F7D /* Logger.swift */,
 				384A322A253C8FA900438F7D /* LogLevel.swift */,
+				384A3228253C8FA900438F7D /* Logger.swift */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -141,13 +141,13 @@
 			children = (
 				384A3268253CE40500438F7D /* AppError.swift */,
 				384A3275253CE5B500438F7D /* DepartureTime.swift */,
-				38773900253DDA7C007C1207 /* StopPointDetails.swift */,
-				38338D09253DF64A00F55D60 /* Street.swift */,
-				38338D0C253DF69B00F55D60 /* StopPointGroup.swift */,
+				383293752540B29E002E1271 /* Direction.swift */,
+				383293642540AAFB002E1271 /* Route.swift */,
 				38338D19253DFAEC00F55D60 /* SearchResult.swift */,
 				383293612540AA61002E1271 /* StopPoint.swift */,
-				383293642540AAFB002E1271 /* Route.swift */,
-				383293752540B29E002E1271 /* Direction.swift */,
+				38773900253DDA7C007C1207 /* StopPointDetails.swift */,
+				38338D0C253DF69B00F55D60 /* StopPointGroup.swift */,
+				38338D09253DF64A00F55D60 /* Street.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,9 +163,9 @@
 		384A3271253CE52800438F7D /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				384A3272253CE55100438F7D /* VMRepository.swift */,
-				387738FD253DDA58007C1207 /* StopPointRemoteRepository.swift */,
 				38773904253DDD93007C1207 /* StopPointLocalRepository.swift */,
+				387738FD253DDA58007C1207 /* StopPointRemoteRepository.swift */,
+				384A3272253CE55100438F7D /* VMRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -173,11 +173,11 @@
 		384A328B253CEE1800438F7D /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				384A328C253CEE2100438F7D /* UseCase.swift */,
 				384A328F253CEE2E00438F7D /* GetDepartureTimes.swift */,
+				383293682540AC9E002E1271 /* GetRoutes.swift */,
 				38338D04253DF3E600F55D60 /* GetStopPoints.swift */,
 				38338D1E253DFB8C00F55D60 /* Search.swift */,
-				383293682540AC9E002E1271 /* GetRoutes.swift */,
+				384A328C253CEE2100438F7D /* UseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -185,9 +185,9 @@
 		38BD7537257D385300D2F1A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38BD7554257D3F5700D2F1A8 /* Favorites */,
 				38BD756A257D404B00D2F1A8 /* Map */,
 				38BD755F257D3FE000D2F1A8 /* Search */,
-				38BD7554257D3F5700D2F1A8 /* Favorites */,
 				38BD7538257D385E00D2F1A8 /* Times */,
 			);
 			path = Views;
@@ -233,9 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				38CA52F2253C511D00AD5AEC /* Domain */,
-				38CA52F1253C511D00AD5AEC /* Products */,
-				AE99871AF0A195ADF32B2AD5 /* Pods */,
 				EABCE2BF3DA3F68958294296 /* Frameworks */,
+				AE99871AF0A195ADF32B2AD5 /* Pods */,
+				38CA52F1253C511D00AD5AEC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,13 +250,13 @@
 		38CA52F2253C511D00AD5AEC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				38BD7537257D385300D2F1A8 /* Views */,
-				384A328B253CEE1800438F7D /* UseCases */,
-				384A3271253CE52800438F7D /* Repositories */,
+				384A321F253C8F0C00438F7D /* DI */,
 				384A326C253CE42A00438F7D /* Extensions */,
 				384A3267253CE40000438F7D /* Models */,
+				384A3271253CE52800438F7D /* Repositories */,
+				384A328B253CEE1800438F7D /* UseCases */,
 				384A3225253C8F8C00438F7D /* Utils */,
-				384A321F253C8F0C00438F7D /* DI */,
+				38BD7537257D385300D2F1A8 /* Views */,
 				38CA52F3253C511D00AD5AEC /* Domain.h */,
 				38CA52F4253C511D00AD5AEC /* Info.plist */,
 			);

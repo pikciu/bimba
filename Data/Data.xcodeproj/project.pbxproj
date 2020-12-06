@@ -149,6 +149,8 @@
 		384A31EE253C87BD00438F7D /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				384A31F0253C87DD00438F7D /* Request */,
+				384A31EF253C87C600438F7D /* RequestBodyEncoder */,
 				384A3200253C885700438F7D /* EndpointType.swift */,
 				384A31FF253C885700438F7D /* HTTPClient.swift */,
 				384A31FE253C885700438F7D /* HTTPError.swift */,
@@ -156,8 +158,6 @@
 				384A3201253C885700438F7D /* HTTPMethod.swift */,
 				384A3202253C885700438F7D /* QueryType.swift */,
 				384A3203253C885700438F7D /* Response.swift */,
-				384A31F0253C87DD00438F7D /* Request */,
-				384A31EF253C87C600438F7D /* RequestBodyEncoder */,
 			);
 			path = HTTP;
 			sourceTree = "<group>";
@@ -166,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				384A3239253C961E00438F7D /* URLEncodedForm */,
-				384A31FA253C884900438F7D /* RequestBodyEncoder.swift */,
 				384A31F9253C884900438F7D /* JSONEncoder.swift */,
+				384A31FA253C884900438F7D /* RequestBodyEncoder.swift */,
 			);
 			path = RequestBodyEncoder;
 			sourceTree = "<group>";
@@ -188,10 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				384A323E253C96AF00438F7D /* Bits */,
-				384A323D253C963F00438F7D /* Utilities */,
-				384A323C253C963800438F7D /* Data */,
 				384A323B253C963000438F7D /* Codable */,
 				384A323A253C962800438F7D /* Core */,
+				384A323C253C963800438F7D /* Data */,
+				384A323D253C963F00438F7D /* Utilities */,
 			);
 			path = URLEncodedForm;
 			sourceTree = "<group>";
@@ -234,8 +234,8 @@
 		384A323E253C96AF00438F7D /* Bits */ = {
 			isa = PBXGroup;
 			children = (
-				384A3253253C985200438F7D /* Bytes.swift */,
 				384A3251253C981A00438F7D /* Byte+Control.swift */,
+				384A3253253C985200438F7D /* Bytes.swift */,
 			);
 			path = Bits;
 			sourceTree = "<group>";
@@ -253,11 +253,11 @@
 		384A325D253CE37C00438F7D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				384A325E253CE38300438F7D /* ObjectDecoder.swift */,
 				384A3263253CE3AF00438F7D /* ArrayDecoder.swift */,
-				384A3265253CE3C900438F7D /* JSONMapper.swift */,
-				384A327E253CE82C00438F7D /* DateTimeMapper.swift */,
 				38338D11253DF8E700F55D60 /* ArrayMapper.swift */,
+				384A327E253CE82C00438F7D /* DateTimeMapper.swift */,
+				384A3265253CE3C900438F7D /* JSONMapper.swift */,
+				384A325E253CE38300438F7D /* ObjectDecoder.swift */,
 				38338D15253DF9A700F55D60 /* SkipMapper.swift */,
 			);
 			path = Utils;
@@ -267,14 +267,14 @@
 			isa = PBXGroup;
 			children = (
 				384A3279253CE6D900438F7D /* DepartureTimesDTO.swift */,
-				38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */,
-				38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */,
-				38338D13253DF95500F55D60 /* StreetDTO.swift */,
-				38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */,
-				38338D1C253DFB4200F55D60 /* LineDTO.swift */,
-				3832936F2540AF8D002E1271 /* DirectionsDTO.swift */,
 				383293712540B02E002E1271 /* DirectionDTO.swift */,
+				3832936F2540AF8D002E1271 /* DirectionsDTO.swift */,
+				38338D1C253DFB4200F55D60 /* LineDTO.swift */,
 				383293732540B04F002E1271 /* StopPointDTO.swift */,
+				38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */,
+				38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */,
+				38338D13253DF95500F55D60 /* StreetDTO.swift */,
+				38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,8 +282,8 @@
 		384A3280253CE9C700438F7D /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				384A3284253CECD100438F7D /* VMRepository.swift */,
 				38773907253DDE76007C1207 /* StopPointRemoteRepository.swift */,
+				384A3284253CECD100438F7D /* VMRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -291,10 +291,10 @@
 		384A3281253CE9CD00438F7D /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				384A3282253CE9DB00438F7D /* StopPointRequest.swift */,
 				3877390E253DDF86007C1207 /* GetStopPointsRequest.swift */,
-				38338D07253DF4CF00F55D60 /* SearchRequest.swift */,
 				3832936D2540AE9B002E1271 /* NameRequest.swift */,
+				38338D07253DF4CF00F55D60 /* SearchRequest.swift */,
+				384A3282253CE9DB00438F7D /* StopPointRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -302,8 +302,8 @@
 		38773909253DDE84007C1207 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				3877390A253DDE8D007C1207 /* VMEndpoint.swift */,
 				3877390C253DDEFA007C1207 /* StopPointsEndpoint.swift */,
+				3877390A253DDE8D007C1207 /* VMEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -312,9 +312,9 @@
 			isa = PBXGroup;
 			children = (
 				38CA5309253C514E00AD5AEC /* Data */,
-				38CA5308253C514E00AD5AEC /* Products */,
 				38CA5345253C6CC400AD5AEC /* Frameworks */,
 				9C65E620E13FCB351FC6EAFC /* Pods */,
+				38CA5308253C514E00AD5AEC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -329,14 +329,14 @@
 		38CA5309253C514E00AD5AEC /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				384A3280253CE9C700438F7D /* Repositories */,
-				384A3278253CE6D000438F7D /* Models */,
-				384A325D253CE37C00438F7D /* Utils */,
 				384A3257253CE32E00438F7D /* API */,
 				384A31EE253C87BD00438F7D /* HTTP */,
+				384A3278253CE6D000438F7D /* Models */,
+				384A3280253CE9C700438F7D /* Repositories */,
+				384A325D253CE37C00438F7D /* Utils */,
 				38CA530A253C514E00AD5AEC /* Data.h */,
-				38CA530B253C514E00AD5AEC /* Info.plist */,
 				384A3286253CECF700438F7D /* DataModule.swift */,
+				38CA530B253C514E00AD5AEC /* Info.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
