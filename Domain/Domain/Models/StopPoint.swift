@@ -1,6 +1,6 @@
 import Foundation
 
-public struct StopPoint {
+public struct StopPoint: StopPointType {
     public let id: String
     public let name: String
     
@@ -8,4 +8,9 @@ public struct StopPoint {
         self.id = id
         self.name = name
     }
+}
+
+public protocol StopPointType {
+    var id: String { get }
+    var name: String { get }
 }

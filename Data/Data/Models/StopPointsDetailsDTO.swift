@@ -52,17 +52,16 @@ struct StopPointsDetailsMapper: Mapper {
                 longitude: longitude
             ),
             name: dto.properties.name,
-            type: route(dto: dto),
-            headsings: dto.properties.headsigns
+            type: [route(dto: dto)]
         )
     }
     
     private func route(dto: StopPointsDetailsDTO.StopPointDetailsDTO) -> StopPointDetails.Route {
         switch dto.properties.routeType {
         case .bus:
-            return .bus
+            return .bus(dto.properties.headsigns)
         case .tram:
-            return .tram
+            return .tram(dto.properties.headsigns)
         }
     }
 }

@@ -1,7 +1,7 @@
 import Foundation
 
-public struct StopPointDetails {
-    public struct Coordinates {
+public struct StopPointDetails: StopPointType {
+    public struct Coordinates: Hashable {
         public let latitude: Double
         public let longitude: Double
         
@@ -11,20 +11,31 @@ public struct StopPointDetails {
         }
     }
     public enum Route {
-        case bus
-        case tram
+        case bus(String)
+        case tram(String)
+        
+        var headsings: String {
+            switch self {
+            case .bus(let headsings):
+                return headsings
+            case .tram(let headsings):
+                return headsings
+            }
+        }
     }
     public let id: String
     public let coordinates: Coordinates
     public let name: String
-    public let type: Route
-    public let headsings: String
+    public let type: [Route]
     
-    public init(id: String, coordinates: Coordinates, name: String, type: Route, headsings: String) {
+    public var headsings: String {
+        type.map({ $0.headsings }).joined(separator: ", ")
+    }
+    
+    public init(id: String, coordinates: Coordinates, name: String, type: [Route]) {
         self.id = id
         self.coordinates = coordinates
         self.name = name
         self.type = type
-        self.headsings = headsings
     }
 }

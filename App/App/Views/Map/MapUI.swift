@@ -13,6 +13,9 @@ final class MapUI: View {
             mapView.leadingAnchor.constraint(equalTo: leadingAnchor),
             mapView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
-        
+    }
+    
+    override func setupAppearance() {
+        mapView.showsUserLocation = true
     }
 }

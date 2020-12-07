@@ -43,6 +43,8 @@
 		38BD7563257D3FEF00D2F1A8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7561257D3FEF00D2F1A8 /* SearchView.swift */; };
 		38BD756D257D405500D2F1A8 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD756B257D405500D2F1A8 /* MapPresenter.swift */; };
 		38BD756E257D405500D2F1A8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD756C257D405500D2F1A8 /* MapView.swift */; };
+		38C8F82A257E6ED90010FEC8 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F829257E6ED90010FEC8 /* Decorator.swift */; };
+		38C8F82D257E6EE90010FEC8 /* Decorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F82C257E6EE90010FEC8 /* Decorable.swift */; };
 		38CA52F5253C511D00AD5AEC /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CA52F3253C511D00AD5AEC /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D7D2E14D8E2D6309F1F99EE /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40EC53AD1F621C3C33B7FC1 /* Pods_Domain.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +86,8 @@
 		38BD7561257D3FEF00D2F1A8 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		38BD756B257D405500D2F1A8 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		38BD756C257D405500D2F1A8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		38C8F829257E6ED90010FEC8 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		38C8F82C257E6EE90010FEC8 /* Decorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorable.swift; sourceTree = "<group>"; };
 		38CA52F0253C511D00AD5AEC /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA52F3253C511D00AD5AEC /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		38CA52F4253C511D00AD5AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				384A327B253CE7E300438F7D /* DateTimeFormatter.swift */,
 				384A325A253CE35F00438F7D /* Mapper.swift */,
 				384A3260253CE39A00438F7D /* Transformer.swift */,
+				38C8F829257E6ED90010FEC8 /* Decorator.swift */,
+				38C8F82C257E6EE90010FEC8 /* Decorable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				384A3276253CE5B500438F7D /* DepartureTime.swift in Sources */,
 				383293762540B29E002E1271 /* Direction.swift in Sources */,
 				383293652540AAFB002E1271 /* Route.swift in Sources */,
+				38C8F82A257E6ED90010FEC8 /* Decorator.swift in Sources */,
 				38338D0A253DF64A00F55D60 /* Street.swift in Sources */,
 				384A322E253C8FA900438F7D /* LogLevel.swift in Sources */,
 				38BD7562257D3FEF00D2F1A8 /* SearchPresenter.swift in Sources */,
@@ -418,6 +425,7 @@
 				384A322C253C8FA900438F7D /* Logger.swift in Sources */,
 				384A327C253CE7E300438F7D /* DateTimeFormatter.swift in Sources */,
 				38338D05253DF3E600F55D60 /* GetStopPoints.swift in Sources */,
+				38C8F82D257E6EE90010FEC8 /* Decorable.swift in Sources */,
 				38BD7558257D3F7200D2F1A8 /* FavoritesView.swift in Sources */,
 				38338D1F253DFB8C00F55D60 /* Search.swift in Sources */,
 				384A326E253CE43900438F7D /* ObservableExtensions.swift in Sources */,

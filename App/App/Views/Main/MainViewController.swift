@@ -5,6 +5,8 @@ final class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBarControllers()
+        
+        tabBar.apply(AppNavigationStyle())
     }
     
     private func setupTabBarControllers() {
@@ -18,7 +20,9 @@ final class MainViewController: UITabBarController {
         let viewControllers = items.map({ (item) -> UIViewController in
             let viewController = item.viewController
             viewController.title = item.title
-            return UINavigationController(rootViewController: viewController)
+            let navigationController = UINavigationController(rootViewController: viewController)
+            navigationController.navigationBar.apply(AppNavigationStyle())
+            return navigationController
         })
         
         setViewControllers(viewControllers, animated: false)
@@ -53,5 +57,32 @@ enum TabBarItem {
         case .map:
             return L10n.tabMap
         }
+    }
+}
+
+protocol NavigationBar: class {
+    var barTintColor: UIColor? { get set }
+    var barStyle: UIBarStyle { get set }
+    var tintColor: UIColor! { get set }
+    var isTranslucent: Bool { get set }
+}
+
+extension UITabBar: NavigationBar {
+    
+}
+
+extension UINavigationBar: NavigationBar {
+    
+}
+
+import Domain
+
+struct AppNavigationStyle<T: NavigationBar>: Decorator {
+    
+    func apply(on object: T) {
+        object.barTintColor = Asset.backgroundColor.color
+        object.barStyle = .black
+        object.tintColor = .white
+        object.isTranslucent = false
     }
 }

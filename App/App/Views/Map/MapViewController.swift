@@ -2,7 +2,6 @@ import UIKit
 import Domain
 import RxSwift
 import RxCocoa
-import RxMKMapView
 import MapKit
 
 final class MapViewController: ViewController<MapUI>, MapView, MKMapViewDelegate {
@@ -11,16 +10,17 @@ final class MapViewController: ViewController<MapUI>, MapView, MKMapViewDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.loadStopPoints()
         
         ui.mapView.register(StopPointAnnotationView.self, forAnnotationViewWithReuseIdentifier: StopPointAnnotationView.reuseIdentifier)
         ui.mapView.register(StopPointClusterAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
         
-        ui.mapView.rx.setDelegate(self).disposed(by: disposeBag)
-
-        presenter.stopPoints
-            .map({ $0.map({ StopPointAnnotation(stopPoint: $0) }) })
-            .bind(to: ui.mapView.rx.annotations)
-            .disposed(by: disposeBag)
+        ui.mapView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -31,121 +31,46 @@ final class MapViewController: ViewController<MapUI>, MapView, MKMapViewDelegate
         annotationView.clusteringIdentifier = StopPointAnnotationView.reuseIdentifier
         return annotationView
     }
-}
-
-final class StopPointAnnotation: NSObject, MKAnnotation {
     
-    let stopPoint: StopPointDetails
-    
-    var title: String? {
-        stopPoint.name
-    }
-    
-    var subtitle: String? {
-        stopPoint.headsings
-    }
-    
-    var coordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: stopPoint.coordinates.latitude,
-            longitude: stopPoint.coordinates.longitude
-        )
-    }
-    
-    init(stopPoint: StopPointDetails) {
-        self.stopPoint = stopPoint
-        super.init()
-    }
-}
-
-import Reusable
-
-final class  StopPointAnnotationView: MKAnnotationView, Reusable {
-    var stopPointAnnotation: StopPointAnnotation {
-        annotation as! StopPointAnnotation
-    }
-    
-    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
-        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-        let image = Asset.mapPin.image
-        
-        self.image = image
-        self.canShowCallout = true
-        self.clusteringIdentifier = reuseIdentifier
-        self.centerOffset = CGPoint(x: 0, y: -image.size.height / 2)
-        self.collisionMode = .circle
-        self.displayPriority = .defaultLow
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-final class StopPointClusterAnnotationView: MKAnnotationView {
-    
-    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
-        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-        collisionMode = .circle
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func prepareForDisplay() {
-        super.prepareForDisplay()
-        
-        guard let annotation = annotation as? MKClusterAnnotation else {
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let clusterAnnotation = view.annotation as? MKClusterAnnotation else {
             return
         }
-        let count = annotation.memberAnnotations.count
-        image = drawImage(count: count)
-        
-        if count > 2 {
-            displayPriority = .defaultHigh
-        } else {
-            displayPriority = .defaultLow
-        }
+        zoom(to: clusterAnnotation.coordinate)
     }
     
-    private func drawImage(count: Int) -> UIImage? {
-        let size = CGSize(width: 40, height: 40)
-        return UIGraphicsImageRenderer(size: size).image { (context) in
-            let frame = CGRect(origin: .zero, size: size)
-            
-            UIColor.white.setFill()
-            UIBezierPath(ovalIn: frame).fill()
-            
-            let margin = CGFloat(2)
-            let innterOvalRect = frame.inset(by: UIEdgeInsets(all: margin))
-            
-            Asset.backgroundColor.color.setFill()
-            UIBezierPath(ovalIn: innterOvalRect).fill()
-            
-            let text = String(count)
-            let attributes = [
-                NSAttributedString.Key.foregroundColor: UIColor.white,
-                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 11, weight: .semibold)
-            ]
-            let textSize = text.size(withAttributes: attributes)
-            let textRect = CGRect(
-                x: size.width / 2 - textSize.width / 2,
-                y: size.height / 2 - textSize.height / 2,
-                width: textSize.width,
-                height: textSize.height
-            )
-            text.draw(in: textRect, withAttributes: attributes)
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let stopPointAnnotation = view.annotation as? StopPointAnnotation else {
+            return
         }
-    }
-}
-
-extension UIEdgeInsets {
-    init(all: CGFloat) {
-        self.init(horizontal: all, vertical: all)
+        showTimes(for: stopPointAnnotation.stopPoint)
     }
     
-    init(horizontal: CGFloat, vertical: CGFloat) {
-        self.init(top: vertical, left: horizontal, bottom: vertical, right: horizontal)
+    func display(stopPoints: [StopPointDetails]) {
+        let annotations = stopPoints.map({ StopPointAnnotation(stopPoint: $0) })
+        ui.mapView.removeAnnotations(ui.mapView.annotations)
+        ui.mapView.addAnnotations(annotations)
+    }
+    
+    private func showTimes(for stopPoint: StopPointDetails) {
+        let timesViewController = TimesViewController(stopPoint: stopPoint)
+        show(timesViewController, sender: nil)
+    }
+    
+    private func zoom(to coordinates: CLLocationCoordinate2D) {
+        var span = ui.mapView.region.span
+        span.latitudeDelta = span.latitudeDelta / 3
+        span.longitudeDelta = span.longitudeDelta / 3
+        zoom(to: coordinates, span: span)
+    }
+    
+    func setLocation(location: CLLocationCoordinate2D, delta: CLLocationDegrees) {
+        let span = MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
+        zoom(to: location, span: span)
+    }
+    
+    private func zoom(to location: CLLocationCoordinate2D, span: MKCoordinateSpan) {
+        let region = MKCoordinateRegion(center: location, span: span)
+        ui.mapView.setRegion(region, animated: true)
     }
 }

@@ -22,6 +22,11 @@
 		38BD757F257D42FC00D2F1A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38BD7581257D42FC00D2F1A8 /* Localizable.strings */; };
 		38BD7585257D444800D2F1A8 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7583257D444800D2F1A8 /* L10n.swift */; };
 		38BD7586257D444800D2F1A8 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7584257D444800D2F1A8 /* Assets.swift */; };
+		38C8F81C257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */; };
+		38C8F81F257E3F980010FEC8 /* StopPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */; };
+		38C8F821257E3FB60010FEC8 /* StopPointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */; };
+		38C8F823257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F822257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift */; };
+		38C8F826257E6AA60010FEC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38C8F828257E6AA60010FEC8 /* InfoPlist.strings */; };
 		38CA52D1253C50D000AD5AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CA52D0253C50D000AD5AEC /* AppDelegate.swift */; };
 		38CA52DA253C50D300AD5AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA52D9253C50D300AD5AEC /* Assets.xcassets */; };
 		38CA533A253C6C4E00AD5AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */; };
@@ -64,6 +69,11 @@
 		38BD7580257D42FC00D2F1A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38BD7583257D444800D2F1A8 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		38BD7584257D444800D2F1A8 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
+		38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointAnnotation.swift; sourceTree = "<group>"; };
+		38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointAnnotationView.swift; sourceTree = "<group>"; };
+		38C8F822257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointClusterAnnotationView.swift; sourceTree = "<group>"; };
+		38C8F827257E6AA60010FEC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38CA52CD253C50D000AD5AEC /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA52D0253C50D000AD5AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38CA52D9253C50D300AD5AEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +124,7 @@
 				38CA52D9253C50D300AD5AEC /* Assets.xcassets */,
 				38BD7583257D444800D2F1A8 /* L10n.swift */,
 				38BD7581257D42FC00D2F1A8 /* Localizable.strings */,
+				38C8F828257E6AA60010FEC8 /* InfoPlist.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,6 +176,7 @@
 		38BD7570257D406000D2F1A8 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				38C8F81D257E3F8D0010FEC8 /* Annotations */,
 				38BD7572257D406600D2F1A8 /* MapUI.swift */,
 				38BD7571257D406600D2F1A8 /* MapViewController.swift */,
 			);
@@ -175,8 +187,19 @@
 			isa = PBXGroup;
 			children = (
 				38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */,
+				38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		38C8F81D257E3F8D0010FEC8 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */,
+				38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */,
+				38C8F822257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift */,
+			);
+			path = Annotations;
 			sourceTree = "<group>";
 		};
 		38CA52C4253C50D000AD5AEC = {
@@ -293,6 +316,7 @@
 				38BD757F257D42FC00D2F1A8 /* Localizable.strings in Resources */,
 				38CA52DA253C50D300AD5AEC /* Assets.xcassets in Resources */,
 				38CA533A253C6C4E00AD5AEC /* LaunchScreen.storyboard in Resources */,
+				38C8F826257E6AA60010FEC8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,15 +387,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C8F81C257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift in Sources */,
 				38BD7573257D406600D2F1A8 /* MapViewController.swift in Sources */,
 				38BD7553257D3E0B00D2F1A8 /* ViewController.swift in Sources */,
 				38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */,
 				38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */,
+				38C8F81F257E3F980010FEC8 /* StopPointAnnotation.swift in Sources */,
+				38C8F821257E3FB60010FEC8 /* StopPointAnnotationView.swift in Sources */,
 				38BD7585257D444800D2F1A8 /* L10n.swift in Sources */,
 				38BD7568257D400000D2F1A8 /* SearchViewController.swift in Sources */,
 				384A31ED253C726500438F7D /* MainViewController.swift in Sources */,
 				38BD7551257D3DD700D2F1A8 /* View.swift in Sources */,
 				38BD7586257D444800D2F1A8 /* Assets.swift in Sources */,
+				38C8F823257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift in Sources */,
 				38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */,
 				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
 				38BD7569257D400000D2F1A8 /* SearchUI.swift in Sources */,
@@ -391,6 +419,14 @@
 			);
 			name = Localizable.strings;
 			path = .;
+			sourceTree = "<group>";
+		};
+		38C8F828257E6AA60010FEC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38C8F827257E6AA60010FEC8 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

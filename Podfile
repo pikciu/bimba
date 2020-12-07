@@ -13,6 +13,7 @@ def shared_pods
 	pod 'RxOptional'
 	pod 'RxSwiftExt'
 	pod 'RxSwiftUtilities'
+	pod 'RxCoreLocation'
 
 	pod 'Swinject'
 end
@@ -23,7 +24,6 @@ target 'App' do
 	shared_pods
 
 	pod 'RxCells'
-	pod 'RxMKMapView'
 end
 
 target 'Domain' do
