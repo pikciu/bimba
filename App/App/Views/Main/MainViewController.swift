@@ -1,12 +1,19 @@
 import UIKit
+import Domain
+import RxSwift
 
 final class MainViewController: UITabBarController {
+    let disposeBag = DisposeBag()
+    let activityIndicator = SharedActivityIndicator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBarControllers()
         
         tabBar.apply(AppNavigationStyle())
+        
+        activityIndicator.shared.drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible)
+            .disposed(by: disposeBag)
     }
     
     private func setupTabBarControllers() {
@@ -83,6 +90,6 @@ struct AppNavigationStyle<T: NavigationBar>: Decorator {
         object.barTintColor = Asset.backgroundColor.color
         object.barStyle = .black
         object.tintColor = .white
-        object.isTranslucent = false
+        object.isTranslucent = true
     }
 }

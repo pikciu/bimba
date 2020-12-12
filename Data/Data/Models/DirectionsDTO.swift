@@ -2,26 +2,30 @@ import Foundation
 import Domain
 
 struct DirectionsDTO: Decodable {
-    struct RouteDTO: Decodable {
-        let direction: DirectionDTO
-        let bollards: [StopPointDTO]
+    struct BollardDTO: Decodable {
+        let bollard: StopPointDTO
+        let directions: [DirectionDTO]
     }
     
-    let directions: [RouteDTO]
+    let bollards: [BollardDTO]
 }
 
 struct DirectionsMapper: Mapper {
+    let stopPointMapper: StopPointMapper
     let directionMapper = DirectionMapper()
-    let stopPointMapper = StopPointMapper(useTagAsID: true)
     
-    func map(from object: DirectionsDTO) throws -> [Route] {
-        try object.directions.map(mapRoute)
+    init(useTagAsID: Bool) {
+        stopPointMapper = StopPointMapper(useTagAsID: useTagAsID)
+    }
+
+    func map(from object: DirectionsDTO) -> [StopPointDirections] {
+        object.bollards.map(stopPoint(bollard:))
     }
     
-    private func mapRoute(dto: DirectionsDTO.RouteDTO) throws -> Route {
-        try Route(
-            direction: directionMapper.map(from: dto.direction),
-            stopPoints: dto.bollards.map(stopPointMapper.map)
+    private func stopPoint(bollard: DirectionsDTO.BollardDTO) -> StopPointDirections {
+        StopPointDirections(
+            stopPoint: stopPointMapper.map(from: bollard.bollard),
+            directions: bollard.directions.map(directionMapper.map(from:))
         )
     }
 }

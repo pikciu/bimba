@@ -12,4 +12,8 @@ public protocol VMRepository {
     func searchStopPoints(query: String) -> Observable<[StopPointGroup]>
     
     func routes(for line: String) -> Observable<[Route]>
+    
+    func stopPoints(street: String) -> Observable<[StopPointDirections]>
+    
+    func stopPoints(name stopPoint: String) -> Observable<[StopPointDirections]>
 }

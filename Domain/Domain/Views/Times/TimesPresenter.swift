@@ -1,11 +1,10 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import RxSwiftUtilities
 
 public final class TimesPresenter {
     private let disposeBag = DisposeBag()
-    private let activityIndicator = ActivityIndicator()
+    private let activityIndicator = SharedActivityIndicator()
 
     public unowned let view: TimesView
     
@@ -13,10 +12,14 @@ public final class TimesPresenter {
 
     public init(view: TimesView) {
         self.view = view
+        
+        times.bind(to: view.times)
+            .disposed(by: disposeBag)
     }
     
     public func loadTimes() {
         Observable<Int>.interval(.seconds(10), scheduler: MainScheduler.asyncInstance)
+            .startWith(0)
             .mapTo(GetDepartureTime(stopPointID: view.stopPoint.id))
             .flatMap(with: self, { (context, useCase) in
                 useCase.execute().trackActivity(context.activityIndicator)

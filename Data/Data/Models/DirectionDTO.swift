@@ -8,7 +8,7 @@ struct DirectionDTO: Decodable {
 
 struct DirectionMapper: Mapper {
     
-    func map(from object: DirectionDTO) throws -> Direction {
+    func map(from object: DirectionDTO) -> Direction {
         Direction(
             name: object.direction,
             line: object.lineName

@@ -8,11 +8,15 @@ struct StopPointDTO: Decodable {
 }
 
 struct StopPointMapper: Mapper {
+    private let nameMapper = StopPointNameMapper()
     
     let useTagAsID: Bool
     
-    func map(from object: StopPointDTO) throws -> StopPoint {
-        StopPoint(id: id(from: object), name: object.name)
+    func map(from object: StopPointDTO) -> StopPoint {
+        StopPoint(
+            id: id(from: object),
+            name: nameMapper.map(from: object.name)
+        )
     }
     
     private func id(from dto: StopPointDTO) -> String {
@@ -20,5 +24,20 @@ struct StopPointMapper: Mapper {
             return dto.tag
         }
         return dto.symbol
+    }
+}
+
+struct StopPointNameMapper: Mapper {
+    let pattern = " - \\d+$"
+    
+    func map(from object: String) -> String {
+        let range = object.startIndex..<object.endIndex
+        
+        return object.replacingOccurrences(
+            of: pattern,
+            with: "",
+            options: .regularExpression,
+            range: range
+        )
     }
 }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38216D9925851CB300DA8EA1 /* SearchResultDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D9725851CB300DA8EA1 /* SearchResultDetailsPresenter.swift */; };
+		38216D9A25851CB300DA8EA1 /* SearchResultDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D9825851CB300DA8EA1 /* SearchResultDetailsView.swift */; };
+		38216DA725853AF000DA8EA1 /* SharedActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */; };
+		38216DAC25853CAE00DA8EA1 /* DomainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DAB25853CAE00DA8EA1 /* DomainModule.swift */; };
+		38216DB12585432C00DA8EA1 /* StopPointDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DB02585432C00DA8EA1 /* StopPointDirections.swift */; };
+		38216DB4258545AA00DA8EA1 /* GetStopPointsByName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DB3258545AA00DA8EA1 /* GetStopPointsByName.swift */; };
+		38216DB7258545E900DA8EA1 /* GetStopPointsByStreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DB6258545E900DA8EA1 /* GetStopPointsByStreet.swift */; };
 		383293622540AA61002E1271 /* StopPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293612540AA61002E1271 /* StopPoint.swift */; };
 		383293652540AAFB002E1271 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293642540AAFB002E1271 /* Route.swift */; };
 		383293692540AC9E002E1271 /* GetRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293682540AC9E002E1271 /* GetRoutes.swift */; };
@@ -50,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38216D9725851CB300DA8EA1 /* SearchResultDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailsPresenter.swift; sourceTree = "<group>"; };
+		38216D9825851CB300DA8EA1 /* SearchResultDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailsView.swift; sourceTree = "<group>"; };
+		38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedActivityIndicator.swift; sourceTree = "<group>"; };
+		38216DAB25853CAE00DA8EA1 /* DomainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModule.swift; sourceTree = "<group>"; };
+		38216DB02585432C00DA8EA1 /* StopPointDirections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointDirections.swift; sourceTree = "<group>"; };
+		38216DB3258545AA00DA8EA1 /* GetStopPointsByName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStopPointsByName.swift; sourceTree = "<group>"; };
+		38216DB6258545E900DA8EA1 /* GetStopPointsByStreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStopPointsByStreet.swift; sourceTree = "<group>"; };
 		383293612540AA61002E1271 /* StopPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPoint.swift; sourceTree = "<group>"; };
 		383293642540AAFB002E1271 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		383293682540AC9E002E1271 /* GetRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoutes.swift; sourceTree = "<group>"; };
@@ -108,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38216D9625851C9F00DA8EA1 /* SearchResultDetails */ = {
+			isa = PBXGroup;
+			children = (
+				38216D9725851CB300DA8EA1 /* SearchResultDetailsPresenter.swift */,
+				38216D9825851CB300DA8EA1 /* SearchResultDetailsView.swift */,
+			);
+			path = SearchResultDetails;
+			sourceTree = "<group>";
+		};
 		384A321F253C8F0C00438F7D /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +150,7 @@
 				384A3260253CE39A00438F7D /* Transformer.swift */,
 				38C8F829257E6ED90010FEC8 /* Decorator.swift */,
 				38C8F82C257E6EE90010FEC8 /* Decorable.swift */,
+				38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -154,6 +178,7 @@
 				38773900253DDA7C007C1207 /* StopPointDetails.swift */,
 				38338D0C253DF69B00F55D60 /* StopPointGroup.swift */,
 				38338D09253DF64A00F55D60 /* Street.swift */,
+				38216DB02585432C00DA8EA1 /* StopPointDirections.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +209,8 @@
 				38338D04253DF3E600F55D60 /* GetStopPoints.swift */,
 				38338D1E253DFB8C00F55D60 /* Search.swift */,
 				384A328C253CEE2100438F7D /* UseCase.swift */,
+				38216DB3258545AA00DA8EA1 /* GetStopPointsByName.swift */,
+				38216DB6258545E900DA8EA1 /* GetStopPointsByStreet.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -191,6 +218,7 @@
 		38BD7537257D385300D2F1A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38216D9625851C9F00DA8EA1 /* SearchResultDetails */,
 				38BD7554257D3F5700D2F1A8 /* Favorites */,
 				38BD756A257D404B00D2F1A8 /* Map */,
 				38BD755F257D3FE000D2F1A8 /* Search */,
@@ -265,6 +293,7 @@
 				38BD7537257D385300D2F1A8 /* Views */,
 				38CA52F3253C511D00AD5AEC /* Domain.h */,
 				38CA52F4253C511D00AD5AEC /* Info.plist */,
+				38216DAB25853CAE00DA8EA1 /* DomainModule.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -400,25 +429,32 @@
 				384A3222253C8F2000438F7D /* Container.swift in Sources */,
 				38BD7563257D3FEF00D2F1A8 /* SearchView.swift in Sources */,
 				384A3276253CE5B500438F7D /* DepartureTime.swift in Sources */,
+				38216DB7258545E900DA8EA1 /* GetStopPointsByStreet.swift in Sources */,
 				383293762540B29E002E1271 /* Direction.swift in Sources */,
 				383293652540AAFB002E1271 /* Route.swift in Sources */,
+				38216DB12585432C00DA8EA1 /* StopPointDirections.swift in Sources */,
 				38C8F82A257E6ED90010FEC8 /* Decorator.swift in Sources */,
 				38338D0A253DF64A00F55D60 /* Street.swift in Sources */,
 				384A322E253C8FA900438F7D /* LogLevel.swift in Sources */,
 				38BD7562257D3FEF00D2F1A8 /* SearchPresenter.swift in Sources */,
 				38BD753C257D386A00D2F1A8 /* TimesView.swift in Sources */,
 				384A3269253CE40500438F7D /* AppError.swift in Sources */,
+				38216DA725853AF000DA8EA1 /* SharedActivityIndicator.swift in Sources */,
 				38773905253DDD93007C1207 /* StopPointLocalRepository.swift in Sources */,
+				38216DB4258545AA00DA8EA1 /* GetStopPointsByName.swift in Sources */,
 				383293622540AA61002E1271 /* StopPoint.swift in Sources */,
 				38338D0D253DF69B00F55D60 /* StopPointGroup.swift in Sources */,
 				384A325B253CE35F00438F7D /* Mapper.swift in Sources */,
 				384A322B253C8FA900438F7D /* LogDestination.swift in Sources */,
 				38BD7557257D3F7200D2F1A8 /* FavoritesPresenter.swift in Sources */,
+				38216D9A25851CB300DA8EA1 /* SearchResultDetailsView.swift in Sources */,
 				38BD753B257D386A00D2F1A8 /* TimesPresenter.swift in Sources */,
 				38BD756D257D405500D2F1A8 /* MapPresenter.swift in Sources */,
 				383293692540AC9E002E1271 /* GetRoutes.swift in Sources */,
+				38216DAC25853CAE00DA8EA1 /* DomainModule.swift in Sources */,
 				384A3273253CE55100438F7D /* VMRepository.swift in Sources */,
 				38BD756E257D405500D2F1A8 /* MapView.swift in Sources */,
+				38216D9925851CB300DA8EA1 /* SearchResultDetailsPresenter.swift in Sources */,
 				384A322D253C8FA900438F7D /* ConsoleLogDestination.swift in Sources */,
 				384A3223253C8F2000438F7D /* Module.swift in Sources */,
 				38773901253DDA7D007C1207 /* StopPointDetails.swift in Sources */,

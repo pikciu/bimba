@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		36E6C83FAD1E53CDF2A6E596 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35ACD84088282A8C6D19A6FB /* Pods_Data.framework */; };
+		38216DAF2585419100DA8EA1 /* DirectionsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */; };
 		3832936E2540AE9B002E1271 /* NameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832936D2540AE9B002E1271 /* NameRequest.swift */; };
-		383293702540AF8D002E1271 /* DirectionsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832936F2540AF8D002E1271 /* DirectionsDTO.swift */; };
+		383293702540AF8D002E1271 /* RoutesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832936F2540AF8D002E1271 /* RoutesDTO.swift */; };
 		383293722540B02E002E1271 /* DirectionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293712540B02E002E1271 /* DirectionDTO.swift */; };
 		383293742540B04F002E1271 /* StopPointDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293732540B04F002E1271 /* StopPointDTO.swift */; };
 		38338D08253DF4CF00F55D60 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D07253DF4CF00F55D60 /* SearchRequest.swift */; };
@@ -77,8 +78,9 @@
 
 /* Begin PBXFileReference section */
 		35ACD84088282A8C6D19A6FB /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsDTO.swift; sourceTree = "<group>"; };
 		3832936D2540AE9B002E1271 /* NameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRequest.swift; sourceTree = "<group>"; };
-		3832936F2540AF8D002E1271 /* DirectionsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsDTO.swift; sourceTree = "<group>"; };
+		3832936F2540AF8D002E1271 /* RoutesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesDTO.swift; sourceTree = "<group>"; };
 		383293712540B02E002E1271 /* DirectionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionDTO.swift; sourceTree = "<group>"; };
 		383293732540B04F002E1271 /* StopPointDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointDTO.swift; sourceTree = "<group>"; };
 		38338D07253DF4CF00F55D60 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
@@ -268,13 +270,14 @@
 			children = (
 				384A3279253CE6D900438F7D /* DepartureTimesDTO.swift */,
 				383293712540B02E002E1271 /* DirectionDTO.swift */,
-				3832936F2540AF8D002E1271 /* DirectionsDTO.swift */,
+				3832936F2540AF8D002E1271 /* RoutesDTO.swift */,
 				38338D1C253DFB4200F55D60 /* LineDTO.swift */,
 				383293732540B04F002E1271 /* StopPointDTO.swift */,
 				38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */,
 				38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */,
 				38338D13253DF95500F55D60 /* StreetDTO.swift */,
 				38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */,
+				38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -471,8 +474,9 @@
 				3877390F253DDF86007C1207 /* GetStopPointsRequest.swift in Sources */,
 				384A3207253C885700438F7D /* EndpointType.swift in Sources */,
 				384A3252253C981A00438F7D /* Byte+Control.swift in Sources */,
-				383293702540AF8D002E1271 /* DirectionsDTO.swift in Sources */,
+				383293702540AF8D002E1271 /* RoutesDTO.swift in Sources */,
 				384A31FB253C884900438F7D /* JSONEncoder.swift in Sources */,
+				38216DAF2585419100DA8EA1 /* DirectionsDTO.swift in Sources */,
 				384A3256253C991400438F7D /* URLEncodedFormRequestType.swift in Sources */,
 				384A324D253C973200438F7D /* URLEncodedFormError.swift in Sources */,
 				38338D10253DF7E900F55D60 /* VMResponseDTO.swift in Sources */,

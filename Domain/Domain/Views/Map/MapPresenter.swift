@@ -1,14 +1,13 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import RxSwiftUtilities
 import CoreLocation
 import RxCoreLocation
 import RxOptional
 
 public final class MapPresenter {
     private let disposeBag = DisposeBag()
-    private let activityIndicator = ActivityIndicator()
+    private let activityIndicator = SharedActivityIndicator()
     private let locationManager = CLLocationManager()
 
     public unowned let view: MapView

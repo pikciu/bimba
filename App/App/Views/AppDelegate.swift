@@ -9,7 +9,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        Container.register(modules: DataModule.self)
+        Container.register(modules: DataModule.self, DomainModule.self)
         
 #if DEBUG
         log.logLevel = .debug

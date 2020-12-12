@@ -21,6 +21,11 @@ struct SearchRequest: Encodable, URLEncodedFormRequestType {
     }
     
     func build() throws -> Request {
-        try Request(endpoint: VMEndpoint(), httpMethod: .POST, body: body(), headers: [])
+        try Request(
+            endpoint: VMEndpoint(),
+            httpMethod: .POST,
+            body: body(),
+            headers: defaultHeaders
+        )
     }
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38216D792585066700DA8EA1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D782585066700DA8EA1 /* TableViewCell.swift */; };
+		38216D7B258506D900DA8EA1 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D7A258506D900DA8EA1 /* TimeCell.swift */; };
+		38216D7D258517E200DA8EA1 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D7C258517E200DA8EA1 /* SearchResultCell.swift */; };
+		38216DA025851D3200DA8EA1 /* SearchResultDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D9E25851D3200DA8EA1 /* SearchResultDetailsViewController.swift */; };
+		38216DA125851D3200DA8EA1 /* SearchResultDetailsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D9F25851D3200DA8EA1 /* SearchResultDetailsUI.swift */; };
+		38216DA325852FBD00DA8EA1 /* LineStopPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DA225852FBD00DA8EA1 /* LineStopPointCell.swift */; };
+		38216DA52585300A00DA8EA1 /* SearchResultDetailsCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DA42585300A00DA8EA1 /* SearchResultDetailsCellFactory.swift */; };
+		38216DBA25854F2800DA8EA1 /* StopPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DB925854F2800DA8EA1 /* StopPointCell.swift */; };
 		384A31ED253C726500438F7D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31EC253C726500438F7D /* MainViewController.swift */; };
 		38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */; };
 		38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754C257D3A6500D2F1A8 /* TimesUI.swift */; };
@@ -54,6 +62,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		38216D782585066700DA8EA1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		38216D7A258506D900DA8EA1 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		38216D7C258517E200DA8EA1 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		38216D9E25851D3200DA8EA1 /* SearchResultDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailsViewController.swift; sourceTree = "<group>"; };
+		38216D9F25851D3200DA8EA1 /* SearchResultDetailsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailsUI.swift; sourceTree = "<group>"; };
+		38216DA225852FBD00DA8EA1 /* LineStopPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStopPointCell.swift; sourceTree = "<group>"; };
+		38216DA42585300A00DA8EA1 /* SearchResultDetailsCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailsCellFactory.swift; sourceTree = "<group>"; };
+		38216DB925854F2800DA8EA1 /* StopPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointCell.swift; sourceTree = "<group>"; };
 		384A31EC253C726500438F7D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		38BD754C257D3A6500D2F1A8 /* TimesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesUI.swift; sourceTree = "<group>"; };
@@ -101,9 +117,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38216D9D25851D2800DA8EA1 /* SearchResultDetails */ = {
+			isa = PBXGroup;
+			children = (
+				38216D9E25851D3200DA8EA1 /* SearchResultDetailsViewController.swift */,
+				38216D9F25851D3200DA8EA1 /* SearchResultDetailsUI.swift */,
+				38216DA225852FBD00DA8EA1 /* LineStopPointCell.swift */,
+				38216DA42585300A00DA8EA1 /* SearchResultDetailsCellFactory.swift */,
+				38216DB925854F2800DA8EA1 /* StopPointCell.swift */,
+			);
+			path = SearchResultDetails;
+			sourceTree = "<group>";
+		};
 		384A31E9253C6F5800438F7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38216D9D25851D2800DA8EA1 /* SearchResultDetails */,
 				38BD754F257D3DD100D2F1A8 /* Base */,
 				38BD755A257D3F8400D2F1A8 /* Favorites */,
 				384A31EB253C724E00438F7D /* Main */,
@@ -142,6 +171,7 @@
 			children = (
 				38BD754C257D3A6500D2F1A8 /* TimesUI.swift */,
 				38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */,
+				38216D7A258506D900DA8EA1 /* TimeCell.swift */,
 			);
 			path = Times;
 			sourceTree = "<group>";
@@ -151,6 +181,7 @@
 			children = (
 				38BD7550257D3DD700D2F1A8 /* View.swift */,
 				38BD7552257D3E0B00D2F1A8 /* ViewController.swift */,
+				38216D782585066700DA8EA1 /* TableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -169,6 +200,7 @@
 			children = (
 				38BD7567257D400000D2F1A8 /* SearchUI.swift */,
 				38BD7566257D400000D2F1A8 /* SearchViewController.swift */,
+				38216D7C258517E200DA8EA1 /* SearchResultCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -389,9 +421,11 @@
 			files = (
 				38C8F81C257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift in Sources */,
 				38BD7573257D406600D2F1A8 /* MapViewController.swift in Sources */,
+				38216DBA25854F2800DA8EA1 /* StopPointCell.swift in Sources */,
 				38BD7553257D3E0B00D2F1A8 /* ViewController.swift in Sources */,
 				38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */,
 				38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */,
+				38216D792585066700DA8EA1 /* TableViewCell.swift in Sources */,
 				38C8F81F257E3F980010FEC8 /* StopPointAnnotation.swift in Sources */,
 				38C8F821257E3FB60010FEC8 /* StopPointAnnotationView.swift in Sources */,
 				38BD7585257D444800D2F1A8 /* L10n.swift in Sources */,
@@ -401,10 +435,16 @@
 				38BD7586257D444800D2F1A8 /* Assets.swift in Sources */,
 				38C8F823257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift in Sources */,
 				38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */,
+				38216DA125851D3200DA8EA1 /* SearchResultDetailsUI.swift in Sources */,
+				38216D7B258506D900DA8EA1 /* TimeCell.swift in Sources */,
 				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
 				38BD7569257D400000D2F1A8 /* SearchUI.swift in Sources */,
+				38216DA325852FBD00DA8EA1 /* LineStopPointCell.swift in Sources */,
 				38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */,
 				38BD7574257D406600D2F1A8 /* MapUI.swift in Sources */,
+				38216DA52585300A00DA8EA1 /* SearchResultDetailsCellFactory.swift in Sources */,
+				38216DA025851D3200DA8EA1 /* SearchResultDetailsViewController.swift in Sources */,
+				38216D7D258517E200DA8EA1 /* SearchResultCell.swift in Sources */,
 				38CA52D1253C50D000AD5AEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

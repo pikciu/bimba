@@ -1,11 +1,10 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import RxSwiftUtilities
 
 public final class FavoritesPresenter {
     private let disposeBag = DisposeBag()
-    private let activityIndicator = ActivityIndicator()
+    private let activityIndicator = SharedActivityIndicator()
 
     public unowned let view: FavoritesView
 

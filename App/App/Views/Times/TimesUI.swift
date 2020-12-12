@@ -33,8 +33,12 @@ final class TimesUI: View {
         tableView.backgroundColor = Asset.backgroundColor.color
         messageContainer.backgroundColor = Asset.backgroundColor.color
         
-        tableView.tableFooterView = UIView()
+        let size = CGSize(width: 0, height: 6)
+        let frame = CGRect(origin: .zero, size: size)
+        tableView.tableFooterView = UIView(frame: frame)
+        tableView.tableHeaderView = UIView(frame: frame)
         tableView.allowsSelection = false
         tableView.separatorStyle = .none
+        
     }
 }

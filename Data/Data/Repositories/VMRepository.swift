@@ -34,7 +34,21 @@ struct VMRepository: Domain.VMRepository {
     func routes(for line: String) -> Observable<[Route]> {
         APIClient().execute(
             request: NameRequest(name: line, method: .directionsByLine),
-            responseMapper: VMResponseMapper(DirectionsMapper())
+            responseMapper: VMResponseMapper(RoutesMapper())
+        )
+    }
+    
+    func stopPoints(street: String) -> Observable<[StopPointDirections]> {
+        APIClient().execute(
+            request: NameRequest(name: street, method: .stopPointsByStreet),
+            responseMapper: VMResponseMapper(DirectionsMapper(useTagAsID: false))
+        )
+    }
+    
+    func stopPoints(name stopPoint: String) -> Observable<[StopPointDirections]> {
+        APIClient().execute(
+            request: NameRequest(name: stopPoint, method: .stopPointsByName),
+            responseMapper: VMResponseMapper(DirectionsMapper(useTagAsID: true))
         )
     }
 }
