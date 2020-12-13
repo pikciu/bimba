@@ -1,6 +1,6 @@
 import Foundation
 
-public struct StopPointDetails: StopPointType {
+public struct StopPointDetails: StopPointType, Equatable {
     public struct Coordinates: Hashable {
         public let latitude: Double
         public let longitude: Double
@@ -10,11 +10,11 @@ public struct StopPointDetails: StopPointType {
             self.longitude = longitude
         }
     }
-    public enum Route {
+    public enum Route: Equatable {
         case bus(String)
         case tram(String)
         
-        var headsings: String {
+        public var headsings: String {
             switch self {
             case .bus(let headsings):
                 return headsings

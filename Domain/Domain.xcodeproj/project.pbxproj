@@ -18,11 +18,15 @@
 		383293652540AAFB002E1271 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293642540AAFB002E1271 /* Route.swift */; };
 		383293692540AC9E002E1271 /* GetRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293682540AC9E002E1271 /* GetRoutes.swift */; };
 		383293762540B29E002E1271 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293752540B29E002E1271 /* Direction.swift */; };
-		38338D05253DF3E600F55D60 /* GetStopPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D04253DF3E600F55D60 /* GetStopPoints.swift */; };
+		38338D05253DF3E600F55D60 /* LoadStopPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D04253DF3E600F55D60 /* LoadStopPoints.swift */; };
 		38338D0A253DF64A00F55D60 /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D09253DF64A00F55D60 /* Street.swift */; };
 		38338D0D253DF69B00F55D60 /* StopPointGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D0C253DF69B00F55D60 /* StopPointGroup.swift */; };
 		38338D1A253DFAEC00F55D60 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D19253DFAEC00F55D60 /* SearchResult.swift */; };
 		38338D1F253DFB8C00F55D60 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D1E253DFB8C00F55D60 /* Search.swift */; };
+		383D00C22586688400E2D969 /* GetStopPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D00C12586688400E2D969 /* GetStopPoints.swift */; };
+		383D00C82586783E00E2D969 /* FavoriteStopPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D00C72586783E00E2D969 /* FavoriteStopPoints.swift */; };
+		383D00CB258679F800E2D969 /* StopPointIsFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D00CA258679F800E2D969 /* StopPointIsFavorite.swift */; };
+		383D00CE25867A6A00E2D969 /* ToggleFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D00CD25867A6A00E2D969 /* ToggleFavorite.swift */; };
 		384A3222253C8F2000438F7D /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3220253C8F2000438F7D /* Container.swift */; };
 		384A3223253C8F2000438F7D /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3221253C8F2000438F7D /* Module.swift */; };
 		384A322B253C8FA900438F7D /* LogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3227253C8FA900438F7D /* LogDestination.swift */; };
@@ -30,7 +34,6 @@
 		384A322D253C8FA900438F7D /* ConsoleLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3229253C8FA900438F7D /* ConsoleLogDestination.swift */; };
 		384A322E253C8FA900438F7D /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A322A253C8FA900438F7D /* LogLevel.swift */; };
 		384A325B253CE35F00438F7D /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A325A253CE35F00438F7D /* Mapper.swift */; };
-		384A3261253CE39A00438F7D /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3260253CE39A00438F7D /* Transformer.swift */; };
 		384A3269253CE40500438F7D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3268253CE40500438F7D /* AppError.swift */; };
 		384A326E253CE43900438F7D /* ObservableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A326D253CE43900438F7D /* ObservableExtensions.swift */; };
 		384A3273253CE55100438F7D /* VMRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A3272253CE55100438F7D /* VMRepository.swift */; };
@@ -68,11 +71,15 @@
 		383293642540AAFB002E1271 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		383293682540AC9E002E1271 /* GetRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRoutes.swift; sourceTree = "<group>"; };
 		383293752540B29E002E1271 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		38338D04253DF3E600F55D60 /* GetStopPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStopPoints.swift; sourceTree = "<group>"; };
+		38338D04253DF3E600F55D60 /* LoadStopPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStopPoints.swift; sourceTree = "<group>"; };
 		38338D09253DF64A00F55D60 /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
 		38338D0C253DF69B00F55D60 /* StopPointGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointGroup.swift; sourceTree = "<group>"; };
 		38338D19253DFAEC00F55D60 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		38338D1E253DFB8C00F55D60 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		383D00C12586688400E2D969 /* GetStopPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStopPoints.swift; sourceTree = "<group>"; };
+		383D00C72586783E00E2D969 /* FavoriteStopPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStopPoints.swift; sourceTree = "<group>"; };
+		383D00CA258679F800E2D969 /* StopPointIsFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointIsFavorite.swift; sourceTree = "<group>"; };
+		383D00CD25867A6A00E2D969 /* ToggleFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFavorite.swift; sourceTree = "<group>"; };
 		384A3220253C8F2000438F7D /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		384A3221253C8F2000438F7D /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		384A3227253C8FA900438F7D /* LogDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDestination.swift; sourceTree = "<group>"; };
@@ -80,7 +87,6 @@
 		384A3229253C8FA900438F7D /* ConsoleLogDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogDestination.swift; sourceTree = "<group>"; };
 		384A322A253C8FA900438F7D /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 		384A325A253CE35F00438F7D /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
-		384A3260253CE39A00438F7D /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
 		384A3268253CE40500438F7D /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		384A326D253CE43900438F7D /* ObservableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableExtensions.swift; sourceTree = "<group>"; };
 		384A3272253CE55100438F7D /* VMRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMRepository.swift; sourceTree = "<group>"; };
@@ -147,7 +153,6 @@
 				384A3226253C8F9200438F7D /* Logger */,
 				384A327B253CE7E300438F7D /* DateTimeFormatter.swift */,
 				384A325A253CE35F00438F7D /* Mapper.swift */,
-				384A3260253CE39A00438F7D /* Transformer.swift */,
 				38C8F829257E6ED90010FEC8 /* Decorator.swift */,
 				38C8F82C257E6EE90010FEC8 /* Decorable.swift */,
 				38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */,
@@ -206,11 +211,15 @@
 			children = (
 				384A328F253CEE2E00438F7D /* GetDepartureTimes.swift */,
 				383293682540AC9E002E1271 /* GetRoutes.swift */,
-				38338D04253DF3E600F55D60 /* GetStopPoints.swift */,
+				38338D04253DF3E600F55D60 /* LoadStopPoints.swift */,
 				38338D1E253DFB8C00F55D60 /* Search.swift */,
 				384A328C253CEE2100438F7D /* UseCase.swift */,
 				38216DB3258545AA00DA8EA1 /* GetStopPointsByName.swift */,
 				38216DB6258545E900DA8EA1 /* GetStopPointsByStreet.swift */,
+				383D00C12586688400E2D969 /* GetStopPoints.swift */,
+				383D00C72586783E00E2D969 /* FavoriteStopPoints.swift */,
+				383D00CA258679F800E2D969 /* StopPointIsFavorite.swift */,
+				383D00CD25867A6A00E2D969 /* ToggleFavorite.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -430,6 +439,7 @@
 				38BD7563257D3FEF00D2F1A8 /* SearchView.swift in Sources */,
 				384A3276253CE5B500438F7D /* DepartureTime.swift in Sources */,
 				38216DB7258545E900DA8EA1 /* GetStopPointsByStreet.swift in Sources */,
+				383D00CB258679F800E2D969 /* StopPointIsFavorite.swift in Sources */,
 				383293762540B29E002E1271 /* Direction.swift in Sources */,
 				383293652540AAFB002E1271 /* Route.swift in Sources */,
 				38216DB12585432C00DA8EA1 /* StopPointDirections.swift in Sources */,
@@ -437,9 +447,12 @@
 				38338D0A253DF64A00F55D60 /* Street.swift in Sources */,
 				384A322E253C8FA900438F7D /* LogLevel.swift in Sources */,
 				38BD7562257D3FEF00D2F1A8 /* SearchPresenter.swift in Sources */,
+				383D00CE25867A6A00E2D969 /* ToggleFavorite.swift in Sources */,
 				38BD753C257D386A00D2F1A8 /* TimesView.swift in Sources */,
 				384A3269253CE40500438F7D /* AppError.swift in Sources */,
+				383D00C82586783E00E2D969 /* FavoriteStopPoints.swift in Sources */,
 				38216DA725853AF000DA8EA1 /* SharedActivityIndicator.swift in Sources */,
+				383D00C22586688400E2D969 /* GetStopPoints.swift in Sources */,
 				38773905253DDD93007C1207 /* StopPointLocalRepository.swift in Sources */,
 				38216DB4258545AA00DA8EA1 /* GetStopPointsByName.swift in Sources */,
 				383293622540AA61002E1271 /* StopPoint.swift in Sources */,
@@ -460,12 +473,11 @@
 				38773901253DDA7D007C1207 /* StopPointDetails.swift in Sources */,
 				384A322C253C8FA900438F7D /* Logger.swift in Sources */,
 				384A327C253CE7E300438F7D /* DateTimeFormatter.swift in Sources */,
-				38338D05253DF3E600F55D60 /* GetStopPoints.swift in Sources */,
+				38338D05253DF3E600F55D60 /* LoadStopPoints.swift in Sources */,
 				38C8F82D257E6EE90010FEC8 /* Decorable.swift in Sources */,
 				38BD7558257D3F7200D2F1A8 /* FavoritesView.swift in Sources */,
 				38338D1F253DFB8C00F55D60 /* Search.swift in Sources */,
 				384A326E253CE43900438F7D /* ObservableExtensions.swift in Sources */,
-				384A3261253CE39A00438F7D /* Transformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

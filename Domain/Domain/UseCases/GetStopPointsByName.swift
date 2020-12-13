@@ -7,7 +7,7 @@ struct GetStopPointsByName: UseCase {
     
     let name: String
     
-    func execute() -> Observable<[StopPointDirections]> {
+    func execute() -> Single<[StopPointDirections]> {
         repository.stopPoints(name: name)
     }
 }

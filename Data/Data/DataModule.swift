@@ -9,5 +9,10 @@ public struct DataModule: Module {
         
         container.register(Domain.VMRepository.self) { _ in VMRepository() }
         container.register(Domain.StopPointRemoteRepository.self) { _ in StopPointRemoteRepository() }
+        container.register(Domain.StopPointLocalRepository.self) { _ in StopPointLocalRepository() }
+        
+        container.register(RealmContext.self) { _ in RealmContext() }
+            .inObjectScope(.weak)
+        
     }
 }

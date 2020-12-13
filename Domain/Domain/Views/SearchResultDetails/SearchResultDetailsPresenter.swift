@@ -75,7 +75,7 @@ public final class SearchResultDetailsPresenter {
             .disposed(by: disposeBag)
     }
     
-    private func loadStopPoints(observable: Observable<[StopPointDirections]>) {
+    private func loadStopPoints(observable: Single<[StopPointDirections]>) {
         observable.trackActivity(activityIndicator)
             .bind(to: stopPoints)
             .disposed(by: disposeBag)

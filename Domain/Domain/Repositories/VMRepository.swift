@@ -3,17 +3,17 @@ import RxSwift
 
 public protocol VMRepository {
     
-    func times(stopPointID: String) -> Observable<[DepartureTime]>
+    func times(stopPointID: String) -> Single<[DepartureTime]>
     
-    func searchLines(query: String) -> Observable<[String]>
+    func searchLines(query: String) -> Single<[String]>
     
-    func searchStreets(query: String) -> Observable<[Street]>
+    func searchStreets(query: String) -> Single<[Street]>
     
-    func searchStopPoints(query: String) -> Observable<[StopPointGroup]>
+    func searchStopPoints(query: String) -> Single<[StopPointGroup]>
     
-    func routes(for line: String) -> Observable<[Route]>
+    func routes(for line: String) -> Single<[Route]>
     
-    func stopPoints(street: String) -> Observable<[StopPointDirections]>
+    func stopPoints(street: String) -> Single<[StopPointDirections]>
     
-    func stopPoints(name stopPoint: String) -> Observable<[StopPointDirections]>
+    func stopPoints(name stopPoint: String) -> Single<[StopPointDirections]>
 }

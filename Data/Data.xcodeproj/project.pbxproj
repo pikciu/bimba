@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		36E6C83FAD1E53CDF2A6E596 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35ACD84088282A8C6D19A6FB /* Pods_Data.framework */; };
 		38216DAF2585419100DA8EA1 /* DirectionsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */; };
+		38216DBC258660D600DA8EA1 /* FavoriteStopPointRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DBB258660D600DA8EA1 /* FavoriteStopPointRealm.swift */; };
+		38216DCF2586614100DA8EA1 /* StopPointRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DCE2586614100DA8EA1 /* StopPointRealm.swift */; };
 		3832936E2540AE9B002E1271 /* NameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832936D2540AE9B002E1271 /* NameRequest.swift */; };
 		383293702540AF8D002E1271 /* RoutesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832936F2540AF8D002E1271 /* RoutesDTO.swift */; };
 		383293722540B02E002E1271 /* DirectionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383293712540B02E002E1271 /* DirectionDTO.swift */; };
@@ -20,6 +22,7 @@
 		38338D16253DF9A700F55D60 /* SkipMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D15253DF9A700F55D60 /* SkipMapper.swift */; };
 		38338D18253DFA6700F55D60 /* StopPointGroupDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */; };
 		38338D1D253DFB4200F55D60 /* LineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38338D1C253DFB4200F55D60 /* LineDTO.swift */; };
+		383D00C625866C0C00E2D969 /* StopPointLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D00C525866C0C00E2D969 /* StopPointLocalRepository.swift */; };
 		384A31F5253C883400438F7D /* EncodableRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31F1253C883400438F7D /* EncodableRequestType.swift */; };
 		384A31F6253C883400438F7D /* JSONEncodableRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31F2253C883400438F7D /* JSONEncodableRequestType.swift */; };
 		384A31F7253C883400438F7D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31F3253C883400438F7D /* Request.swift */; };
@@ -79,6 +82,8 @@
 /* Begin PBXFileReference section */
 		35ACD84088282A8C6D19A6FB /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsDTO.swift; sourceTree = "<group>"; };
+		38216DBB258660D600DA8EA1 /* FavoriteStopPointRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStopPointRealm.swift; sourceTree = "<group>"; };
+		38216DCE2586614100DA8EA1 /* StopPointRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointRealm.swift; sourceTree = "<group>"; };
 		3832936D2540AE9B002E1271 /* NameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRequest.swift; sourceTree = "<group>"; };
 		3832936F2540AF8D002E1271 /* RoutesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesDTO.swift; sourceTree = "<group>"; };
 		383293712540B02E002E1271 /* DirectionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionDTO.swift; sourceTree = "<group>"; };
@@ -90,6 +95,7 @@
 		38338D15253DF9A700F55D60 /* SkipMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipMapper.swift; sourceTree = "<group>"; };
 		38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointGroupDTO.swift; sourceTree = "<group>"; };
 		38338D1C253DFB4200F55D60 /* LineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDTO.swift; sourceTree = "<group>"; };
+		383D00C525866C0C00E2D969 /* StopPointLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointLocalRepository.swift; sourceTree = "<group>"; };
 		384A31F1253C883400438F7D /* EncodableRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableRequestType.swift; sourceTree = "<group>"; };
 		384A31F2253C883400438F7D /* JSONEncodableRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableRequestType.swift; sourceTree = "<group>"; };
 		384A31F3253C883400438F7D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -278,6 +284,8 @@
 				38338D13253DF95500F55D60 /* StreetDTO.swift */,
 				38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */,
 				38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */,
+				38216DBB258660D600DA8EA1 /* FavoriteStopPointRealm.swift */,
+				38216DCE2586614100DA8EA1 /* StopPointRealm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 			children = (
 				38773907253DDE76007C1207 /* StopPointRemoteRepository.swift */,
 				384A3284253CECD100438F7D /* VMRepository.swift */,
+				383D00C525866C0C00E2D969 /* StopPointLocalRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -483,8 +492,10 @@
 				38773908253DDE76007C1207 /* StopPointRemoteRepository.swift in Sources */,
 				384A31F5253C883400438F7D /* EncodableRequestType.swift in Sources */,
 				384A3208253C885700438F7D /* HTTPMethod.swift in Sources */,
+				38216DBC258660D600DA8EA1 /* FavoriteStopPointRealm.swift in Sources */,
 				384A325F253CE38300438F7D /* ObjectDecoder.swift in Sources */,
 				3877390D253DDEFA007C1207 /* StopPointsEndpoint.swift in Sources */,
+				38216DCF2586614100DA8EA1 /* StopPointRealm.swift in Sources */,
 				384A31FC253C884900438F7D /* RequestBodyEncoder.swift in Sources */,
 				384A3247253C971E00438F7D /* URLEncodedFormData.swift in Sources */,
 				383293722540B02E002E1271 /* DirectionDTO.swift in Sources */,
@@ -499,6 +510,7 @@
 				384A3205253C885700438F7D /* HTTPError.swift in Sources */,
 				38338D08253DF4CF00F55D60 /* SearchRequest.swift in Sources */,
 				384A3254253C985200438F7D /* Bytes.swift in Sources */,
+				383D00C625866C0C00E2D969 /* StopPointLocalRepository.swift in Sources */,
 				3832936E2540AE9B002E1271 /* NameRequest.swift in Sources */,
 				384A3206253C885700438F7D /* HTTPClient.swift in Sources */,
 				384A3264253CE3AF00438F7D /* ArrayDecoder.swift in Sources */,

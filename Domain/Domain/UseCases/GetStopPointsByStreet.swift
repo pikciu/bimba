@@ -7,7 +7,7 @@ struct GetStopPointsByStreet: UseCase {
     
     let street: String
     
-    func execute() -> Observable<[StopPointDirections]> {
+    func execute() -> Single<[StopPointDirections]> {
         repository.stopPoints(street: street)
     }
 }

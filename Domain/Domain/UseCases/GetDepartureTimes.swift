@@ -7,7 +7,7 @@ struct GetDepartureTime: UseCase {
     
     let stopPointID: String
     
-    func execute() -> Observable<[DepartureTime]> {
+    func execute() -> Single<[DepartureTime]> {
         repository.times(stopPointID: stopPointID)
     }
 }

@@ -24,6 +24,9 @@ target 'App' do
 	shared_pods
 
 	pod 'RxCells'
+	
+	pod 'RealmSwift'
+	pod 'RxRealm'
 end
 
 target 'Domain' do
@@ -36,6 +39,9 @@ target 'Data' do
 	project 'Data/Data.xcodeproj'
 
 	shared_pods
+	
+	pod 'RealmSwift'
+	pod 'RxRealm'
 end
 
 

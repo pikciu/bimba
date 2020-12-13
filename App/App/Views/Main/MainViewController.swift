@@ -10,6 +10,12 @@ final class MainViewController: UITabBarController {
         super.viewDidLoad()
         setupTabBarControllers()
         
+        LoadStopPoints()
+            .execute()
+            .trackActivity(activityIndicator)
+            .subscribe()
+            .disposed(by: disposeBag)
+        
         tabBar.apply(AppNavigationStyle())
         
         activityIndicator.shared.drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible)

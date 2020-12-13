@@ -10,7 +10,7 @@ final class SearchUI: View {
             tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
     
@@ -19,5 +19,6 @@ final class SearchUI: View {
         tableView.backgroundColor = Asset.backgroundColor.color
         tableView.tableFooterView = UIView()
         tableView.contentInsetAdjustmentBehavior = .always
+        tableView.keyboardDismissMode = .interactive
     }
 }

@@ -3,5 +3,5 @@ import RxSwift
 
 public protocol StopPointRemoteRepository {
     
-    func stopPoints() -> Observable<[StopPointDetails]>
+    func stopPoints() -> Single<[StopPointDetails]>
 }

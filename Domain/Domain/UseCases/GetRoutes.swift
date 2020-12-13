@@ -7,7 +7,7 @@ struct GetRoutes: UseCase {
     
     let line: String
     
-    func execute() -> Observable<[Route]> {
+    func execute() -> Single<[Route]> {
         repository.routes(for: line)
     }
 }

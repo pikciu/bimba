@@ -2,7 +2,7 @@ import Foundation
 import Domain
 import RxSwift
 
-struct ArrayDecoder<Mapper: Domain.Mapper> : Transformer where Mapper.From: Decodable {
+struct ArrayDecoder<Mapper: Domain.Mapper> where Mapper.From: Decodable {
     
     typealias From = Data
     typealias To = [Mapper.To]
@@ -13,8 +13,8 @@ struct ArrayDecoder<Mapper: Domain.Mapper> : Transformer where Mapper.From: Deco
         self.mapper = mapper
     }
     
-    func transform(from: Observable<Data>) -> Observable<To> {
-        let dtos = from.map(using: JSONMapper<[Mapper.From]>())
+    func transform(from: Single<Data>) -> Single<To> {
+        let dtos = from.map(JSONMapper<[Mapper.From]>().map(from:))
         return dtos.map({ (array) -> To in
             try array.map(self.mapper.map)
         }).do(onError: { (error) in

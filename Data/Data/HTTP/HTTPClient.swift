@@ -4,19 +4,19 @@ import Domain
 
 final class HTTPClient {
     
-    func execute(request: Request) -> Observable<Response> {
+    func execute(request: Request) -> Single<Response> {
         guard let urlRequest = createRequest(from: request) else {
-            return Observable.error(HTTPError.invalidRequest)
+            return Single.error(HTTPError.invalidRequest)
         }
         
-        let observable: Observable<Response> = Observable.create { observer in
+        let observable: Single<Response> = Single.create { (observer) in
             let session = Container.resolve(URLSession.self)
             let task = session.dataTask(with: urlRequest) { (data, urlResponse, error) in
                 
                 log.verbose(request.resource)
                 
                 if let error = error {
-                    observer.onError(HTTPError.networkError(error))
+                    observer(.error(HTTPError.networkError(error)))
                     return
                 }
                 
@@ -24,14 +24,14 @@ final class HTTPClient {
                     let httpResponse = urlResponse as? HTTPURLResponse,
                     let data = data
                 else {
-                    observer.onError(HTTPError.noResponse)
+                    observer(.error(HTTPError.noResponse))
                     return
                 }
           
                 guard 200..<300 ~= httpResponse.statusCode else {
                     let json = String(bytes: data, encoding: .utf8) ?? ""
                     log.verbose(json)
-                    observer.onError(HTTPError.httpError(status: httpResponse.statusCode, data: data))
+                    observer(.error(HTTPError.httpError(status: httpResponse.statusCode, data: data)))
                     return
                 }
                 
@@ -39,8 +39,7 @@ final class HTTPClient {
                     body: data,
                     httpResponse: httpResponse
                 )
-                observer.onNext(response)
-                observer.onCompleted()
+                observer(.success(response))
             }
             
             task.resume()
@@ -50,7 +49,6 @@ final class HTTPClient {
         }
         
         return observable.observeOn(MainScheduler.instance)
-            .share(replay: 1, scope: .whileConnected)
             .do(onError: { (error) in
                 log.error(error)
             })
