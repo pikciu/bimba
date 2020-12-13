@@ -15,19 +15,19 @@ final class TimeCell: TableViewCell<DepartureTime> {
         
         lineLabel.textAlignment = .center
         
-        lineLabel.font = .systemFont(ofSize: 30, weight: .heavy)
-        directionLabel.font = .systemFont(ofSize: 14, weight: .semibold)
-        minutesLabel.font = .systemFont(ofSize: 14, weight: .semibold)
-        departureTimeLabel.font = .systemFont(ofSize: 12)
+        lineLabel.font = AppFont.heavy(size: .big)
+        directionLabel.font = AppFont.titleFont
+        minutesLabel.font = AppFont.titleFont
+        departureTimeLabel.font = AppFont.subtitleFont
         
-        rootView.layer.cornerRadius = 8
+        rootView.layer.cornerRadius = Constants.UI.cornerRadius
     }
     
     override func setupAutoLayout() {
         contentView.add(subviews: rootView)
         rootView.add(subviews: lineLabel, directionLabel, minutesLabel, departureTimeLabel)
         
-        let spacing = CGFloat(12)
+        let spacing = Constants.UI.defaultSpacing
         
         NSLayoutConstraint.activate([
             rootView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: spacing / 2),

@@ -10,9 +10,10 @@ public struct StopPointDetails: StopPointType, Equatable {
             self.longitude = longitude
         }
     }
-    public enum Route: Equatable {
-        case bus(String)
+    
+    public enum Route: Comparable {
         case tram(String)
+        case bus(String)
         
         public var headsings: String {
             switch self {
@@ -22,6 +23,8 @@ public struct StopPointDetails: StopPointType, Equatable {
                 return headsings
             }
         }
+        
+        
     }
     public let id: String
     public let coordinates: Coordinates

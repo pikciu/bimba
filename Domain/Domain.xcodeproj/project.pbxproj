@@ -56,6 +56,7 @@
 		38C8F82A257E6ED90010FEC8 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F829257E6ED90010FEC8 /* Decorator.swift */; };
 		38C8F82D257E6EE90010FEC8 /* Decorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F82C257E6EE90010FEC8 /* Decorable.swift */; };
 		38CA52F5253C511D00AD5AEC /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CA52F3253C511D00AD5AEC /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38E9BEFF258695D8001B9F19 /* LoggerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9BEFE258695D8001B9F19 /* LoggerObserver.swift */; };
 		9D7D2E14D8E2D6309F1F99EE /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40EC53AD1F621C3C33B7FC1 /* Pods_Domain.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +112,7 @@
 		38CA52F0253C511D00AD5AEC /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA52F3253C511D00AD5AEC /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		38CA52F4253C511D00AD5AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E9BEFE258695D8001B9F19 /* LoggerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerObserver.swift; sourceTree = "<group>"; };
 		86BA6B232E747508B386D020 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		B40EC53AD1F621C3C33B7FC1 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3A8A0AB54A7CA50E664454 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				38C8F829257E6ED90010FEC8 /* Decorator.swift */,
 				38C8F82C257E6EE90010FEC8 /* Decorable.swift */,
 				38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */,
+				38E9BEFE258695D8001B9F19 /* LoggerObserver.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				38773905253DDD93007C1207 /* StopPointLocalRepository.swift in Sources */,
 				38216DB4258545AA00DA8EA1 /* GetStopPointsByName.swift in Sources */,
 				383293622540AA61002E1271 /* StopPoint.swift in Sources */,
+				38E9BEFF258695D8001B9F19 /* LoggerObserver.swift in Sources */,
 				38338D0D253DF69B00F55D60 /* StopPointGroup.swift in Sources */,
 				384A325B253CE35F00438F7D /* Mapper.swift in Sources */,
 				384A322B253C8FA900438F7D /* LogDestination.swift in Sources */,

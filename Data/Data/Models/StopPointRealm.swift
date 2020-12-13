@@ -31,13 +31,13 @@ struct StopPointRealmMapper: Mapper {
     
     private func routes(stopPoint: StopPointRealm) -> [StopPointDetails.Route] {
         var routes = [StopPointDetails.Route]()
-        if let bus = stopPoint.busHeadsings {
-            routes.append(.bus(bus))
-        }
         if let tram = stopPoint.tramHeadsings {
             routes.append(.tram(tram))
         }
-        return routes
+        if let bus = stopPoint.busHeadsings {
+            routes.append(.bus(bus))
+        }
+        return routes.sorted()
     }
 }
 

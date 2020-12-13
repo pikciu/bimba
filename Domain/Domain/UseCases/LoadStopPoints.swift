@@ -29,7 +29,7 @@ public struct LoadStopPoints: UseCase {
             id: group.id,
             coordinates: group.coordinates,
             name: group.name,
-            type: types
+            type: types.sorted()
         )
     }
     

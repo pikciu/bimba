@@ -11,6 +11,13 @@ final class TimesViewController: ViewController<TimesUI>, TimesView {
         ui.tableView.rx.cells(type: TimeCell.self).disposed(by: disposeBag)
     }
     
+    var isFavorite: AnyObserver<Bool> {
+        ui.favoriteButton.apply(FavoriteButtonDecorator()).asObserver()
+    }
+    
+    var toggleFavorite: Observable<Void> {
+        ui.favoriteButton.rx.tap.asObservable()
+    }
     
     init(stopPoint: StopPointType) {
         self.stopPoint = stopPoint
@@ -21,6 +28,8 @@ final class TimesViewController: ViewController<TimesUI>, TimesView {
         super.viewDidLoad()
         title = stopPoint.name
         
+        navigationItem.setRightBarButton(ui.favoriteButton, animated: false)
+        
         presenter.loadTimes()
         
         ui.tableView.register(cellType: TimeCell.self)
@@ -29,5 +38,18 @@ final class TimesViewController: ViewController<TimesUI>, TimesView {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+}
+
+struct FavoriteButtonDecorator: Decorator {
+    
+    func apply(on object: UIBarButtonItem) -> Binder<Bool> {
+        Binder(object) { (button, isFavorite) in
+            if isFavorite {
+                object.image = Asset.starFull.image
+            } else {
+                object.image = Asset.starEmpty.image
+            }
+        }
     }
 }

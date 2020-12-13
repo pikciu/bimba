@@ -44,6 +44,8 @@
 		38CA5341253C6CAC00AD5AEC /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA533E253C6CAC00AD5AEC /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38CA5342253C6CAC00AD5AEC /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA533F253C6CAC00AD5AEC /* Domain.framework */; };
 		38CA5343253C6CAC00AD5AEC /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA533F253C6CAC00AD5AEC /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38E9BF0225869F32001B9F19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9BF0125869F32001B9F19 /* Constants.swift */; };
+		38E9BF042586A11E001B9F19 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9BF032586A11E001B9F19 /* AppFont.swift */; };
 		D668C85709D6C440D29C7144 /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFAED00A9EB54FD607CEDE6 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +102,8 @@
 		38CA5339253C6C4E00AD5AEC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		38CA533E253C6CAC00AD5AEC /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA533F253C6CAC00AD5AEC /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E9BF0125869F32001B9F19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		38E9BF032586A11E001B9F19 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		45E517D43A3897C444F27E8A /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 		D5555032B6B9E71D42F0C2B9 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 		EAFAED00A9EB54FD607CEDE6 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +147,6 @@
 				38BD7536257D383E00D2F1A8 /* Times */,
 				38CA52D0253C50D000AD5AEC /* AppDelegate.swift */,
 				38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */,
-				38CA5339253C6C4E00AD5AEC /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 		384A31EB253C724E00438F7D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				38CA5339253C6C4E00AD5AEC /* Main.storyboard */,
 				384A31EC253C726500438F7D /* MainViewController.swift */,
 			);
 			path = Main;
@@ -262,6 +266,8 @@
 				384A31EA253C6F7900438F7D /* Resources */,
 				384A31E9253C6F5800438F7D /* Views */,
 				38CA52DE253C50D300AD5AEC /* Info.plist */,
+				38E9BF0125869F32001B9F19 /* Constants.swift */,
+				38E9BF032586A11E001B9F19 /* AppFont.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				38216DBA25854F2800DA8EA1 /* StopPointCell.swift in Sources */,
 				38BD7553257D3E0B00D2F1A8 /* ViewController.swift in Sources */,
 				38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */,
+				38E9BF0225869F32001B9F19 /* Constants.swift in Sources */,
 				38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */,
 				383D00D125867C0500E2D969 /* FavoriteStopPointCell.swift in Sources */,
 				38216D792585066700DA8EA1 /* TableViewCell.swift in Sources */,
@@ -447,6 +454,7 @@
 				38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */,
 				38BD7574257D406600D2F1A8 /* MapUI.swift in Sources */,
 				38216DA52585300A00DA8EA1 /* SearchResultDetailsCellFactory.swift in Sources */,
+				38E9BF042586A11E001B9F19 /* AppFont.swift in Sources */,
 				38216DA025851D3200DA8EA1 /* SearchResultDetailsViewController.swift in Sources */,
 				38216D7D258517E200DA8EA1 /* SearchResultCell.swift in Sources */,
 				38CA52D1253C50D000AD5AEC /* AppDelegate.swift in Sources */,

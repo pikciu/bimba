@@ -16,7 +16,6 @@ final class FavoritesUI: View {
     
     override func setupAppearance() {
         backgroundColor = Asset.backgroundColor.color
-        tableView.backgroundColor = Asset.backgroundColor.color
-        tableView.tableFooterView = UIView()
+        tableView.apply(DefaultTableViewStyle())
     }
 }

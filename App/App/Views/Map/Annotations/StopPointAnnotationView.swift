@@ -7,7 +7,7 @@ final class  StopPointAnnotationView: MKAnnotationView, Reusable {
     
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-        let image = Asset.mapPin.image
+        let image = Asset.pin.image
         
         self.image = image
         self.canShowCallout = true

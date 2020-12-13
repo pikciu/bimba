@@ -13,7 +13,7 @@ final class MainViewController: UITabBarController {
         LoadStopPoints()
             .execute()
             .trackActivity(activityIndicator)
-            .subscribe()
+            .subscribe(LoggerObserver())
             .disposed(by: disposeBag)
         
         tabBar.apply(AppNavigationStyle())
@@ -41,6 +41,7 @@ final class MainViewController: UITabBarController {
         setViewControllers(viewControllers, animated: false)
         zip(tabBar.items ?? [], items).forEach { (tabBarItem, item) in
             tabBarItem.title = item.title
+            tabBarItem.image = item.image
         }
     }
 }
@@ -69,6 +70,17 @@ enum TabBarItem {
             return L10n.tabSearch
         case .map:
             return L10n.tabMap
+        }
+    }
+    
+    var image: UIImage {
+        switch self {
+        case .favorites:
+            return Asset.favorite.image
+        case .search:
+            return Asset.search.image
+        case .map:
+            return Asset.map.image
         }
     }
 }

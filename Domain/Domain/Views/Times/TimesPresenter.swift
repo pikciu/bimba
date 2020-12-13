@@ -16,6 +16,16 @@ public final class TimesPresenter {
         
         times.bind(to: view.times)
             .disposed(by: disposeBag)
+        
+        StopPointIsFavorite(id: view.stopPoint.id)
+            .execute()
+            .bind(to: view.isFavorite)
+            .disposed(by: disposeBag)
+        
+        view.toggleFavorite.mapTo(ToggleFavorite(id: view.stopPoint.id))
+            .flatMap({ $0.execute() })
+            .subscribe(LoggerObserver())
+            .disposed(by: disposeBag)
     }
     
     public func loadTimes() {

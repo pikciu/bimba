@@ -5,6 +5,7 @@ final class TimesUI: View {
     let tableView = UITableView()
     let messageContainer = UIView()
     let messageLabel = UILabel()
+    let favoriteButton = UIBarButtonItem()
     
     private(set) lazy var labelLeadingConstraint = messageLabel.leadingAnchor.constraint(equalTo: messageContainer.leadingAnchor)
     
@@ -30,15 +31,23 @@ final class TimesUI: View {
     }
     
     override func setupAppearance() {
-        tableView.backgroundColor = Asset.backgroundColor.color
         messageContainer.backgroundColor = Asset.backgroundColor.color
         
-        let size = CGSize(width: 0, height: 6)
-        let frame = CGRect(origin: .zero, size: size)
-        tableView.tableFooterView = UIView(frame: frame)
-        tableView.tableHeaderView = UIView(frame: frame)
+        tableView.apply(DefaultTableViewStyle())
         tableView.allowsSelection = false
-        tableView.separatorStyle = .none
-        
+    }
+}
+
+import Domain
+
+struct DefaultTableViewStyle: Decorator {
+    
+    func apply(on object: UITableView) {
+        object.backgroundColor = Asset.backgroundColor.color
+        let size = CGSize(width: 0, height: Constants.UI.defaultSpacing / 2)
+        let frame = CGRect(origin: .zero, size: size)
+        object.tableFooterView = UIView(frame: frame)
+        object.tableHeaderView = UIView(frame: frame)
+        object.separatorStyle = .none
     }
 }

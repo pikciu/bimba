@@ -9,8 +9,7 @@ final class SearchResultDetailsUI: View {
     override func setupAppearance() {
         segmentedControlContainer.backgroundColor = Asset.backgroundColor.color
         stackView.axis = .vertical
-        tableView.backgroundColor = Asset.backgroundColor.color
-        tableView.tableFooterView = UIView()
+        tableView.apply(DefaultTableViewStyle())
     }
     
     override func setupAutoLayout() {
@@ -19,7 +18,7 @@ final class SearchResultDetailsUI: View {
         segmentedControlContainer.add(subviews: segmentedControl)
         add(subviews: stackView)
         
-        let spacing = CGFloat(8)
+        let spacing = Constants.UI.defaultSpacing
         
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
@@ -30,7 +29,7 @@ final class SearchResultDetailsUI: View {
             segmentedControl.topAnchor.constraint(equalTo: segmentedControlContainer.topAnchor, constant: spacing),
             segmentedControl.leadingAnchor.constraint(equalTo: segmentedControlContainer.leadingAnchor, constant: spacing),
             segmentedControl.trailingAnchor.constraint(equalTo: segmentedControlContainer.trailingAnchor, constant: -spacing),
-            segmentedControl.bottomAnchor.constraint(equalTo: segmentedControlContainer.bottomAnchor, constant: -spacing)
+            segmentedControl.bottomAnchor.constraint(equalTo: segmentedControlContainer.bottomAnchor, constant: -spacing / 2)
         ])
     }
 }
