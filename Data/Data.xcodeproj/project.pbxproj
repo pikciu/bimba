@@ -276,16 +276,16 @@
 			children = (
 				384A3279253CE6D900438F7D /* DepartureTimesDTO.swift */,
 				383293712540B02E002E1271 /* DirectionDTO.swift */,
-				3832936F2540AF8D002E1271 /* RoutesDTO.swift */,
+				38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */,
+				38216DBB258660D600DA8EA1 /* FavoriteStopPointRealm.swift */,
 				38338D1C253DFB4200F55D60 /* LineDTO.swift */,
+				3832936F2540AF8D002E1271 /* RoutesDTO.swift */,
 				383293732540B04F002E1271 /* StopPointDTO.swift */,
 				38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */,
+				38216DCE2586614100DA8EA1 /* StopPointRealm.swift */,
 				38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */,
 				38338D13253DF95500F55D60 /* StreetDTO.swift */,
 				38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */,
-				38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */,
-				38216DBB258660D600DA8EA1 /* FavoriteStopPointRealm.swift */,
-				38216DCE2586614100DA8EA1 /* StopPointRealm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,9 +293,9 @@
 		384A3280253CE9C700438F7D /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				383D00C525866C0C00E2D969 /* StopPointLocalRepository.swift */,
 				38773907253DDE76007C1207 /* StopPointRemoteRepository.swift */,
 				384A3284253CECD100438F7D /* VMRepository.swift */,
-				383D00C525866C0C00E2D969 /* StopPointLocalRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -676,7 +676,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.Data;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba.data;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -703,7 +703,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.Data;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba.data;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

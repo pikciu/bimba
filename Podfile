@@ -27,6 +27,9 @@ target 'App' do
 	
 	pod 'RealmSwift'
 	pod 'RxRealm'
+
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Crashlytics'
 end
 
 target 'Domain' do

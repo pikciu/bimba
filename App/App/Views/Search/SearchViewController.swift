@@ -22,6 +22,8 @@ final class SearchViewController: ViewController<SearchUI>, SearchView {
         
         ui.tableView.register(cellType: SearchResultCell.self)
         
+        searchController.searchBar.tintColor = .white
+        searchController.hidesNavigationBarDuringPresentation = false
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
         definesPresentationContext = true

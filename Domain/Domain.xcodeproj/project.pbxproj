@@ -154,11 +154,11 @@
 			children = (
 				384A3226253C8F9200438F7D /* Logger */,
 				384A327B253CE7E300438F7D /* DateTimeFormatter.swift */,
-				384A325A253CE35F00438F7D /* Mapper.swift */,
-				38C8F829257E6ED90010FEC8 /* Decorator.swift */,
 				38C8F82C257E6EE90010FEC8 /* Decorable.swift */,
-				38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */,
+				38C8F829257E6ED90010FEC8 /* Decorator.swift */,
 				38E9BEFE258695D8001B9F19 /* LoggerObserver.swift */,
+				384A325A253CE35F00438F7D /* Mapper.swift */,
+				38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -184,9 +184,9 @@
 				38338D19253DFAEC00F55D60 /* SearchResult.swift */,
 				383293612540AA61002E1271 /* StopPoint.swift */,
 				38773900253DDA7C007C1207 /* StopPointDetails.swift */,
+				38216DB02585432C00DA8EA1 /* StopPointDirections.swift */,
 				38338D0C253DF69B00F55D60 /* StopPointGroup.swift */,
 				38338D09253DF64A00F55D60 /* Street.swift */,
-				38216DB02585432C00DA8EA1 /* StopPointDirections.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,17 +212,17 @@
 		384A328B253CEE1800438F7D /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				383D00C72586783E00E2D969 /* FavoriteStopPoints.swift */,
 				384A328F253CEE2E00438F7D /* GetDepartureTimes.swift */,
 				383293682540AC9E002E1271 /* GetRoutes.swift */,
-				38338D04253DF3E600F55D60 /* LoadStopPoints.swift */,
-				38338D1E253DFB8C00F55D60 /* Search.swift */,
-				384A328C253CEE2100438F7D /* UseCase.swift */,
+				383D00C12586688400E2D969 /* GetStopPoints.swift */,
 				38216DB3258545AA00DA8EA1 /* GetStopPointsByName.swift */,
 				38216DB6258545E900DA8EA1 /* GetStopPointsByStreet.swift */,
-				383D00C12586688400E2D969 /* GetStopPoints.swift */,
-				383D00C72586783E00E2D969 /* FavoriteStopPoints.swift */,
+				38338D04253DF3E600F55D60 /* LoadStopPoints.swift */,
+				38338D1E253DFB8C00F55D60 /* Search.swift */,
 				383D00CA258679F800E2D969 /* StopPointIsFavorite.swift */,
 				383D00CD25867A6A00E2D969 /* ToggleFavorite.swift */,
+				384A328C253CEE2100438F7D /* UseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -230,10 +230,10 @@
 		38BD7537257D385300D2F1A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				38216D9625851C9F00DA8EA1 /* SearchResultDetails */,
 				38BD7554257D3F5700D2F1A8 /* Favorites */,
 				38BD756A257D404B00D2F1A8 /* Map */,
 				38BD755F257D3FE000D2F1A8 /* Search */,
+				38216D9625851C9F00DA8EA1 /* SearchResultDetails */,
 				38BD7538257D385E00D2F1A8 /* Times */,
 			);
 			path = Views;
@@ -304,8 +304,8 @@
 				384A3225253C8F8C00438F7D /* Utils */,
 				38BD7537257D385300D2F1A8 /* Views */,
 				38CA52F3253C511D00AD5AEC /* Domain.h */,
-				38CA52F4253C511D00AD5AEC /* Info.plist */,
 				38216DAB25853CAE00DA8EA1 /* DomainModule.swift */,
+				38CA52F4253C511D00AD5AEC /* Info.plist */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -628,7 +628,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.Domain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba.domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -655,7 +655,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.Domain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba.domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
