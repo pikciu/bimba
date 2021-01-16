@@ -266,6 +266,7 @@
 				38216DAE2585419100DA8EA1 /* DirectionsDTO.swift */,
 				38216DBB258660D600DA8EA1 /* FavoriteStopPointRealm.swift */,
 				38338D1C253DFB4200F55D60 /* LineDTO.swift */,
+				3896D3CD25B34E42004341A9 /* MessageDTO.swift */,
 				3832936F2540AF8D002E1271 /* RoutesDTO.swift */,
 				383293732540B04F002E1271 /* StopPointDTO.swift */,
 				38338D17253DFA6700F55D60 /* StopPointGroupDTO.swift */,
@@ -273,7 +274,6 @@
 				38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */,
 				38338D13253DF95500F55D60 /* StreetDTO.swift */,
 				38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */,
-				3896D3CD25B34E42004341A9 /* MessageDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

@@ -19,8 +19,8 @@ final class PlaceholderView: View, Configurable {
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             
             label.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: Constants.UI.defaultSpacing),
-            label.leadingAnchor.constraint(equalTo: leadingAnchor),
-            label.trailingAnchor.constraint(equalTo: trailingAnchor),
+            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.UI.defaultSpacing),
+            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.UI.defaultSpacing),
             label.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }

@@ -19,6 +19,16 @@ final class SearchViewController: ViewController<SearchUI>, SearchView {
     var state: AnyObserver<SearchPresenter.State> {
         ui.tableView.apply(SearchFooterDecorator()).asObserver()
     }
+    
+    var scope: ControlProperty<Int> {
+        searchController.searchBar.rx.selectedScopeButtonIndex
+    }
+    
+    var scopes: AnyObserver<[SearchPresenter.Scope]> {
+        Binder(searchController) { (search, scopes) in
+            search.searchBar.scopeButtonTitles = scopes.map({ $0.title })
+        }.asObserver()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,12 +70,17 @@ final class SearchViewController: ViewController<SearchUI>, SearchView {
     }
 }
 
-struct SearchBarStyle: Decorator {
-    
-    func apply(on object: UISearchBar) {
-        object.apply(AppNavigationStyle())
-        object.searchBarStyle = .minimal
-        object.backgroundImage = UIImage(color: .clear)
-        object.scopeBarBackgroundImage = UIImage(color: .clear)
+extension SearchPresenter.Scope {
+    var title: String {
+        switch self {
+        case .all:
+            return L10n.searchScopeAll
+        case .line:
+            return L10n.searchScopeLine
+        case .stopPoint:
+            return L10n.searchScopeStopPoint
+        case .street:
+            return L10n.searchScopeStreet
+        }
     }
 }

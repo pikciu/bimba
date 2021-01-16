@@ -30,6 +30,8 @@
 		3882A5CA25B3119800FF111D /* DefaultTableViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5C925B3119800FF111D /* DefaultTableViewStyle.swift */; };
 		3882A5CC25B311BD00FF111D /* FavoriteButtonDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5CB25B311BD00FF111D /* FavoriteButtonDecorator.swift */; };
 		3896D3D425B35FA1004341A9 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3D325B35FA1004341A9 /* MessageView.swift */; };
+		3896D3D625B369FA004341A9 /* SegmentedControlStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3D525B369FA004341A9 /* SegmentedControlStyle.swift */; };
+		3896D3D825B36A23004341A9 /* SearchBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3D725B36A23004341A9 /* SearchBarStyle.swift */; };
 		38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */; };
 		38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754C257D3A6500D2F1A8 /* TimesUI.swift */; };
 		38BD7551257D3DD700D2F1A8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7550257D3DD700D2F1A8 /* View.swift */; };
@@ -103,6 +105,8 @@
 		3882A5C925B3119800FF111D /* DefaultTableViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewStyle.swift; sourceTree = "<group>"; };
 		3882A5CB25B311BD00FF111D /* FavoriteButtonDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonDecorator.swift; sourceTree = "<group>"; };
 		3896D3D325B35FA1004341A9 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		3896D3D525B369FA004341A9 /* SegmentedControlStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlStyle.swift; sourceTree = "<group>"; };
+		3896D3D725B36A23004341A9 /* SearchBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarStyle.swift; sourceTree = "<group>"; };
 		38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		38BD754C257D3A6500D2F1A8 /* TimesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesUI.swift; sourceTree = "<group>"; };
 		38BD7550257D3DD700D2F1A8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -177,9 +181,9 @@
 				38BD7536257D383E00D2F1A8 /* Times */,
 				38CA52D0253C50D000AD5AEC /* AppDelegate.swift */,
 				38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */,
+				3896D3D325B35FA1004341A9 /* MessageView.swift */,
 				38D6E75E258E5D9C0010956B /* PlaceholderView.swift */,
 				38D6E760258E64B90010956B /* RoundedRectView.swift */,
-				3896D3D325B35FA1004341A9 /* MessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +217,7 @@
 				3882A5A825B2261600FF111D /* FooterLoader.swift */,
 				3882A5BF25B3109A00FF111D /* NavigationBar.swift */,
 				3882A5BD25B3103C00FF111D /* PlaceholderDecorator.swift */,
+				3896D3D525B369FA004341A9 /* SegmentedControlStyle.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 		38BD7565257D3FFA00D2F1A8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				3896D3D725B36A23004341A9 /* SearchBarStyle.swift */,
 				3882A5C325B310FE00FF111D /* SearchFooterDecorator.swift */,
 				38216D7C258517E200DA8EA1 /* SearchResultCell.swift */,
 				38BD7567257D400000D2F1A8 /* SearchUI.swift */,
@@ -492,6 +498,7 @@
 				38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */,
 				38D6E75F258E5D9C0010956B /* PlaceholderView.swift in Sources */,
 				383D00D125867C0500E2D969 /* FavoriteStopPointCell.swift in Sources */,
+				3896D3D625B369FA004341A9 /* SegmentedControlStyle.swift in Sources */,
 				38216D792585066700DA8EA1 /* TableViewCell.swift in Sources */,
 				38D6E761258E64B90010956B /* RoundedRectView.swift in Sources */,
 				38C8F81F257E3F980010FEC8 /* StopPointAnnotation.swift in Sources */,
@@ -508,6 +515,7 @@
 				38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */,
 				38216DA125851D3200DA8EA1 /* SearchResultDetailsUI.swift in Sources */,
 				3882A5BB25B3100500FF111D /* VehicleTypeView.swift in Sources */,
+				3896D3D825B36A23004341A9 /* SearchBarStyle.swift in Sources */,
 				38216D7B258506D900DA8EA1 /* TimeCell.swift in Sources */,
 				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
 				3896D3D425B35FA1004341A9 /* MessageView.swift in Sources */,
@@ -676,14 +684,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 99R4D8SSEQ;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -698,14 +706,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 99R4D8SSEQ;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

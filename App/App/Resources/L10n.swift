@@ -22,8 +22,16 @@ internal enum L10n {
   }
   /// Nie możemy znaleźć tego, czego szukasz. Sprawdź, czy Twoje zapytanie jest poprawne.
   internal static let searchNoResultPlaceholder = L10n.tr("Localizable", "search_no_result_placeholder")
-  /// Wyszukaj przystanek, linię lub ulicę i sprawdź, kiedy odjedzie Twój autobus lub\ntramwaj.
+  /// Wyszukaj przystanek, linię lub ulicę i sprawdź, kiedy odjedzie Twój autobus lub tramwaj.
   internal static let searchPlaceholder = L10n.tr("Localizable", "search_placeholder")
+  /// Wszystko
+  internal static let searchScopeAll = L10n.tr("Localizable", "search_scope_all")
+  /// Linia
+  internal static let searchScopeLine = L10n.tr("Localizable", "search_scope_line")
+  /// Przystanek
+  internal static let searchScopeStopPoint = L10n.tr("Localizable", "search_scope_stop_point")
+  /// Ulica
+  internal static let searchScopeStreet = L10n.tr("Localizable", "search_scope_street")
   /// Moje przystanki
   internal static let tabFavorites = L10n.tr("Localizable", "tab_favorites")
   /// Mapa

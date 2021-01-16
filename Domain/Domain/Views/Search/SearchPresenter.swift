@@ -10,9 +10,17 @@ public final class SearchPresenter {
         case hasResults
     }
     
+    public enum Scope: Int, CaseIterable {
+        case all = 0
+        case line
+        case stopPoint
+        case street
+    }
+    
     private let disposeBag = DisposeBag()
     private let activityIndicator = SharedActivityIndicator()
     private let results = BehaviorRelay(value: [SearchResult]())
+    private let scopeIndex = BehaviorRelay(value: 0)
     
     private var searchQuery: Observable<String> {
         view.searchQuery.map({ $0.trimmingCharacters(in: .whitespaces) })
@@ -23,7 +31,12 @@ public final class SearchPresenter {
     public init(view: SearchView) {
         self.view = view
         
-        results.bind(to: view.results).disposed(by: disposeBag)
+        let scope = scopeIndex.map({ Scope(rawValue: $0) }).filterNil()
+        
+        Observable.combineLatest(scope, results)
+            .map(filter(scope:results:))
+            .bind(to: view.results)
+            .disposed(by: disposeBag)
         
         let state = Observable.combineLatest(activityIndicator.current.asObservable(), searchQuery, results) { (isBusy, searchQuery, results) -> State in
             if isBusy {
@@ -41,6 +54,13 @@ public final class SearchPresenter {
         state.distinctUntilChanged()
             .bind(to: view.state)
             .disposed(by: disposeBag)
+        
+        Observable.just(Scope.allCases)
+            .bind(to: view.scopes)
+            .disposed(by: disposeBag)
+        
+        view.scope.bindTwoWay(scopeIndex)
+            .disposed(by: disposeBag)
     }
     
     public func initialize() {
@@ -55,5 +75,26 @@ public final class SearchPresenter {
             })
             .bind(to: results)
             .disposed(by: disposeBag)
+    }
+    
+    private func filter(scope: Scope, results: [SearchResult]) -> [SearchResult] {
+        results.filter({ $0.match(scope: scope) })
+    }
+}
+
+extension SearchResult {
+    
+    func match(scope: SearchPresenter.Scope) -> Bool {
+        if case .all = scope {
+            return true
+        }
+        switch self {
+        case .line:
+            return scope == .line
+        case .stopPoint:
+            return scope == .stopPoint
+        case .street:
+            return scope == .street
+        }
     }
 }
