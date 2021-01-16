@@ -1,6 +1,12 @@
 import Foundation
 
-public struct Direction {
+public protocol DirectionType {
+    var name: String { get }
+    var line: String { get }
+}
+
+public struct Direction: DirectionType, Equatable {
+    
     public let name: String
     public let line: String
     

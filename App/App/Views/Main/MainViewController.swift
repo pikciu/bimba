@@ -10,6 +10,8 @@ final class MainViewController: UITabBarController {
         super.viewDidLoad()
         setupTabBarControllers()
         
+        view.backgroundColor = Asset.backgroundColor.color
+        
         LoadStopPoints()
             .execute()
             .trackActivity(activityIndicator)
@@ -37,6 +39,8 @@ final class MainViewController: UITabBarController {
             navigationController.navigationBar.apply(AppNavigationStyle())
             return navigationController
         })
+        
+        tabBar.unselectedItemTintColor = Asset.secondaryColor.color.withAlphaComponent(0.5)
         
         setViewControllers(viewControllers, animated: false)
         zip(tabBar.items ?? [], items).forEach { (tabBarItem, item) in
@@ -97,6 +101,10 @@ extension UITabBar: NavigationBar {
 }
 
 extension UINavigationBar: NavigationBar {
+    
+}
+
+extension UISearchBar: NavigationBar {
     
 }
 

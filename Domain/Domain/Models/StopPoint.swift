@@ -1,6 +1,6 @@
 import Foundation
 
-public struct StopPoint: StopPointType {
+public struct StopPoint: StopPointType, Equatable {
     public let id: String
     public let name: String
     

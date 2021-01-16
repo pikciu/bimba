@@ -20,9 +20,9 @@ public final class DateTimeFormatter {
         }
         
         let formatter = DateFormatter()
+        formatter.locale = locale
         formatter.timeZone = timeZone
         formatter.dateFormat = dateFormat
-        formatter.locale = locale
         formatters[dateFormat] = formatter
         return formatter
     }

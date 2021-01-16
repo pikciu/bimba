@@ -4,6 +4,7 @@ import RxCocoa
 import CoreLocation
 
 public protocol MapView: class {
+    var showUserTrackingButton: AnyObserver<Bool> { get }
     
     func display(stopPoints: [StopPointDetails])
     func setLocation(location: CLLocationCoordinate2D, delta: CLLocationDegrees)

@@ -1,6 +1,7 @@
 import Foundation
 
-public struct StopPointDirections {
+public struct StopPointDirections: Equatable {
+    
     public let stopPoint: StopPoint
     public let directions: [Direction]
     

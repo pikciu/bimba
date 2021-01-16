@@ -3,7 +3,7 @@ import Domain
 
 final class FavoriteStopPointCell: TableViewCell<StopPointDetails> {
     
-    let rootView = UIView()
+    let rootView = RoundedRectView()
     let vehicleImages = VehicleTypeView()
     let nameLabel = UILabel()
     let headsingsLabel = UILabel()
@@ -11,11 +11,15 @@ final class FavoriteStopPointCell: TableViewCell<StopPointDetails> {
     override func setupAppearance() {
         selectionStyle = .none
         backgroundColor = Asset.backgroundColor.color
-        rootView.backgroundColor = .white
-        rootView.layer.cornerRadius = Constants.UI.cornerRadius
         
         nameLabel.font = AppFont.titleFont
         headsingsLabel.font = AppFont.subtitleFont
+        
+        nameLabel.textColor = Asset.primaryColor.color
+        headsingsLabel.textColor = Asset.secondaryColor.color
+        
+        nameLabel.numberOfLines = 0
+        headsingsLabel.numberOfLines = 0
     }
     
     override func setupAutoLayout() {
@@ -30,27 +34,23 @@ final class FavoriteStopPointCell: TableViewCell<StopPointDetails> {
             rootView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -spacing),
             rootView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -spacing / 2),
             
-            nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: spacing),
+            nameLabel.topAnchor.constraint(equalTo: rootView.topAnchor, constant: Constants.UI.systemSpacing),
             nameLabel.leadingAnchor.constraint(equalTo: rootView.leadingAnchor, constant: spacing),
-            nameLabel.bottomAnchor.constraint(equalTo: rootView.centerYAnchor),
             
             headsingsLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor),
             headsingsLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
-            headsingsLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -spacing),
+            headsingsLabel.bottomAnchor.constraint(equalTo: rootView.bottomAnchor, constant: -Constants.UI.systemSpacing),
             
             vehicleImages.trailingAnchor.constraint(equalTo: rootView.trailingAnchor, constant: -spacing),
-            vehicleImages.centerYAnchor.constraint(equalTo: rootView.centerYAnchor)
+            vehicleImages.centerYAnchor.constraint(equalTo: rootView.centerYAnchor),
+            vehicleImages.leadingAnchor.constraint(equalTo: nameLabel.trailingAnchor, constant: spacing)
         ])
     }
     
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
         
-        if highlighted {
-            rootView.backgroundColor = .lightGray
-        } else {
-            rootView.backgroundColor = .white
-        }
+        rootView.setSelected(highlighted, animated: true)
     }
     
     override func configure(with model: StopPointDetails) {
@@ -69,20 +69,20 @@ final class VehicleTypeView: View, Configurable {
     override func setupAutoLayout() {
         add(subviews: images)
         
-        let topBottom = images.flatMap { (image) in
+        let topBottomWidth = images.flatMap { (image) in
             [
                 image.topAnchor.constraint(equalTo: topAnchor),
-                image.bottomAnchor.constraint(equalTo: bottomAnchor)
+                image.bottomAnchor.constraint(equalTo: bottomAnchor),
+                image.widthAnchor.constraint(equalToConstant: 20)
             ]
         }
         
-        NSLayoutConstraint.activate(topBottom)
+        NSLayoutConstraint.activate(topBottomWidth)
         
         NSLayoutConstraint.activate([
             images[0].leadingAnchor.constraint(equalTo: leadingAnchor),
             images[1].leadingAnchor.constraint(equalTo: images[0].trailingAnchor, constant: 4),
-            images[1].trailingAnchor.constraint(equalTo: trailingAnchor),
-            images[0].widthAnchor.constraint(equalTo: images[1].widthAnchor)
+            images[1].trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
     

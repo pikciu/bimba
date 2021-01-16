@@ -26,6 +26,8 @@ public final class TimesPresenter {
             .flatMap({ $0.execute() })
             .subscribe(LoggerObserver())
             .disposed(by: disposeBag)
+        
+        activityIndicator.current.drive(view.isBusy).disposed(by: disposeBag)
     }
     
     public func loadTimes() {

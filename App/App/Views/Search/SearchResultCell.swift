@@ -3,17 +3,17 @@ import Domain
 
 final class SearchResultCell: TableViewCell<SearchResult> {
     
-    let rootView = UIView()
+    let rootView = RoundedRectView()
     let nameLabel = UILabel()
     let iconView = UIImageView()
     
     override func setupAppearance() {
         selectionStyle = .none
         backgroundColor = Asset.backgroundColor.color
-        rootView.backgroundColor = .white
-        rootView.layer.cornerRadius = Constants.UI.cornerRadius
         
         nameLabel.font = AppFont.titleFont
+        nameLabel.textColor = Asset.primaryColor.color
+        nameLabel.numberOfLines = 0
         iconView.contentMode = .center
     }
     
@@ -31,23 +31,19 @@ final class SearchResultCell: TableViewCell<SearchResult> {
             
             iconView.leadingAnchor.constraint(equalTo: rootView.leadingAnchor),
             iconView.centerYAnchor.constraint(equalTo: rootView.centerYAnchor),
-            iconView.widthAnchor.constraint(equalToConstant: 40),
+            iconView.widthAnchor.constraint(equalToConstant: 60),
             
             nameLabel.topAnchor.constraint(equalTo: rootView.topAnchor, constant: spacing),
             nameLabel.leadingAnchor.constraint(equalTo: iconView.trailingAnchor),
             nameLabel.bottomAnchor.constraint(equalTo: rootView.bottomAnchor, constant: -spacing),
+            nameLabel.trailingAnchor.constraint(equalTo: rootView.trailingAnchor, constant: -Constants.UI.defaultSpacing)
         ])
     }
     
     
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
-        
-        if highlighted {
-            rootView.backgroundColor = .lightGray
-        } else {
-            rootView.backgroundColor = .white
-        }
+        rootView.setSelected(highlighted, animated: true)
     }
     
     override func configure(with model: SearchResult) {

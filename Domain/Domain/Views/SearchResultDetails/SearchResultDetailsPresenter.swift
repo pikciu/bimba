@@ -77,6 +77,7 @@ public final class SearchResultDetailsPresenter {
     
     private func loadStopPoints(observable: Single<[StopPointDirections]>) {
         observable.trackActivity(activityIndicator)
+            .map({ $0.map(GroupByDirectionName().map(from:)) })
             .bind(to: stopPoints)
             .disposed(by: disposeBag)
     }
@@ -105,5 +106,48 @@ extension ControlProperty {
     
     func bindTwoWay(_ relay: BehaviorRelay<Element>) -> Disposable {
         self <-> relay
+    }
+}
+
+
+struct GroupByDirectionName: Mapper {
+    
+    func map(from object: StopPointDirections) -> StopPointDirections {
+        let directions = Dictionary(grouping: object.directions) { $0.name }
+            .map({ (name, directions) -> Direction in
+                let lines = directions.map({ $0.line }).joined(separator: ", ")
+                return Direction(name: name, line: lines)
+            })
+            .sorted(by: GroupedDirectionComparator().compare(lhs:rhs:))
+        return StopPointDirections(stopPoint: object.stopPoint, directions: directions)
+    }
+}
+
+extension Sequence {
+    
+    func sorted<T: Comparable>(key keySelector: (Element) throws -> T) rethrows -> [Element] {
+        try sorted { (lhs, rhs) in
+            try keySelector(lhs) < keySelector(rhs)
+        }
+    }
+}
+
+struct GroupedDirectionComparator {
+    
+    func compare(lhs: Direction, rhs: Direction) -> Bool {
+        let lLines = lines(direction: lhs)
+        let rLines = lines(direction: rhs)
+        
+        for (l, r) in zip(lLines, rLines) {
+            if l < r {
+                return true
+            }
+        }
+        return lhs.line < rhs.line
+    }
+    
+    private func lines(direction: Direction) -> [Int] {
+        direction.line.split(separator: ",")
+            .compactMap({ Int($0.trimmingCharacters(in: .whitespacesAndNewlines)) })
     }
 }

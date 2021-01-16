@@ -7,6 +7,10 @@ import MapKit
 final class MapViewController: ViewController<MapUI>, MapView, MKMapViewDelegate {
 
     private lazy var presenter = MapPresenter(view: self)
+    
+    var showUserTrackingButton: AnyObserver<Bool> {
+        ui.userLocationButtonHeightConstraint.rx.constant.mapObserver({ $0 ? 40 : 0 })
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

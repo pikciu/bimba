@@ -22,9 +22,15 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
+  internal static let alertColor = ColorAsset(name: "AlertColor")
   internal static let backgroundColor = ColorAsset(name: "BackgroundColor")
+  internal static let primaryColor = ColorAsset(name: "PrimaryColor")
+  internal static let secondaryColor = ColorAsset(name: "SecondaryColor")
   internal static let starEmpty = ImageAsset(name: "star-empty")
   internal static let starFull = ImageAsset(name: "star-full")
+  internal static let errorPlaceholder = ImageAsset(name: "error-placeholder")
+  internal static let searchPlaceholder = ImageAsset(name: "search-placeholder")
+  internal static let starPlaceholder = ImageAsset(name: "star-placeholder")
   internal static let favorite = ImageAsset(name: "favorite")
   internal static let map = ImageAsset(name: "map")
   internal static let search = ImageAsset(name: "search")

@@ -45,6 +45,7 @@
 		387738FE253DDA58007C1207 /* StopPointRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387738FD253DDA58007C1207 /* StopPointRemoteRepository.swift */; };
 		38773901253DDA7D007C1207 /* StopPointDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38773900253DDA7C007C1207 /* StopPointDetails.swift */; };
 		38773905253DDD93007C1207 /* StopPointLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38773904253DDD93007C1207 /* StopPointLocalRepository.swift */; };
+		3882A5AF25B2494A00FF111D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5AE25B2494A00FF111D /* DateExtensions.swift */; };
 		38BD753B257D386A00D2F1A8 /* TimesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7539257D386A00D2F1A8 /* TimesPresenter.swift */; };
 		38BD753C257D386A00D2F1A8 /* TimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD753A257D386A00D2F1A8 /* TimesView.swift */; };
 		38BD7557257D3F7200D2F1A8 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7555257D3F7200D2F1A8 /* FavoritesPresenter.swift */; };
@@ -99,6 +100,7 @@
 		387738FD253DDA58007C1207 /* StopPointRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointRemoteRepository.swift; sourceTree = "<group>"; };
 		38773900253DDA7C007C1207 /* StopPointDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointDetails.swift; sourceTree = "<group>"; };
 		38773904253DDD93007C1207 /* StopPointLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointLocalRepository.swift; sourceTree = "<group>"; };
+		3882A5AE25B2494A00FF111D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		38BD7539257D386A00D2F1A8 /* TimesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesPresenter.swift; sourceTree = "<group>"; };
 		38BD753A257D386A00D2F1A8 /* TimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesView.swift; sourceTree = "<group>"; };
 		38BD7555257D3F7200D2F1A8 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				384A326D253CE43900438F7D /* ObservableExtensions.swift */,
+				3882A5AE25B2494A00FF111D /* DateExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				38216DB7258545E900DA8EA1 /* GetStopPointsByStreet.swift in Sources */,
 				383D00CB258679F800E2D969 /* StopPointIsFavorite.swift in Sources */,
 				383293762540B29E002E1271 /* Direction.swift in Sources */,
+				3882A5AF25B2494A00FF111D /* DateExtensions.swift in Sources */,
 				383293652540AAFB002E1271 /* Route.swift in Sources */,
 				38216DB12585432C00DA8EA1 /* StopPointDirections.swift in Sources */,
 				38C8F82A257E6ED90010FEC8 /* Decorator.swift in Sources */,

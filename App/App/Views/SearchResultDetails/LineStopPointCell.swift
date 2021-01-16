@@ -3,16 +3,15 @@ import Domain
 
 final class LineStopPointCell: TableViewCell<StopPoint> {
     
-    let rootView = UIView()
+    let rootView = RoundedRectView()
     let nameLabel = UILabel()
     
     override func setupAppearance() {
         selectionStyle = .none
         backgroundColor = Asset.backgroundColor.color
-        rootView.backgroundColor = .white
-        rootView.layer.cornerRadius = Constants.UI.cornerRadius
         
         nameLabel.font = AppFont.titleFont
+        nameLabel.textColor = Asset.primaryColor.color
     }
     
     override func setupAutoLayout() {
@@ -36,12 +35,7 @@ final class LineStopPointCell: TableViewCell<StopPoint> {
     
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
-        
-        if highlighted {
-            rootView.backgroundColor = .lightGray
-        } else {
-            rootView.backgroundColor = .white
-        }
+        rootView.setSelected(highlighted, animated: true)
     }
     
     override func configure(with model: StopPoint) {

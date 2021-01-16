@@ -10,6 +10,11 @@ final class SearchResultDetailsUI: View {
         segmentedControlContainer.backgroundColor = Asset.backgroundColor.color
         stackView.axis = .vertical
         tableView.apply(DefaultTableViewStyle())
+        
+        segmentedControl.tintColor = .white
+        
+        segmentedControl.setTitleTextAttributes([.foregroundColor: Asset.secondaryColor.color], for: .normal)
+        segmentedControl.setTitleTextAttributes([.foregroundColor: Asset.primaryColor.color], for: .selected)
     }
     
     override func setupAutoLayout() {

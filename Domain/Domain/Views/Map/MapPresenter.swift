@@ -19,15 +19,13 @@ public final class MapPresenter {
         
         locationManager.requestWhenInUseAuthorization()
         
-        let poznanLocation = CLLocationCoordinate2D(latitude: 52.409538, longitude: 16.931992)
+        Observable.merge(locationManager.rx.didChangeAuthorization.map({ $0.status }), locationManager.rx.status)
+            .map({ $0 == .authorizedWhenInUse })
+            .bind(to: view.showUserTrackingButton)
+            .disposed(by: disposeBag)
         
-        locationManager.rx.location.filterNil()
-            .take(1)
-            .map({ $0.coordinate })
-            .startWith(poznanLocation)
-            .subscribe(with: self, onNext: { (context, location) in
-                context.view.setLocation(location: location, delta: 0.02)
-            }).disposed(by: disposeBag)
+        let poznanLocation = CLLocationCoordinate2D(latitude: 52.409538, longitude: 16.931992)
+        view.setLocation(location: poznanLocation, delta: 0.02)
         
         stopPoints
             .subscribe(with: self, onNext: { (context, stopPoints) in

@@ -19,6 +19,10 @@ final class TimesViewController: ViewController<TimesUI>, TimesView {
         ui.favoriteButton.rx.tap.asObservable()
     }
     
+    var isBusy: AnyObserver<Bool> {
+        ui.tableView.apply(FooterLoader()).asObserver()
+    }
+    
     init(stopPoint: StopPointType) {
         self.stopPoint = stopPoint
         super.init()

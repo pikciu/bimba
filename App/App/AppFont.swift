@@ -2,20 +2,20 @@ import UIKit
 
 enum AppFont {
     enum Size: CGFloat {
-        case small = 12
-        case medium = 14
-        case big = 30
+        case small = 13
+        case medium = 17
+        case big = 40
     }
     
     static let titleFont = regular(size: .medium)
     static let subtitleFont = light(size: .small)
     
     static func light(size: CGFloat) -> UIFont {
-        .systemFont(ofSize: size, weight: .regular)
+        .systemFont(ofSize: size, weight: .medium)
     }
     
     static func regular(size: CGFloat) -> UIFont {
-        .systemFont(ofSize: size, weight: .semibold)
+        .systemFont(ofSize: size, weight: .bold)
     }
     
     static func heavy(size: CGFloat) -> UIFont {

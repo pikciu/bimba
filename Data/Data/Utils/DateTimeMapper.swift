@@ -13,6 +13,6 @@ struct DateTimeMapper: Mapper {
         guard let date = formatter.date(from: object, dateFormat: format) else {
             throw AppError.mappingError(AppError.descriptive("Invalid date"))
         }
-        return date
+        return date.convert(from: .current, to: .gmt)
     }
 }

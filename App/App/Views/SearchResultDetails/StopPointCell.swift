@@ -3,19 +3,21 @@ import Domain
 
 final class StopPointCell: TableViewCell<StopPointDirections> {
     
-    let rootView = UIView()
+    let rootView = RoundedRectView()
     let nameLabel = UILabel()
     let directionsLabel = UILabel()
     
     override func setupAppearance() {
         selectionStyle = .none
         backgroundColor = Asset.backgroundColor.color
-        rootView.backgroundColor = .white
-        rootView.layer.cornerRadius = Constants.UI.cornerRadius
         
         nameLabel.font = AppFont.titleFont
         directionsLabel.font = AppFont.subtitleFont
         
+        nameLabel.textColor = Asset.primaryColor.color
+        directionsLabel.textColor = Asset.primaryColor.color
+        
+        nameLabel.numberOfLines = 0
         directionsLabel.numberOfLines = 0
     }
     
@@ -45,18 +47,48 @@ final class StopPointCell: TableViewCell<StopPointDirections> {
     
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
-        
-        if highlighted {
-            rootView.backgroundColor = .lightGray
-        } else {
-            rootView.backgroundColor = .white
-        }
+        rootView.setSelected(highlighted, animated: true)
     }
     
     override func configure(with model: StopPointDirections) {
         nameLabel.text = model.stopPoint.name
-        directionsLabel.text = model.directions.map({ (direction) -> String in
-            "\(direction.line) -> \(direction.name)"
-        }).joined(separator: "\n")
+        directionsLabel.attributedText = model.directions.map(attributedString(direction:)).joined(with: "\n")
+    }
+    
+    private func attributedString(direction: Direction) -> NSAttributedString {
+        let string = NSMutableAttributedString(
+            string: direction.line,
+            attributes: [
+                .font : AppFont.regular(size: .small)
+            ]
+        )
+        
+        let directionString = NSAttributedString(
+            string: "\(Constants.noBreakChar)\(Constants.directionArrow)\(Constants.noBreakChar)\(direction.name)",
+            attributes: [
+                .font : AppFont.light(size: .small),
+                .foregroundColor : Asset.secondaryColor.color
+            ]
+        )
+        string.append(directionString)
+        return string
+    }
+}
+
+
+extension Sequence where Element == NSAttributedString {
+    
+    func joined(with separator: NSAttributedString) -> NSAttributedString {
+        reduce(NSMutableAttributedString()) { (result, current) in
+            if result.length > 0 {
+                result.append(separator)
+            }
+            result.append(current)
+            return result
+        }
+    }
+    
+    func joined(with separator: String) -> NSAttributedString {
+        joined(with: NSAttributedString(string: separator))
     }
 }

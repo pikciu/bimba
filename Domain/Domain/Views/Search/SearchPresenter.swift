@@ -13,6 +13,7 @@ public final class SearchPresenter {
         self.view = view
         
         results.bind(to: view.results).disposed(by: disposeBag)
+        activityIndicator.current.drive(view.isBusy).disposed(by: disposeBag)
     }
     
     public func initialize() {

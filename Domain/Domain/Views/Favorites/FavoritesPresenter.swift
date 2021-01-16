@@ -13,6 +13,7 @@ public final class FavoritesPresenter {
         self.view = view
         
         stopPoints.bind(to: view.stopPoints).disposed(by: disposeBag)
+        stopPoints.map({ $0.isEmpty }).bind(to: view.isEmpty).disposed(by: disposeBag)
     }
     
     public func loadFavorites() {

@@ -1,3 +1,10 @@
 "tab_favorites" = "Moje przystanki";
 "tab_search" = "Wyszukaj";
 "tab_map" = "Mapa";
+
+"favorite_placeholder" = "Dodaj przystanki do ulubionych,\nżeby sprawdzać je bez wyszukiwania.";
+"search_placeholder" = "Wyszukaj przystanek, linię\nlub ulicę i sprawdź, kiedy\nodjedzie Twój autobus lub\ntramwaj.";
+"error_placeholder" = "Dodaj przystanki doulubionych,\nżeby sprawdzać jebez wyszukiwania";
+
+"is_driving_away" = "Odjeżdża!";
+"minutes_format" = "%d min";

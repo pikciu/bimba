@@ -62,22 +62,7 @@
 		38773911253DDFF2007C1207 /* StopPointsDetailsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */; };
 		38CA530C253C514E00AD5AEC /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CA530A253C514E00AD5AEC /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38CA5347253C6CC400AD5AEC /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA5346253C6CC400AD5AEC /* Domain.framework */; };
-		38CA5348253C6CC400AD5AEC /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA5346253C6CC400AD5AEC /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		38CA5349253C6CC400AD5AEC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				38CA5348253C6CC400AD5AEC /* Domain.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		35ACD84088282A8C6D19A6FB /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -395,7 +380,6 @@
 				38CA5303253C514E00AD5AEC /* Sources */,
 				38CA5304253C514E00AD5AEC /* Frameworks */,
 				38CA5305253C514E00AD5AEC /* Resources */,
-				38CA5349253C6CC400AD5AEC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
