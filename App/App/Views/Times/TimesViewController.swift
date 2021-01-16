@@ -44,16 +44,3 @@ final class TimesViewController: ViewController<TimesUI>, TimesView {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 }
-
-struct FavoriteButtonDecorator: Decorator {
-    
-    func apply(on object: UIBarButtonItem) -> Binder<Bool> {
-        Binder(object) { (button, isFavorite) in
-            if isFavorite {
-                object.image = Asset.starFull.image
-            } else {
-                object.image = Asset.starEmpty.image
-            }
-        }
-    }
-}

@@ -46,6 +46,9 @@
 		38773901253DDA7D007C1207 /* StopPointDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38773900253DDA7C007C1207 /* StopPointDetails.swift */; };
 		38773905253DDD93007C1207 /* StopPointLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38773904253DDD93007C1207 /* StopPointLocalRepository.swift */; };
 		3882A5AF25B2494A00FF111D /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5AE25B2494A00FF111D /* DateExtensions.swift */; };
+		3882A5B225B30F6B00FF111D /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5B125B30F6B00FF111D /* ArrayExtensions.swift */; };
+		3882A5B525B30F8200FF111D /* GroupedDirectionComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5B425B30F8200FF111D /* GroupedDirectionComparator.swift */; };
+		3882A5B825B30F9300FF111D /* GroupByDirectionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5B725B30F9300FF111D /* GroupByDirectionName.swift */; };
 		38BD753B257D386A00D2F1A8 /* TimesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7539257D386A00D2F1A8 /* TimesPresenter.swift */; };
 		38BD753C257D386A00D2F1A8 /* TimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD753A257D386A00D2F1A8 /* TimesView.swift */; };
 		38BD7557257D3F7200D2F1A8 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7555257D3F7200D2F1A8 /* FavoritesPresenter.swift */; };
@@ -101,6 +104,9 @@
 		38773900253DDA7C007C1207 /* StopPointDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointDetails.swift; sourceTree = "<group>"; };
 		38773904253DDD93007C1207 /* StopPointLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointLocalRepository.swift; sourceTree = "<group>"; };
 		3882A5AE25B2494A00FF111D /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		3882A5B125B30F6B00FF111D /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		3882A5B425B30F8200FF111D /* GroupedDirectionComparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedDirectionComparator.swift; sourceTree = "<group>"; };
+		3882A5B725B30F9300FF111D /* GroupByDirectionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupByDirectionName.swift; sourceTree = "<group>"; };
 		38BD7539257D386A00D2F1A8 /* TimesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesPresenter.swift; sourceTree = "<group>"; };
 		38BD753A257D386A00D2F1A8 /* TimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesView.swift; sourceTree = "<group>"; };
 		38BD7555257D3F7200D2F1A8 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 		38216D9625851C9F00DA8EA1 /* SearchResultDetails */ = {
 			isa = PBXGroup;
 			children = (
+				3882A5B725B30F9300FF111D /* GroupByDirectionName.swift */,
+				3882A5B425B30F8200FF111D /* GroupedDirectionComparator.swift */,
 				38216D9725851CB300DA8EA1 /* SearchResultDetailsPresenter.swift */,
 				38216D9825851CB300DA8EA1 /* SearchResultDetailsView.swift */,
 			);
@@ -196,8 +204,9 @@
 		384A326C253CE42A00438F7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				384A326D253CE43900438F7D /* ObservableExtensions.swift */,
+				3882A5B125B30F6B00FF111D /* ArrayExtensions.swift */,
 				3882A5AE25B2494A00FF111D /* DateExtensions.swift */,
+				384A326D253CE43900438F7D /* ObservableExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,6 +449,7 @@
 				387738FE253DDA58007C1207 /* StopPointRemoteRepository.swift in Sources */,
 				384A3290253CEE2E00438F7D /* GetDepartureTimes.swift in Sources */,
 				384A328D253CEE2100438F7D /* UseCase.swift in Sources */,
+				3882A5B525B30F8200FF111D /* GroupedDirectionComparator.swift in Sources */,
 				384A3289253CEDD600438F7D /* Inject.swift in Sources */,
 				384A3222253C8F2000438F7D /* Container.swift in Sources */,
 				38BD7563257D3FEF00D2F1A8 /* SearchView.swift in Sources */,
@@ -464,6 +474,7 @@
 				38216DB4258545AA00DA8EA1 /* GetStopPointsByName.swift in Sources */,
 				383293622540AA61002E1271 /* StopPoint.swift in Sources */,
 				38E9BEFF258695D8001B9F19 /* LoggerObserver.swift in Sources */,
+				3882A5B225B30F6B00FF111D /* ArrayExtensions.swift in Sources */,
 				38338D0D253DF69B00F55D60 /* StopPointGroup.swift in Sources */,
 				384A325B253CE35F00438F7D /* Mapper.swift in Sources */,
 				384A322B253C8FA900438F7D /* LogDestination.swift in Sources */,
@@ -479,6 +490,7 @@
 				384A322D253C8FA900438F7D /* ConsoleLogDestination.swift in Sources */,
 				384A3223253C8F2000438F7D /* Module.swift in Sources */,
 				38773901253DDA7D007C1207 /* StopPointDetails.swift in Sources */,
+				3882A5B825B30F9300FF111D /* GroupByDirectionName.swift in Sources */,
 				384A322C253C8FA900438F7D /* Logger.swift in Sources */,
 				384A327C253CE7E300438F7D /* DateTimeFormatter.swift in Sources */,
 				38338D05253DF3E600F55D60 /* LoadStopPoints.swift in Sources */,

@@ -1,10 +1,3 @@
-//
-//  DomainModule.swift
-//  Domain
-//
-//  Created by Tomasz Pikć on 12/12/2020.
-//
-
 import Foundation
 import RxSwiftUtilities
 

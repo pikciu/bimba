@@ -45,7 +45,8 @@ public final class SearchPresenter {
     
     public func initialize() {
         searchQuery.distinctUntilChanged()
-            .flatMapLatest(with: self, { (context, searchQuery) -> Observable<[SearchResult]> in
+            .withUnretained(self)
+            .flatMapLatest({ (context, searchQuery) -> Observable<[SearchResult]> in
                 if searchQuery.isEmpty {
                     return Observable.just([])
                 }

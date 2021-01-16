@@ -13,3 +13,11 @@ extension UIView {
         add(subviews: subviews)
     }
 }
+
+extension NSLayoutConstraint {
+    @discardableResult
+    func with(priority: UILayoutPriority) -> NSLayoutConstraint {
+        self.priority = priority
+        return self
+    }
+}

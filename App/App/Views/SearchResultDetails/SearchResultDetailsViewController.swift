@@ -44,7 +44,8 @@ final class SearchResultDetailsViewController: ViewController<SearchResultDetail
         ui.tableView.register(cellType: LineStopPointCell.self)
         
         ui.tableView.rx.modelSelected(SearchResultDetailsPresenter.Item.self)
-            .subscribe(with: self, onNext: { (context, item) in
+            .withUnretained(self)
+            .subscribe(onNext: { (context, item) in
                 context.showTimes(for: item.stopPoint)
             })
             .disposed(by: disposeBag)

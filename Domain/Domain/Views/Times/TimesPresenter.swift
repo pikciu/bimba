@@ -34,7 +34,8 @@ public final class TimesPresenter {
         Observable<Int>.interval(.seconds(10), scheduler: MainScheduler.asyncInstance)
             .startWith(0)
             .mapTo(GetDepartureTime(stopPointID: view.stopPoint.id))
-            .flatMap(with: self, { (context, useCase) in
+            .withUnretained(self)
+            .flatMap({ (context, useCase) in
                 useCase.execute().trackActivity(context.activityIndicator)
             })
             .bind(to: times)

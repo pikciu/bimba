@@ -27,8 +27,8 @@ public final class MapPresenter {
         let poznanLocation = CLLocationCoordinate2D(latitude: 52.409538, longitude: 16.931992)
         view.setLocation(location: poznanLocation, delta: 0.02)
         
-        stopPoints
-            .subscribe(with: self, onNext: { (context, stopPoints) in
+        stopPoints.withUnretained(self)
+            .subscribe(onNext: { (context, stopPoints) in
                 context.view.display(stopPoints: stopPoints)
             }).disposed(by: disposeBag)
     }

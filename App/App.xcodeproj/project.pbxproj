@@ -20,6 +20,15 @@
 		3854FCB7258A81130004BCF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3854FCB6258A81120004BCF1 /* GoogleService-Info.plist */; };
 		3882A5A725B221DE00FF111D /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5A625B221DE00FF111D /* UIImageExtensions.swift */; };
 		3882A5A925B2261600FF111D /* FooterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5A825B2261600FF111D /* FooterLoader.swift */; };
+		3882A5BB25B3100500FF111D /* VehicleTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5BA25B3100500FF111D /* VehicleTypeView.swift */; };
+		3882A5BE25B3103C00FF111D /* PlaceholderDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5BD25B3103C00FF111D /* PlaceholderDecorator.swift */; };
+		3882A5C025B3109A00FF111D /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5BF25B3109A00FF111D /* NavigationBar.swift */; };
+		3882A5C225B310B700FF111D /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5C125B310B700FF111D /* TabBarItem.swift */; };
+		3882A5C425B310FE00FF111D /* SearchFooterDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5C325B310FE00FF111D /* SearchFooterDecorator.swift */; };
+		3882A5C625B3112600FF111D /* UISearchBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5C525B3112600FF111D /* UISearchBarExtensions.swift */; };
+		3882A5C825B3116C00FF111D /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5C725B3116C00FF111D /* NSAttributedStringExtensions.swift */; };
+		3882A5CA25B3119800FF111D /* DefaultTableViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5C925B3119800FF111D /* DefaultTableViewStyle.swift */; };
+		3882A5CC25B311BD00FF111D /* FavoriteButtonDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5CB25B311BD00FF111D /* FavoriteButtonDecorator.swift */; };
 		38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */; };
 		38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754C257D3A6500D2F1A8 /* TimesUI.swift */; };
 		38BD7551257D3DD700D2F1A8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7550257D3DD700D2F1A8 /* View.swift */; };
@@ -83,6 +92,15 @@
 		3854FCB6258A81120004BCF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3882A5A625B221DE00FF111D /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		3882A5A825B2261600FF111D /* FooterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterLoader.swift; sourceTree = "<group>"; };
+		3882A5BA25B3100500FF111D /* VehicleTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTypeView.swift; sourceTree = "<group>"; };
+		3882A5BD25B3103C00FF111D /* PlaceholderDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderDecorator.swift; sourceTree = "<group>"; };
+		3882A5BF25B3109A00FF111D /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		3882A5C125B310B700FF111D /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		3882A5C325B310FE00FF111D /* SearchFooterDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooterDecorator.swift; sourceTree = "<group>"; };
+		3882A5C525B3112600FF111D /* UISearchBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExtensions.swift; sourceTree = "<group>"; };
+		3882A5C725B3116C00FF111D /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
+		3882A5C925B3119800FF111D /* DefaultTableViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewStyle.swift; sourceTree = "<group>"; };
+		3882A5CB25B311BD00FF111D /* FavoriteButtonDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonDecorator.swift; sourceTree = "<group>"; };
 		38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		38BD754C257D3A6500D2F1A8 /* TimesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesUI.swift; sourceTree = "<group>"; };
 		38BD7550257D3DD700D2F1A8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -159,7 +177,6 @@
 				38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */,
 				38D6E75E258E5D9C0010956B /* PlaceholderView.swift */,
 				38D6E760258E64B90010956B /* RoundedRectView.swift */,
-				3882A5A825B2261600FF111D /* FooterLoader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,13 +198,26 @@
 			children = (
 				38CA5339253C6C4E00AD5AEC /* Main.storyboard */,
 				384A31EC253C726500438F7D /* MainViewController.swift */,
+				3882A5C125B310B700FF111D /* TabBarItem.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		3882A5BC25B3103300FF111D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3882A5C925B3119800FF111D /* DefaultTableViewStyle.swift */,
+				3882A5A825B2261600FF111D /* FooterLoader.swift */,
+				3882A5BF25B3109A00FF111D /* NavigationBar.swift */,
+				3882A5BD25B3103C00FF111D /* PlaceholderDecorator.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		38BD7536257D383E00D2F1A8 /* Times */ = {
 			isa = PBXGroup;
 			children = (
+				3882A5CB25B311BD00FF111D /* FavoriteButtonDecorator.swift */,
 				38216D7A258506D900DA8EA1 /* TimeCell.swift */,
 				38BD754C257D3A6500D2F1A8 /* TimesUI.swift */,
 				38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */,
@@ -211,6 +241,7 @@
 				383D00D025867C0500E2D969 /* FavoriteStopPointCell.swift */,
 				38BD755C257D3F8B00D2F1A8 /* FavoritesUI.swift */,
 				38BD755B257D3F8B00D2F1A8 /* FavoritesViewController.swift */,
+				3882A5BA25B3100500FF111D /* VehicleTypeView.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -218,6 +249,7 @@
 		38BD7565257D3FFA00D2F1A8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				3882A5C325B310FE00FF111D /* SearchFooterDecorator.swift */,
 				38216D7C258517E200DA8EA1 /* SearchResultCell.swift */,
 				38BD7567257D400000D2F1A8 /* SearchUI.swift */,
 				38BD7566257D400000D2F1A8 /* SearchViewController.swift */,
@@ -238,9 +270,11 @@
 		38BD7575257D418100D2F1A8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3882A5C725B3116C00FF111D /* NSAttributedStringExtensions.swift */,
 				38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */,
-				38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */,
 				3882A5A625B221DE00FF111D /* UIImageExtensions.swift */,
+				3882A5C525B3112600FF111D /* UISearchBarExtensions.swift */,
+				38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +312,7 @@
 			children = (
 				38BD7575257D418100D2F1A8 /* Extensions */,
 				384A31EA253C6F7900438F7D /* Resources */,
+				3882A5BC25B3103300FF111D /* Utils */,
 				384A31E9253C6F5800438F7D /* Views */,
 				38E9BF032586A11E001B9F19 /* AppFont.swift */,
 				38E9BF0125869F32001B9F19 /* Constants.swift */,
@@ -448,6 +483,7 @@
 				38BD7573257D406600D2F1A8 /* MapViewController.swift in Sources */,
 				38216DBA25854F2800DA8EA1 /* StopPointCell.swift in Sources */,
 				38BD7553257D3E0B00D2F1A8 /* ViewController.swift in Sources */,
+				3882A5C425B310FE00FF111D /* SearchFooterDecorator.swift in Sources */,
 				38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */,
 				38E9BF0225869F32001B9F19 /* Constants.swift in Sources */,
 				38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */,
@@ -459,25 +495,33 @@
 				3882A5A725B221DE00FF111D /* UIImageExtensions.swift in Sources */,
 				38C8F821257E3FB60010FEC8 /* StopPointAnnotationView.swift in Sources */,
 				38BD7585257D444800D2F1A8 /* L10n.swift in Sources */,
+				3882A5BE25B3103C00FF111D /* PlaceholderDecorator.swift in Sources */,
 				38BD7568257D400000D2F1A8 /* SearchViewController.swift in Sources */,
 				384A31ED253C726500438F7D /* MainViewController.swift in Sources */,
 				38BD7551257D3DD700D2F1A8 /* View.swift in Sources */,
 				38BD7586257D444800D2F1A8 /* Assets.swift in Sources */,
 				38C8F823257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift in Sources */,
+				3882A5C825B3116C00FF111D /* NSAttributedStringExtensions.swift in Sources */,
 				38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */,
 				38216DA125851D3200DA8EA1 /* SearchResultDetailsUI.swift in Sources */,
+				3882A5BB25B3100500FF111D /* VehicleTypeView.swift in Sources */,
 				38216D7B258506D900DA8EA1 /* TimeCell.swift in Sources */,
 				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
 				38BD7569257D400000D2F1A8 /* SearchUI.swift in Sources */,
+				3882A5CC25B311BD00FF111D /* FavoriteButtonDecorator.swift in Sources */,
 				38216DA325852FBD00DA8EA1 /* LineStopPointCell.swift in Sources */,
 				38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */,
 				38BD7574257D406600D2F1A8 /* MapUI.swift in Sources */,
 				38216DA52585300A00DA8EA1 /* SearchResultDetailsCellFactory.swift in Sources */,
 				38E9BF042586A11E001B9F19 /* AppFont.swift in Sources */,
+				3882A5C225B310B700FF111D /* TabBarItem.swift in Sources */,
 				38216DA025851D3200DA8EA1 /* SearchResultDetailsViewController.swift in Sources */,
 				3882A5A925B2261600FF111D /* FooterLoader.swift in Sources */,
 				38216D7D258517E200DA8EA1 /* SearchResultCell.swift in Sources */,
+				3882A5C025B3109A00FF111D /* NavigationBar.swift in Sources */,
 				38CA52D1253C50D000AD5AEC /* AppDelegate.swift in Sources */,
+				3882A5C625B3112600FF111D /* UISearchBarExtensions.swift in Sources */,
+				3882A5CA25B3119800FF111D /* DefaultTableViewStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +672,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 99R4D8SSEQ;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,7 +694,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 99R4D8SSEQ;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

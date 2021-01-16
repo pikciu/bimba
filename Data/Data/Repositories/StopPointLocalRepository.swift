@@ -76,7 +76,7 @@ final class RealmContext {
             .flatMap({ (realm) -> Observable<[M.To]> in
                 let objects = realm.objects(M.From.self)
                 return Observable.array(from: objects)
-                    .map(using: ArrayMapper(mapper))
+                    .map(ArrayMapper(mapper).map(from:))
             })
     }
     
