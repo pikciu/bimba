@@ -2,9 +2,10 @@
 "tab_search" = "Wyszukaj";
 "tab_map" = "Mapa";
 
-"favorite_placeholder" = "Dodaj przystanki do ulubionych,\nżeby sprawdzać je bez wyszukiwania.";
-"search_placeholder" = "Wyszukaj przystanek, linię\nlub ulicę i sprawdź, kiedy\nodjedzie Twój autobus lub\ntramwaj.";
-"error_placeholder" = "Dodaj przystanki doulubionych,\nżeby sprawdzać jebez wyszukiwania";
+"favorite_placeholder" = "Dodaj przystanki do ulubionych, żeby sprawdzać je bez wyszukiwania.";
+"search_placeholder" = "Wyszukaj przystanek, linię lub ulicę i sprawdź, kiedy odjedzie Twój autobus lub\ntramwaj.";
+"error_placeholder" = "Wystąpił problem z przetwarzaniem Twojego żądania. Upewnij się, że masz połączenie z Internetem lub spróbuj za chwilę.";
+"search_no_result_placeholder" = "Nie możemy znaleźć tego, czego szukasz. Sprawdź, czy Twoje zapytanie jest poprawne.";
 
 "is_driving_away" = "Odjeżdża!";
 "minutes_format" = "%d min";

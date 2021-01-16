@@ -2,7 +2,7 @@ import Foundation
 import RxSwift
 
 public protocol SearchView: class {
-    var isBusy: AnyObserver<Bool> { get }
+    var state: AnyObserver<SearchPresenter.State> { get }
     var results: AnyObserver<[SearchResult]> { get }
     var searchQuery: Observable<String> { get }
 }

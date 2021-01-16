@@ -29,6 +29,8 @@ public final class SearchResultDetailsPresenter {
     public init(view: SearchResultDetailsView) {
         self.view = view
         
+        activityIndicator.current.drive(view.isBusy).disposed(by: disposeBag)
+        
         view.selectedRouteIndex.bindTwoWay(selectedIndex)
             .disposed(by: disposeBag)
         

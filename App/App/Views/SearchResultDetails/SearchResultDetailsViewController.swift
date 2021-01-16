@@ -9,6 +9,10 @@ final class SearchResultDetailsViewController: ViewController<SearchResultDetail
     
     let searchResult: SearchResult
     
+    var isBusy: AnyObserver<Bool> {
+        ui.tableView.apply(FooterLoader()).asObserver()
+    }
+    
     var routes: AnyObserver<[Route]> {
         ui.segmentedControl.rx.segments(animated: false)
             .mapObserver({ $0.map({ $0.direction.name }) })

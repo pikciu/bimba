@@ -3,6 +3,7 @@ import RxSwift
 import RxCocoa
 
 public protocol SearchResultDetailsView: class {
+    var isBusy: AnyObserver<Bool> { get }
     var searchResult: SearchResult { get }
     var routes: AnyObserver<[Route]> { get }
     var selectedRouteIndex: ControlProperty<Int> { get }

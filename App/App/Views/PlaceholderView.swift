@@ -36,6 +36,7 @@ final class PlaceholderView: View, Configurable {
     }
     
     func configure(with model: PlaceholderViewModelType) {
+        isHidden = false
         imageView.image = model.image.withRenderingMode(.alwaysTemplate)
         label.text = model.text
     }
@@ -44,6 +45,7 @@ final class PlaceholderView: View, Configurable {
 enum Placeholder: PlaceholderViewModelType {
     case favorites
     case search
+    case noResults
     case error
     
     var image: UIImage {
@@ -52,6 +54,8 @@ enum Placeholder: PlaceholderViewModelType {
             return Asset.starPlaceholder.image
         case .search:
             return Asset.searchPlaceholder.image
+        case .noResults:
+            return Asset.errorPlaceholder.image
         case .error:
             return Asset.errorPlaceholder.image
         }
@@ -63,6 +67,8 @@ enum Placeholder: PlaceholderViewModelType {
             return L10n.favoritePlaceholder
         case .search:
             return L10n.searchPlaceholder
+        case .noResults:
+            return L10n.searchNoResultPlaceholder
         case .error:
             return L10n.errorPlaceholder
         }

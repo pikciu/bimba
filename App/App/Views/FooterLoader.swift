@@ -7,12 +7,14 @@ struct FooterLoader: Decorator {
     
     func apply(on object: UITableView) -> Binder<Bool> {
         let acitivtyIndicator = loaderView(for: object)
-        object.tableFooterView = footer(with: acitivtyIndicator)
+        let footerView = footer(with: acitivtyIndicator)
         
-        return Binder(acitivtyIndicator) { (acitivtyIndicator, isBusy) in
+        return Binder(acitivtyIndicator) { [weak object] (acitivtyIndicator, isBusy) in
             if isBusy {
+                object?.tableFooterView = footerView
                 acitivtyIndicator.startAnimating()
             } else {
+                object?.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: Constants.UI.systemSpacing / 2))
                 acitivtyIndicator.stopAnimating()
             }
         }
