@@ -60,6 +60,7 @@
 		3877390D253DDEFA007C1207 /* StopPointsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3877390C253DDEFA007C1207 /* StopPointsEndpoint.swift */; };
 		3877390F253DDF86007C1207 /* GetStopPointsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3877390E253DDF86007C1207 /* GetStopPointsRequest.swift */; };
 		38773911253DDFF2007C1207 /* StopPointsDetailsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */; };
+		3896D3CE25B34E42004341A9 /* MessageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3CD25B34E42004341A9 /* MessageDTO.swift */; };
 		38CA530C253C514E00AD5AEC /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CA530A253C514E00AD5AEC /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38CA5347253C6CC400AD5AEC /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA5346253C6CC400AD5AEC /* Domain.framework */; };
 /* End PBXBuildFile section */
@@ -118,6 +119,7 @@
 		3877390C253DDEFA007C1207 /* StopPointsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointsEndpoint.swift; sourceTree = "<group>"; };
 		3877390E253DDF86007C1207 /* GetStopPointsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStopPointsRequest.swift; sourceTree = "<group>"; };
 		38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointsDetailsDTO.swift; sourceTree = "<group>"; };
+		3896D3CD25B34E42004341A9 /* MessageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDTO.swift; sourceTree = "<group>"; };
 		38CA5307253C514E00AD5AEC /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA530A253C514E00AD5AEC /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		38CA530B253C514E00AD5AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				38773910253DDFF2007C1207 /* StopPointsDetailsDTO.swift */,
 				38338D13253DF95500F55D60 /* StreetDTO.swift */,
 				38338D0F253DF7E900F55D60 /* VMResponseDTO.swift */,
+				3896D3CD25B34E42004341A9 /* MessageDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				383D00C625866C0C00E2D969 /* StopPointLocalRepository.swift in Sources */,
 				3832936E2540AE9B002E1271 /* NameRequest.swift in Sources */,
 				384A3206253C885700438F7D /* HTTPClient.swift in Sources */,
+				3896D3CE25B34E42004341A9 /* MessageDTO.swift in Sources */,
 				384A3264253CE3AF00438F7D /* ArrayDecoder.swift in Sources */,
 				384A3249253C971E00438F7D /* URLEncodedFormSerializer.swift in Sources */,
 				384A3248253C971E00438F7D /* URLEncodedFormDataConvertible.swift in Sources */,

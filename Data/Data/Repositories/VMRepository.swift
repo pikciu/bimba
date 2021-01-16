@@ -51,4 +51,11 @@ struct VMRepository: Domain.VMRepository {
             responseMapper: VMResponseMapper(DirectionsMapper(useTagAsID: true))
         )
     }
+    
+    func message(stopPointID: String) -> Single<String> {
+        APIClient().execute(
+            request: StopPointRequest(stopPointID: stopPointID, method: .message),
+            responseMapper: VMResponseMapper(MessageMapper())
+        )
+    }
 }

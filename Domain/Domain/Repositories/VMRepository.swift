@@ -16,4 +16,6 @@ public protocol VMRepository {
     func stopPoints(street: String) -> Single<[StopPointDirections]>
     
     func stopPoints(name stopPoint: String) -> Single<[StopPointDirections]>
+    
+    func message(stopPointID: String) -> Single<String>
 }

@@ -35,8 +35,8 @@ struct FooterLoader: Decorator {
             if let acitivtyIndicator = footer as? UIActivityIndicatorView {
                 return acitivtyIndicator
             }
-            debugPrint("WARNING: overriding table view footer")
-            debugPrint(footer)
+            log.warning("overriding table view footer")
+            log.warning(footer)
         }
         let acitivtyIndicator = create()
         acitivtyIndicator.color = .white

@@ -23,6 +23,10 @@ final class TimesViewController: ViewController<TimesUI>, TimesView {
         ui.tableView.apply(FooterLoader()).asObserver()
     }
     
+    var message: AnyObserver<String?> {
+        ui.tableView.apply(MessageHeaderDecorator()).asObserver()
+    }
+    
     init(stopPoint: StopPointType) {
         self.stopPoint = stopPoint
         super.init()

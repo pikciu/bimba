@@ -2,6 +2,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 import RxSwiftExt
+import RxOptional
 
 public final class TimesPresenter {
     private let disposeBag = DisposeBag()
@@ -39,6 +40,15 @@ public final class TimesPresenter {
                 useCase.execute().trackActivity(context.activityIndicator)
             })
             .bind(to: times)
+            .disposed(by: disposeBag)
+        
+        GetMessage(stopPointID: view.stopPoint.id)
+            .execute()
+            .map({ $0 as String? })
+            .catchErrorJustReturn(nil)
+            .asObservable()
+            .startWith(nil)
+            .bind(to: view.message)
             .disposed(by: disposeBag)
     }
 }

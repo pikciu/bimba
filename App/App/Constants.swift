@@ -11,6 +11,9 @@ enum Constants {
         /// 8
         static let cornerRadius = CGFloat(8)
         
+        static let spacingViewSize = CGSize(width: 0, height: defaultSpacing / 2)
+        static let spacingViewFrame = CGRect(origin: .zero, size: spacingViewSize)
+        
     }
     
     static let noBreakChar = Character(Unicode.Scalar(UInt8(0xa0)))

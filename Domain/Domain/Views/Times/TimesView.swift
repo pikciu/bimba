@@ -7,4 +7,5 @@ public protocol TimesView: class {
     var times: AnyObserver<[DepartureTime]> { get }
     var isFavorite: AnyObserver<Bool> { get }
     var toggleFavorite: Observable<Void> { get }
+    var message: AnyObserver<String?> { get }
 }

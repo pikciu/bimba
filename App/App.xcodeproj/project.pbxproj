@@ -29,6 +29,7 @@
 		3882A5C825B3116C00FF111D /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5C725B3116C00FF111D /* NSAttributedStringExtensions.swift */; };
 		3882A5CA25B3119800FF111D /* DefaultTableViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5C925B3119800FF111D /* DefaultTableViewStyle.swift */; };
 		3882A5CC25B311BD00FF111D /* FavoriteButtonDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5CB25B311BD00FF111D /* FavoriteButtonDecorator.swift */; };
+		3896D3D425B35FA1004341A9 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3D325B35FA1004341A9 /* MessageView.swift */; };
 		38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */; };
 		38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754C257D3A6500D2F1A8 /* TimesUI.swift */; };
 		38BD7551257D3DD700D2F1A8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7550257D3DD700D2F1A8 /* View.swift */; };
@@ -101,6 +102,7 @@
 		3882A5C725B3116C00FF111D /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
 		3882A5C925B3119800FF111D /* DefaultTableViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewStyle.swift; sourceTree = "<group>"; };
 		3882A5CB25B311BD00FF111D /* FavoriteButtonDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonDecorator.swift; sourceTree = "<group>"; };
+		3896D3D325B35FA1004341A9 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		38BD754C257D3A6500D2F1A8 /* TimesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesUI.swift; sourceTree = "<group>"; };
 		38BD7550257D3DD700D2F1A8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				38CA5338253C6C4D00AD5AEC /* LaunchScreen.storyboard */,
 				38D6E75E258E5D9C0010956B /* PlaceholderView.swift */,
 				38D6E760258E64B90010956B /* RoundedRectView.swift */,
+				3896D3D325B35FA1004341A9 /* MessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				3882A5BB25B3100500FF111D /* VehicleTypeView.swift in Sources */,
 				38216D7B258506D900DA8EA1 /* TimeCell.swift in Sources */,
 				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
+				3896D3D425B35FA1004341A9 /* MessageView.swift in Sources */,
 				38BD7569257D400000D2F1A8 /* SearchUI.swift in Sources */,
 				3882A5CC25B311BD00FF111D /* FavoriteButtonDecorator.swift in Sources */,
 				38216DA325852FBD00DA8EA1 /* LineStopPointCell.swift in Sources */,

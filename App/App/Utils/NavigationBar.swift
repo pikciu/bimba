@@ -20,8 +20,6 @@ extension UISearchBar: NavigationBar {
     
 }
 
-import Domain
-
 struct AppNavigationStyle<T: NavigationBar>: Decorator {
     
     func apply(on object: T) {
