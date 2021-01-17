@@ -1,0 +1,16 @@
+"tab_favorites" = "Moje przystanki";
+"tab_search" = "Wyszukaj";
+"tab_map" = "Mapa";
+
+"favorite_placeholder" = "Dodaj przystanki do ulubionych, żeby sprawdzać je bez wyszukiwania.";
+"search_placeholder" = "Wyszukaj przystanek, linię lub ulicę i sprawdź, kiedy odjedzie Twój autobus lub tramwaj.";
+"error_placeholder" = "Wystąpił problem z przetwarzaniem Twojego żądania. Upewnij się, że masz połączenie z Internetem lub spróbuj za chwilę.";
+"search_no_result_placeholder" = "Nie możemy znaleźć tego, czego szukasz. Sprawdź, czy Twoje zapytanie jest poprawne.";
+
+"is_driving_away" = "Odjeżdża!";
+"minutes_format" = "%d min";
+
+"search_scope_all" = "Wszystko";
+"search_scope_stop_point" = "Przystanek";
+"search_scope_street" = "Ulica";
+"search_scope_line" = "Linia";

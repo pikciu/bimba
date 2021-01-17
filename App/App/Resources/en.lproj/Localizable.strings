@@ -1,16 +1,16 @@
-"tab_favorites" = "Moje przystanki";
-"tab_search" = "Wyszukaj";
-"tab_map" = "Mapa";
+"tab_favorites" = "My stops";
+"tab_search" = "Search";
+"tab_map" = "Map";
 
-"favorite_placeholder" = "Dodaj przystanki do ulubionych, żeby sprawdzać je bez wyszukiwania.";
-"search_placeholder" = "Wyszukaj przystanek, linię lub ulicę i sprawdź, kiedy odjedzie Twój autobus lub tramwaj.";
-"error_placeholder" = "Wystąpił problem z przetwarzaniem Twojego żądania. Upewnij się, że masz połączenie z Internetem lub spróbuj za chwilę.";
-"search_no_result_placeholder" = "Nie możemy znaleźć tego, czego szukasz. Sprawdź, czy Twoje zapytanie jest poprawne.";
+"favorite_placeholder" = "Add stop to favorite to check it without searching.";
+"search_placeholder" = "Search for stop, line or street to check when your bus or tram is leaving.";
+"error_placeholder" = "There was a problem processing your request. Please make sure you are connected to the Internet or try in a moment.";
+"search_no_result_placeholder" = "We couldn't find what you're looking for. Check if your query is correct.";
 
-"is_driving_away" = "Odjeżdża!";
+"is_driving_away" = "Drives away!";
 "minutes_format" = "%d min";
 
-"search_scope_all" = "Wszystko";
-"search_scope_stop_point" = "Przystanek";
-"search_scope_street" = "Ulica";
-"search_scope_line" = "Linia";
+"search_scope_all" = "All";
+"search_scope_stop_point" = "Stop";
+"search_scope_street" = "Street";
+"search_scope_line" = "Line";

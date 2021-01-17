@@ -10,33 +10,33 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
-  /// Wystąpił problem z przetwarzaniem Twojego żądania. Upewnij się, że masz połączenie z Internetem lub spróbuj za chwilę.
+  /// There was a problem processing your request. Please make sure you are connected to the Internet or try in a moment.
   internal static let errorPlaceholder = L10n.tr("Localizable", "error_placeholder")
-  /// Dodaj przystanki do ulubionych, żeby sprawdzać je bez wyszukiwania.
+  /// Add stop to favorite to check it without searching.
   internal static let favoritePlaceholder = L10n.tr("Localizable", "favorite_placeholder")
-  /// Odjeżdża!
+  /// Drives away!
   internal static let isDrivingAway = L10n.tr("Localizable", "is_driving_away")
   /// %d min
   internal static func minutesFormat(_ p1: Int) -> String {
     return L10n.tr("Localizable", "minutes_format", p1)
   }
-  /// Nie możemy znaleźć tego, czego szukasz. Sprawdź, czy Twoje zapytanie jest poprawne.
+  /// We couldn't find what you're looking for. Check if your query is correct.
   internal static let searchNoResultPlaceholder = L10n.tr("Localizable", "search_no_result_placeholder")
-  /// Wyszukaj przystanek, linię lub ulicę i sprawdź, kiedy odjedzie Twój autobus lub tramwaj.
+  /// Search for stop, line or street to check when your bus or tram is leaving.
   internal static let searchPlaceholder = L10n.tr("Localizable", "search_placeholder")
-  /// Wszystko
+  /// All
   internal static let searchScopeAll = L10n.tr("Localizable", "search_scope_all")
-  /// Linia
+  /// Line
   internal static let searchScopeLine = L10n.tr("Localizable", "search_scope_line")
-  /// Przystanek
+  /// Stop
   internal static let searchScopeStopPoint = L10n.tr("Localizable", "search_scope_stop_point")
-  /// Ulica
+  /// Street
   internal static let searchScopeStreet = L10n.tr("Localizable", "search_scope_street")
-  /// Moje przystanki
+  /// My stops
   internal static let tabFavorites = L10n.tr("Localizable", "tab_favorites")
-  /// Mapa
+  /// Map
   internal static let tabMap = L10n.tr("Localizable", "tab_map")
-  /// Wyszukaj
+  /// Search
   internal static let tabSearch = L10n.tr("Localizable", "tab_search")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
