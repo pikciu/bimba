@@ -47,6 +47,17 @@ target 'Data' do
 	pod 'RxRealm'
 end
 
+target 'WidgetExtension' do
+	project 'App/App.xcodeproj'
+
+	shared_pods
+end
+
+target 'FavoriteIntent' do
+	project 'App/App.xcodeproj'
+
+	shared_pods
+end
 
 post_install do |installer|
 	installer.pods_project.targets.each do |target|

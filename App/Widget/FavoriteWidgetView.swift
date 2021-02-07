@@ -6,7 +6,7 @@ struct FavoriteWidgetView: View {
     let entry: FavoriteWidgetEntry
     
     var body: some View {
-        Text("cos")
+        Text(entry.stopPoint.name)
     }
 }
 

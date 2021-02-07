@@ -1,11 +1,15 @@
 import Foundation
 import RxSwift
 
-struct FavoriteStopPoints: UseCase {
+public struct FavoriteStopPoints: UseCase {
     @Inject
     private var repository: StopPointLocalRepository
     
-    func execute() -> Observable<[StopPointDetails]> {
+    public init() {
+        
+    }
+    
+    public func execute() -> Observable<[StopPointDetails]> {
         Observable.combineLatest(repository.stopPoints(), repository.favoriteStopPointIDs())
             .map(filter(data:))
     }

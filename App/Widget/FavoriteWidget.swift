@@ -14,5 +14,6 @@ struct FavoriteWidget: Widget {
         }
         .configurationDisplayName(L10n.favoriteStop)
         .description(L10n.favoriteStopDescription)
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
     }
 }
