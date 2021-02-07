@@ -4,7 +4,6 @@ import Data
 import RxSwift
 
 final class IntentHandler: INExtension, ConfigurationIntentHandling {
-    private let disposeBag = DisposeBag()
     
     override init() {
         super.init()
@@ -12,26 +11,21 @@ final class IntentHandler: INExtension, ConfigurationIntentHandling {
     }
     
     func provideFavoriteOptionsCollection(for intent: ConfigurationIntent, with completion: @escaping (INObjectCollection<FavoriteStopPoint>?, Error?) -> Void) {
-        FavoriteStopPoints()
+        
+        _ = FavoriteStopPoints()
             .execute()
-            .map({ self.map(stopPoints: $0) })
+            .subscribeOn(MainScheduler.asyncInstance)
+            .take(1)
+            .map({ (stopPoints) in
+                stopPoints.map({ (stopPoint) in
+                    FavoriteStopPoint(identifier: stopPoint.id, display: stopPoint.name)
+                })
+            })
             .subscribe(onNext: { (favorites) in
                 completion(INObjectCollection(items: favorites), nil)
             }, onError: { (error) in
                 completion(nil, error)
             })
-            .disposed(by: disposeBag)
-    }
-    
-    private func map(stopPoints: [StopPointDetails]) -> [FavoriteStopPoint] {
-        stopPoints.map(map(stopPoint:))
-    }
-    
-    private func map(stopPoint: StopPointDetails) -> FavoriteStopPoint {
-        FavoriteStopPoint(
-            identifier: stopPoint.id,
-            display: stopPoint.name
-        )
     }
     
     override func handler(for intent: INIntent) -> Any {
@@ -39,10 +33,6 @@ final class IntentHandler: INExtension, ConfigurationIntentHandling {
         // you can override this and return the handler you want for that particular intent.
         
         return self
-    }
-    
-    deinit {
-        debugPrint(self)
     }
     
 }

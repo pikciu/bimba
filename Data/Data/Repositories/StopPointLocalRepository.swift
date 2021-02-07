@@ -2,6 +2,7 @@ import Foundation
 import Domain
 import RxSwift
 import RxRealm
+import RealmSwift
 
 struct StopPointLocalRepository: Domain.StopPointLocalRepository {
     @Inject
@@ -47,32 +48,27 @@ struct StopPointLocalRepository: Domain.StopPointLocalRepository {
     }
 }
 
-import RealmSwift
-
 final class RealmContext {
-    let result: Result<Realm, Error>
     
-    var realm: Realm? {
-        guard case .success(let realm) = result else {
-            return nil
+    private func create() -> Single<Realm> {
+        .create { (observer) -> Disposable in
+            do {
+                guard let url = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.pikciu.bimba") else {
+                    throw AppError.descriptive("Could not create realm file for App Group ID")
+                }
+                var configuration = Realm.Configuration(fileURL: url.appendingPathComponent("db.realm"))
+                configuration.deleteRealmIfMigrationNeeded = true
+                observer(.success(try Realm(configuration: configuration)))
+            } catch {
+                observer(.error(error))
+            }
+            return Disposables.create()
         }
-        return realm
-    }
-    
-    init() {
-        do {
-            result = .success(try Realm())
-        } catch {
-            result = .failure(error)
-        }
-    }
-    
-    func asSingle() -> Single<Realm> {
-        result.asSingle()
     }
     
     func objects<M: Mapper>(_ mapper: M) -> Observable<[M.To]> where M.From: Object {
-        asSingle().asObservable()
+        create()
+            .asObservable()
             .flatMap({ (realm) -> Observable<[M.To]> in
                 let objects = realm.objects(M.From.self)
                 return Observable.array(from: objects)
@@ -81,7 +77,7 @@ final class RealmContext {
     }
     
     func write(block: @escaping (Realm) throws -> Void) -> Completable {
-        asSingle()
+        create()
             .flatMapCompletable { (realm) in
                 do {
                     try block(realm)
@@ -90,16 +86,5 @@ final class RealmContext {
                     return .error(error)
                 }
             }
-    }
-}
-
-extension Result {
-    func asSingle() -> Single<Success> {
-        switch self {
-        case .failure(let error):
-            return .error(error)
-        case .success(let success):
-            return .just(success)
-        }
     }
 }
