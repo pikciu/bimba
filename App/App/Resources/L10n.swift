@@ -14,6 +14,10 @@ internal enum L10n {
   internal static let errorPlaceholder = L10n.tr("Localizable", "error_placeholder")
   /// Add stop to favorite to check it without searching.
   internal static let favoritePlaceholder = L10n.tr("Localizable", "favorite_placeholder")
+  /// Favorite stop
+  internal static let favoriteStop = L10n.tr("Localizable", "favorite_stop")
+  /// Śledź odjazdy z wybranego przystanku.
+  internal static let favoriteStopDescription = L10n.tr("Localizable", "favorite_stop_description")
   /// Drives away!
   internal static let isDrivingAway = L10n.tr("Localizable", "is_driving_away")
   /// %d min

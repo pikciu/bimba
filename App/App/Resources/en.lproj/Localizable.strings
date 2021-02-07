@@ -14,3 +14,6 @@
 "search_scope_stop_point" = "Stop";
 "search_scope_street" = "Street";
 "search_scope_line" = "Line";
+
+"favorite_stop" = "Favorite stop";
+"favorite_stop_description" = "Śledź odjazdy z wybranego przystanku.";
