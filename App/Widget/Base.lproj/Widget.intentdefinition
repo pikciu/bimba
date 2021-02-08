@@ -35,7 +35,7 @@
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Favorite</string>
+					<string>Stop</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>paMajJ</string>
 					<key>INIntentParameterDisplayPriority</key>

@@ -20,8 +20,6 @@
 		384C11FB25D050A9008327EF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384C11FA25D050A9008327EF /* WidgetKit.framework */; };
 		384C11FD25D050A9008327EF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384C11FC25D050A9008327EF /* SwiftUI.framework */; };
 		384C120325D050AA008327EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384C120225D050AA008327EF /* Assets.xcassets */; };
-		384C120525D050AA008327EF /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 384C120125D050A9008327EF /* Widget.intentdefinition */; };
-		384C120625D050AA008327EF /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 384C120125D050A9008327EF /* Widget.intentdefinition */; };
 		384C120925D050AA008327EF /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 384C11F925D050A9008327EF /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		384C120F25D050E9008327EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38BD7581257D42FC00D2F1A8 /* Localizable.strings */; };
 		384C121125D050F0008327EF /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7583257D444800D2F1A8 /* L10n.swift */; };
@@ -42,8 +40,10 @@
 		384F58E925D0642800A2B991 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384F58E625D0642800A2B991 /* Domain.framework */; };
 		384F58EA25D0642800A2B991 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 384F58E625D0642800A2B991 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		384F58EC25D0643000A2B991 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384F58DA25D0640100A2B991 /* IntentHandler.swift */; };
-		384F58ED25D0648B00A2B991 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 384C120125D050A9008327EF /* Widget.intentdefinition */; };
 		3854FCB7258A81130004BCF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3854FCB6258A81120004BCF1 /* GoogleService-Info.plist */; };
+		385D300925D167760060B448 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 385D300D25D167760060B448 /* Widget.intentdefinition */; };
+		385D300A25D167760060B448 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 385D300D25D167760060B448 /* Widget.intentdefinition */; };
+		385D300B25D167760060B448 /* Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 385D300D25D167760060B448 /* Widget.intentdefinition */; };
 		3882A5A725B221DE00FF111D /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5A625B221DE00FF111D /* UIImageExtensions.swift */; };
 		3882A5A925B2261600FF111D /* FooterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5A825B2261600FF111D /* FooterLoader.swift */; };
 		3882A5BB25B3100500FF111D /* VehicleTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5BA25B3100500FF111D /* VehicleTypeView.swift */; };
@@ -179,7 +179,6 @@
 		384C11F925D050A9008327EF /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		384C11FA25D050A9008327EF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		384C11FC25D050A9008327EF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		384C120125D050A9008327EF /* Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Widget.intentdefinition; sourceTree = "<group>"; };
 		384C120225D050AA008327EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384C120425D050AA008327EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384C121325D05139008327EF /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
@@ -196,6 +195,8 @@
 		384F58E525D0642800A2B991 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		384F58E625D0642800A2B991 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3854FCB6258A81120004BCF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		385D300C25D167760060B448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Widget.intentdefinition; sourceTree = "<group>"; };
+		385D300F25D1677B0060B448 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Widget.strings; sourceTree = "<group>"; };
 		3882A5A625B221DE00FF111D /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		3882A5A825B2261600FF111D /* FooterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterLoader.swift; sourceTree = "<group>"; };
 		3882A5BA25B3100500FF111D /* VehicleTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTypeView.swift; sourceTree = "<group>"; };
@@ -345,7 +346,7 @@
 		384C11FE25D050A9008327EF /* Widget */ = {
 			isa = PBXGroup;
 			children = (
-				384C120125D050A9008327EF /* Widget.intentdefinition */,
+				385D300D25D167760060B448 /* Widget.intentdefinition */,
 				384C120225D050AA008327EF /* Assets.xcassets */,
 				384C120425D050AA008327EF /* Info.plist */,
 				384C121325D05139008327EF /* Widgets.swift */,
@@ -774,7 +775,7 @@
 			files = (
 				384C122925D05646008327EF /* FavoriteWidgetEntry.swift in Sources */,
 				384C121725D051B3008327EF /* FavoriteWidget.swift in Sources */,
-				384C120525D050AA008327EF /* Widget.intentdefinition in Sources */,
+				385D300A25D167760060B448 /* Widget.intentdefinition in Sources */,
 				384C121425D05139008327EF /* Widgets.swift in Sources */,
 				384C121C25D052C2008327EF /* FavoriteTimelineProvider.swift in Sources */,
 				384C122725D05469008327EF /* FavoriteWidgetView.swift in Sources */,
@@ -787,7 +788,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384F58ED25D0648B00A2B991 /* Widget.intentdefinition in Sources */,
+				385D300B25D167760060B448 /* Widget.intentdefinition in Sources */,
 				384F58DB25D0640100A2B991 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,7 +824,7 @@
 				38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */,
 				38216DA125851D3200DA8EA1 /* SearchResultDetailsUI.swift in Sources */,
 				3882A5BB25B3100500FF111D /* VehicleTypeView.swift in Sources */,
-				384C120625D050AA008327EF /* Widget.intentdefinition in Sources */,
+				385D300925D167760060B448 /* Widget.intentdefinition in Sources */,
 				3896D3D825B36A23004341A9 /* SearchBarStyle.swift in Sources */,
 				38216D7B258506D900DA8EA1 /* TimeCell.swift in Sources */,
 				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
@@ -862,6 +863,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		385D300D25D167760060B448 /* Widget.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385D300C25D167760060B448 /* Base */,
+				385D300F25D1677B0060B448 /* pl */,
+			);
+			name = Widget.intentdefinition;
+			sourceTree = "<group>";
+		};
 		38BD7581257D42FC00D2F1A8 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
