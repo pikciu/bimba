@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381BF3A225D324290083C936 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9BF0125869F32001B9F19 /* Constants.swift */; };
+		381BF3A325D324B80083C936 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9BF032586A11E001B9F19 /* AppFont.swift */; };
+		381BF3A525D3C51C0083C936 /* DepartureTimeSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381BF3A425D3C51C0083C936 /* DepartureTimeSmallView.swift */; };
 		38216D792585066700DA8EA1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D782585066700DA8EA1 /* TableViewCell.swift */; };
 		38216D7B258506D900DA8EA1 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D7A258506D900DA8EA1 /* TimeCell.swift */; };
 		38216D7D258517E200DA8EA1 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D7C258517E200DA8EA1 /* SearchResultCell.swift */; };
@@ -170,6 +173,7 @@
 		30A3D8DBE7A46A3DACE188B5 /* Pods_Intent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		356CBD2A5FD4B29F120E7D74 /* Pods-Intent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intent.release.xcconfig"; path = "Target Support Files/Pods-Intent/Pods-Intent.release.xcconfig"; sourceTree = "<group>"; };
 		3811246225D068FF00A00EB9 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		381BF3A425D3C51C0083C936 /* DepartureTimeSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureTimeSmallView.swift; sourceTree = "<group>"; };
 		38216D782585066700DA8EA1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		38216D7A258506D900DA8EA1 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
 		38216D7C258517E200DA8EA1 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
@@ -529,6 +533,7 @@
 			children = (
 				384C122625D05469008327EF /* FavoriteWidgetView.swift */,
 				38D294AA25D30AB700F2AFF6 /* DepartureTimeView.swift */,
+				381BF3A425D3C51C0083C936 /* DepartureTimeSmallView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -795,6 +800,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				384C122925D05646008327EF /* FavoriteWidgetEntry.swift in Sources */,
+				381BF3A325D324B80083C936 /* AppFont.swift in Sources */,
 				384C121725D051B3008327EF /* FavoriteWidget.swift in Sources */,
 				385D300A25D167760060B448 /* Widget.intentdefinition in Sources */,
 				38D294AD25D30B0800F2AFF6 /* DepartureTimeFactory.swift in Sources */,
@@ -803,8 +809,10 @@
 				384C122725D05469008327EF /* FavoriteWidgetView.swift in Sources */,
 				38D294AB25D30AB700F2AFF6 /* DepartureTimeView.swift in Sources */,
 				384F58EC25D0643000A2B991 /* IntentHandler.swift in Sources */,
+				381BF3A525D3C51C0083C936 /* DepartureTimeSmallView.swift in Sources */,
 				384C121125D050F0008327EF /* L10n.swift in Sources */,
 				38A9EC0025D1724C000544EC /* Assets.swift in Sources */,
+				381BF3A225D324290083C936 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
