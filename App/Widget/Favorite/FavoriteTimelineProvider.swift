@@ -10,7 +10,10 @@ struct FavoriteTimelineProvider: IntentTimelineProvider {
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (FavoriteWidgetEntry) -> Void) {
-        guard let favorite = configuration.favorite else {
+        guard
+            let favorite = configuration.favorite,
+            context.isPreview == false
+        else {
             completion(.placeholder)
             return
         }
@@ -31,7 +34,7 @@ struct FavoriteTimelineProvider: IntentTimelineProvider {
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<FavoriteWidgetEntry>) -> Void) {
         getSnapshot(for: configuration, in: context) { (entry) in
-            let now = Date()
+            let now = Date().date(withComponents: [.year, .month, .day, .hour, .minute])
             let updateTime = now.byAdding(value: 5, component: .minute)
             guard let last = entry.times.last else {
                 completion(Timeline(entries: [entry], policy: .after(updateTime)))

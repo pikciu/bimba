@@ -50,6 +50,8 @@
 		3882A5B525B30F8200FF111D /* GroupedDirectionComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5B425B30F8200FF111D /* GroupedDirectionComparator.swift */; };
 		3882A5B825B30F9300FF111D /* GroupByDirectionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882A5B725B30F9300FF111D /* GroupByDirectionName.swift */; };
 		3896D3D125B34E7D004341A9 /* GetMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3D025B34E7D004341A9 /* GetMessage.swift */; };
+		389D9FAE25D315FE00FA0FC4 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389D9FAD25D315FE00FA0FC4 /* DeepLink.swift */; };
+		389D9FB125D3166C00FA0FC4 /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389D9FB025D3166C00FA0FC4 /* DeepLinkHandler.swift */; };
 		38BD753B257D386A00D2F1A8 /* TimesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7539257D386A00D2F1A8 /* TimesPresenter.swift */; };
 		38BD753C257D386A00D2F1A8 /* TimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD753A257D386A00D2F1A8 /* TimesView.swift */; };
 		38BD7557257D3F7200D2F1A8 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7555257D3F7200D2F1A8 /* FavoritesPresenter.swift */; };
@@ -109,6 +111,8 @@
 		3882A5B425B30F8200FF111D /* GroupedDirectionComparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedDirectionComparator.swift; sourceTree = "<group>"; };
 		3882A5B725B30F9300FF111D /* GroupByDirectionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupByDirectionName.swift; sourceTree = "<group>"; };
 		3896D3D025B34E7D004341A9 /* GetMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMessage.swift; sourceTree = "<group>"; };
+		389D9FAD25D315FE00FA0FC4 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
+		389D9FB025D3166C00FA0FC4 /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
 		38BD7539257D386A00D2F1A8 /* TimesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesPresenter.swift; sourceTree = "<group>"; };
 		38BD753A257D386A00D2F1A8 /* TimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesView.swift; sourceTree = "<group>"; };
 		38BD7555257D3F7200D2F1A8 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				38E9BEFE258695D8001B9F19 /* LoggerObserver.swift */,
 				384A325A253CE35F00438F7D /* Mapper.swift */,
 				38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */,
+				389D9FB025D3166C00FA0FC4 /* DeepLinkHandler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				38216DB02585432C00DA8EA1 /* StopPointDirections.swift */,
 				38338D0C253DF69B00F55D60 /* StopPointGroup.swift */,
 				38338D09253DF64A00F55D60 /* Street.swift */,
+				389D9FAD25D315FE00FA0FC4 /* DeepLink.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 				38338D0D253DF69B00F55D60 /* StopPointGroup.swift in Sources */,
 				384A325B253CE35F00438F7D /* Mapper.swift in Sources */,
 				384A322B253C8FA900438F7D /* LogDestination.swift in Sources */,
+				389D9FB125D3166C00FA0FC4 /* DeepLinkHandler.swift in Sources */,
 				38BD7557257D3F7200D2F1A8 /* FavoritesPresenter.swift in Sources */,
 				38216D9A25851CB300DA8EA1 /* SearchResultDetailsView.swift in Sources */,
 				38BD753B257D386A00D2F1A8 /* TimesPresenter.swift in Sources */,
@@ -495,6 +502,7 @@
 				384A3223253C8F2000438F7D /* Module.swift in Sources */,
 				38773901253DDA7D007C1207 /* StopPointDetails.swift in Sources */,
 				3882A5B825B30F9300FF111D /* GroupByDirectionName.swift in Sources */,
+				389D9FAE25D315FE00FA0FC4 /* DeepLink.swift in Sources */,
 				384A322C253C8FA900438F7D /* Logger.swift in Sources */,
 				384A327C253CE7E300438F7D /* DateTimeFormatter.swift in Sources */,
 				38338D05253DF3E600F55D60 /* LoadStopPoints.swift in Sources */,

@@ -12,27 +12,14 @@ struct FavoriteWidgetView: View {
                 Text(entry.stopPoint.name)
                     .frame(width: geometry.size.width, alignment: .center)
                     .foregroundColor(.white)
-                ForEach(entry.times, id: \.departure) { (time) in
+                ForEach(entry.times, id: \.self) { (time) in
                     DepartureTimeView(time: time)
                 }
                 Spacer()
             }
             .background(Color(Asset.backgroundColor.color))
         }
-    }
-}
-
-struct DepartureTimeView: View {
-    let time: DepartureTime
-    
-    var body: some View {
-        HStack {
-            Text(time.line)
-            Text(time.departure, style: .time)
-                .foregroundColor(.white)
-            Text(time.direction)
-        }
-        
+        .widgetURL(DeepLink.stop(entry.stopPoint).url)
     }
 }
 

@@ -5,6 +5,7 @@ import RxSwift
 final class MainViewController: UITabBarController {
     let disposeBag = DisposeBag()
     let activityIndicator = SharedActivityIndicator()
+    let deepLinkHandler = Container.resolve(DeepLinkHandler.self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,25 @@ final class MainViewController: UITabBarController {
         
         activityIndicator.shared.drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible)
             .disposed(by: disposeBag)
+        
+        deepLinkHandler.observe()
+            .observeOn(MainScheduler.asyncInstance)
+            .withUnretained(self)
+            .subscribe(onNext: { (context, deepLink) in
+                switch deepLink {
+                case .stop(let stopPoint):
+                    context.showTimes(stop: stopPoint)
+                }
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func showTimes(stop: StopPointType) {
+        guard let navigationController = selectedViewController as? UINavigationController else {
+            return
+        }
+        let timesViewController = TimesViewController(stopPoint: stop)
+        navigationController.pushViewController(timesViewController, animated: true)
     }
     
     private func setupTabBarControllers() {

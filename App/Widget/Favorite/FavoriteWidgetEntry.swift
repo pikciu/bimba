@@ -12,16 +12,7 @@ struct FavoriteWidgetEntry: TimelineEntry {
         FavoriteWidgetEntry(
             date: Date(),
             stopPoint: StopPoint(id: "", name: "Ratajczaka"),
-            times: [
-                DepartureTime(
-                    departure: Date().byAdding(value: 2, component: .minute),
-                    direction: "Franowo",
-                    line: "16",
-                    minutesToDeparture: 2,
-                    isOnStopPoint: false,
-                    isRealTime: true
-                )
-            ]
+            times: DepartureTimeFactory.create(count: 3)
         )
     }
 }

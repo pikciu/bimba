@@ -18,7 +18,7 @@ final class IntentHandler: INExtension, ConfigurationIntentHandling {
             .take(1)
             .map({ (stopPoints) in
                 stopPoints.map({ (stopPoint) in
-                    FavoriteStopPoint(identifier: stopPoint.id, display: stopPoint.name)
+                    FavoriteStopPoint(stopPoint: stopPoint)
                 })
             })
             .subscribe(onNext: { (favorites) in
@@ -35,4 +35,11 @@ final class IntentHandler: INExtension, ConfigurationIntentHandling {
         return self
     }
     
+}
+
+extension FavoriteStopPoint {
+    convenience init(stopPoint: StopPointDetails) {
+        self.init(identifier: stopPoint.id, display: stopPoint.name)
+        subtitleString = stopPoint.headsings
+    }
 }

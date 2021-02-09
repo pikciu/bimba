@@ -1,6 +1,6 @@
 import Foundation
 
-public struct DepartureTime {
+public struct DepartureTime: Hashable {
     public let departure: Date
     public let direction: String
     public let line: String

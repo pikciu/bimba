@@ -86,6 +86,8 @@
 		38CA5341253C6CAC00AD5AEC /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA533E253C6CAC00AD5AEC /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38CA5342253C6CAC00AD5AEC /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA533F253C6CAC00AD5AEC /* Domain.framework */; };
 		38CA5343253C6CAC00AD5AEC /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38CA533F253C6CAC00AD5AEC /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		38D294AB25D30AB700F2AFF6 /* DepartureTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D294AA25D30AB700F2AFF6 /* DepartureTimeView.swift */; };
+		38D294AD25D30B0800F2AFF6 /* DepartureTimeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D294AC25D30B0800F2AFF6 /* DepartureTimeFactory.swift */; };
 		38D6E75F258E5D9C0010956B /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6E75E258E5D9C0010956B /* PlaceholderView.swift */; };
 		38D6E761258E64B90010956B /* RoundedRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6E760258E64B90010956B /* RoundedRectView.swift */; };
 		38E9BF0225869F32001B9F19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9BF0125869F32001B9F19 /* Constants.swift */; };
@@ -239,6 +241,8 @@
 		38CA5339253C6C4E00AD5AEC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		38CA533E253C6CAC00AD5AEC /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CA533F253C6CAC00AD5AEC /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D294AA25D30AB700F2AFF6 /* DepartureTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureTimeView.swift; sourceTree = "<group>"; };
+		38D294AC25D30B0800F2AFF6 /* DepartureTimeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureTimeFactory.swift; sourceTree = "<group>"; };
 		38D6E75E258E5D9C0010956B /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		38D6E760258E64B90010956B /* RoundedRectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectView.swift; sourceTree = "<group>"; };
 		38E9BF0125869F32001B9F19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -293,10 +297,11 @@
 		3816CA8D25D2F2880069CED4 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				38D294A925D30AAA00F2AFF6 /* View */,
 				384C121625D051B3008327EF /* FavoriteWidget.swift */,
 				384C121B25D052C2008327EF /* FavoriteTimelineProvider.swift */,
-				384C122625D05469008327EF /* FavoriteWidgetView.swift */,
 				384C122825D05646008327EF /* FavoriteWidgetEntry.swift */,
+				38D294AC25D30B0800F2AFF6 /* DepartureTimeFactory.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -517,6 +522,15 @@
 				F43D5C877EE8CF0ADBA1DEA0 /* Pods_Widget.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38D294A925D30AAA00F2AFF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				384C122625D05469008327EF /* FavoriteWidgetView.swift */,
+				38D294AA25D30AB700F2AFF6 /* DepartureTimeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EF8E4F971375E09648571BD1 /* Pods */ = {
@@ -783,9 +797,11 @@
 				384C122925D05646008327EF /* FavoriteWidgetEntry.swift in Sources */,
 				384C121725D051B3008327EF /* FavoriteWidget.swift in Sources */,
 				385D300A25D167760060B448 /* Widget.intentdefinition in Sources */,
+				38D294AD25D30B0800F2AFF6 /* DepartureTimeFactory.swift in Sources */,
 				384C121425D05139008327EF /* Widgets.swift in Sources */,
 				384C121C25D052C2008327EF /* FavoriteTimelineProvider.swift in Sources */,
 				384C122725D05469008327EF /* FavoriteWidgetView.swift in Sources */,
+				38D294AB25D30AB700F2AFF6 /* DepartureTimeView.swift in Sources */,
 				384F58EC25D0643000A2B991 /* IntentHandler.swift in Sources */,
 				384C121125D050F0008327EF /* L10n.swift in Sources */,
 				38A9EC0025D1724C000544EC /* Assets.swift in Sources */,
