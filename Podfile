@@ -47,13 +47,13 @@ target 'Data' do
 	pod 'RxRealm'
 end
 
-target 'WidgetExtension' do
+target 'Widget' do
 	project 'App/App.xcodeproj'
 
 	shared_pods
 end
 
-target 'FavoriteIntent' do
+target 'Intent' do
 	project 'App/App.xcodeproj'
 
 	shared_pods

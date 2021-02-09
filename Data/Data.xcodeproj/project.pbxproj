@@ -650,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73AD09DE5E0475192816037B /* Pods-Data.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -677,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54040F5DDA2FD3E996ED3B12 /* Pods-Data.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

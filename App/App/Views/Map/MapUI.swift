@@ -35,7 +35,7 @@ final class MapUI: View {
     override func setupAppearance() {
         mapView.showsUserLocation = true
         mapView.showsCompass = false
-        userLocationButton.backgroundColor = Asset.accentColor.color
+        userLocationButton.backgroundColor = Asset.primaryColor.color
         userLocationButton.tintColor = .white
         userLocationButton.layer.cornerRadius = 6
         userLocationButton.layer.borderColor = UIColor.white.cgColor

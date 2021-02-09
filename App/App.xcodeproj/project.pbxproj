@@ -19,8 +19,7 @@
 		384A31ED253C726500438F7D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384A31EC253C726500438F7D /* MainViewController.swift */; };
 		384C11FB25D050A9008327EF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384C11FA25D050A9008327EF /* WidgetKit.framework */; };
 		384C11FD25D050A9008327EF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384C11FC25D050A9008327EF /* SwiftUI.framework */; };
-		384C120325D050AA008327EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384C120225D050AA008327EF /* Assets.xcassets */; };
-		384C120925D050AA008327EF /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 384C11F925D050A9008327EF /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		384C120925D050AA008327EF /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 384C11F925D050A9008327EF /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		384C120F25D050E9008327EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38BD7581257D42FC00D2F1A8 /* Localizable.strings */; };
 		384C121125D050F0008327EF /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7583257D444800D2F1A8 /* L10n.swift */; };
 		384C121425D05139008327EF /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384C121325D05139008327EF /* Widgets.swift */; };
@@ -34,7 +33,7 @@
 		384C122925D05646008327EF /* FavoriteWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384C122825D05646008327EF /* FavoriteWidgetEntry.swift */; };
 		384F58D825D0640100A2B991 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384F58D725D0640100A2B991 /* Intents.framework */; };
 		384F58DB25D0640100A2B991 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384F58DA25D0640100A2B991 /* IntentHandler.swift */; };
-		384F58DF25D0640100A2B991 /* FavoriteIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 384F58D625D0640100A2B991 /* FavoriteIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		384F58DF25D0640100A2B991 /* Intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 384F58D625D0640100A2B991 /* Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		384F58E725D0642800A2B991 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384F58E525D0642800A2B991 /* Data.framework */; };
 		384F58E825D0642800A2B991 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 384F58E525D0642800A2B991 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		384F58E925D0642800A2B991 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384F58E625D0642800A2B991 /* Domain.framework */; };
@@ -58,6 +57,8 @@
 		3896D3D425B35FA1004341A9 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3D325B35FA1004341A9 /* MessageView.swift */; };
 		3896D3D625B369FA004341A9 /* SegmentedControlStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3D525B369FA004341A9 /* SegmentedControlStyle.swift */; };
 		3896D3D825B36A23004341A9 /* SearchBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896D3D725B36A23004341A9 /* SearchBarStyle.swift */; };
+		38A9EC0025D1724C000544EC /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7584257D444800D2F1A8 /* Assets.swift */; };
+		38A9EC0125D17256000544EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CA52D9253C50D300AD5AEC /* Assets.xcassets */; };
 		38BD754D257D3A6500D2F1A8 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754B257D3A6500D2F1A8 /* TimesViewController.swift */; };
 		38BD754E257D3A6500D2F1A8 /* TimesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD754C257D3A6500D2F1A8 /* TimesUI.swift */; };
 		38BD7551257D3DD700D2F1A8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7550257D3DD700D2F1A8 /* View.swift */; };
@@ -89,8 +90,8 @@
 		38D6E761258E64B90010956B /* RoundedRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6E760258E64B90010956B /* RoundedRectView.swift */; };
 		38E9BF0225869F32001B9F19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9BF0125869F32001B9F19 /* Constants.swift */; };
 		38E9BF042586A11E001B9F19 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E9BF032586A11E001B9F19 /* AppFont.swift */; };
-		82B0FE72281FFFAE9DF13492 /* Pods_FavoriteIntent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0734449700E80B9B645C224C /* Pods_FavoriteIntent.framework */; };
-		95F05F8604BCEB7678B75A10 /* Pods_WidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FC12BD5ABD582ED701BA14 /* Pods_WidgetExtension.framework */; };
+		BF5079A4AC8A60E4EFB57F23 /* Pods_Intent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A3D8DBE7A46A3DACE188B5 /* Pods_Intent.framework */; };
+		C472BA95E634DE31AB4665C9 /* Pods_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43D5C877EE8CF0ADBA1DEA0 /* Pods_Widget.framework */; };
 		D668C85709D6C440D29C7144 /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFAED00A9EB54FD607CEDE6 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,14 +101,14 @@
 			containerPortal = 38CA52C5253C50D000AD5AEC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 384C11F825D050A9008327EF;
-			remoteInfo = WidgetExtension;
+			remoteInfo = Widget;
 		};
 		384F58DD25D0640100A2B991 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 38CA52C5253C50D000AD5AEC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 384F58D525D0640100A2B991;
-			remoteInfo = FavoriteIntent;
+			remoteInfo = Intent;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -118,8 +119,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				384F58DF25D0640100A2B991 /* FavoriteIntent.appex in Embed App Extensions */,
-				384C120925D050AA008327EF /* WidgetExtension.appex in Embed App Extensions */,
+				384F58DF25D0640100A2B991 /* Intent.appex in Embed App Extensions */,
+				384C120925D050AA008327EF /* Widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,8 +164,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0734449700E80B9B645C224C /* Pods_FavoriteIntent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavoriteIntent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29FC12BD5ABD582ED701BA14 /* Pods_WidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0976ED719652819C4CACC89A /* Pods-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.release.xcconfig"; path = "Target Support Files/Pods-Widget/Pods-Widget.release.xcconfig"; sourceTree = "<group>"; };
+		30A3D8DBE7A46A3DACE188B5 /* Pods_Intent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		356CBD2A5FD4B29F120E7D74 /* Pods-Intent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intent.release.xcconfig"; path = "Target Support Files/Pods-Intent/Pods-Intent.release.xcconfig"; sourceTree = "<group>"; };
 		3811246225D068FF00A00EB9 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		38216D782585066700DA8EA1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		38216D7A258506D900DA8EA1 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
@@ -176,10 +178,9 @@
 		38216DB925854F2800DA8EA1 /* StopPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointCell.swift; sourceTree = "<group>"; };
 		383D00D025867C0500E2D969 /* FavoriteStopPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStopPointCell.swift; sourceTree = "<group>"; };
 		384A31EC253C726500438F7D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		384C11F925D050A9008327EF /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		384C11F925D050A9008327EF /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		384C11FA25D050A9008327EF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		384C11FC25D050A9008327EF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		384C120225D050AA008327EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384C120425D050AA008327EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384C121325D05139008327EF /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
 		384C121625D051B3008327EF /* FavoriteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteWidget.swift; sourceTree = "<group>"; };
@@ -188,7 +189,7 @@
 		384C122025D0537C008327EF /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		384C122625D05469008327EF /* FavoriteWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteWidgetView.swift; sourceTree = "<group>"; };
 		384C122825D05646008327EF /* FavoriteWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteWidgetEntry.swift; sourceTree = "<group>"; };
-		384F58D625D0640100A2B991 /* FavoriteIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FavoriteIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		384F58D625D0640100A2B991 /* Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		384F58D725D0640100A2B991 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		384F58DA25D0640100A2B991 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		384F58DC25D0640100A2B991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -245,12 +246,11 @@
 		38FFE54F25B460F50069471D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38FFE55025B460F50069471D /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		45E517D43A3897C444F27E8A /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
-		BB0D3B11EE073C675E8DDEBC /* Pods-FavoriteIntent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteIntent.release.xcconfig"; path = "Target Support Files/Pods-FavoriteIntent/Pods-FavoriteIntent.release.xcconfig"; sourceTree = "<group>"; };
-		BB55A2E367DA23BC5BEF829F /* Pods-FavoriteIntent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavoriteIntent.debug.xcconfig"; path = "Target Support Files/Pods-FavoriteIntent/Pods-FavoriteIntent.debug.xcconfig"; sourceTree = "<group>"; };
-		C0402B4DB1E4F80B3BCA1236 /* Pods-WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-WidgetExtension/Pods-WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		81CD6F020339D6F3A9520628 /* Pods-Intent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intent.debug.xcconfig"; path = "Target Support Files/Pods-Intent/Pods-Intent.debug.xcconfig"; sourceTree = "<group>"; };
 		D5555032B6B9E71D42F0C2B9 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
-		E2BA342D7AEB807F6FC551F6 /* Pods-WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-WidgetExtension/Pods-WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		EAFAED00A9EB54FD607CEDE6 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43D5C877EE8CF0ADBA1DEA0 /* Pods_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60B76A3C382427EF7062C32 /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.debug.xcconfig"; path = "Target Support Files/Pods-Widget/Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,7 +262,7 @@
 				384C122125D0537C008327EF /* Data.framework in Frameworks */,
 				384C11FD25D050A9008327EF /* SwiftUI.framework in Frameworks */,
 				384C11FB25D050A9008327EF /* WidgetKit.framework in Frameworks */,
-				95F05F8604BCEB7678B75A10 /* Pods_WidgetExtension.framework in Frameworks */,
+				C472BA95E634DE31AB4665C9 /* Pods_Widget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +273,7 @@
 				384F58E925D0642800A2B991 /* Domain.framework in Frameworks */,
 				384F58E725D0642800A2B991 /* Data.framework in Frameworks */,
 				384F58D825D0640100A2B991 /* Intents.framework in Frameworks */,
-				82B0FE72281FFFAE9DF13492 /* Pods_FavoriteIntent.framework in Frameworks */,
+				BF5079A4AC8A60E4EFB57F23 /* Pods_Intent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +290,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3816CA8D25D2F2880069CED4 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				384C121625D051B3008327EF /* FavoriteWidget.swift */,
+				384C121B25D052C2008327EF /* FavoriteTimelineProvider.swift */,
+				384C122625D05469008327EF /* FavoriteWidgetView.swift */,
+				384C122825D05646008327EF /* FavoriteWidgetEntry.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
 		38216D9D25851D2800DA8EA1 /* SearchResultDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,25 +357,21 @@
 		384C11FE25D050A9008327EF /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				3816CA8D25D2F2880069CED4 /* Favorite */,
 				385D300D25D167760060B448 /* Widget.intentdefinition */,
-				384C120225D050AA008327EF /* Assets.xcassets */,
 				384C120425D050AA008327EF /* Info.plist */,
 				384C121325D05139008327EF /* Widgets.swift */,
-				384C121625D051B3008327EF /* FavoriteWidget.swift */,
-				384C121B25D052C2008327EF /* FavoriteTimelineProvider.swift */,
-				384C122625D05469008327EF /* FavoriteWidgetView.swift */,
-				384C122825D05646008327EF /* FavoriteWidgetEntry.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
 		};
-		384F58D925D0640100A2B991 /* FavoriteIntent */ = {
+		384F58D925D0640100A2B991 /* Intent */ = {
 			isa = PBXGroup;
 			children = (
 				384F58DA25D0640100A2B991 /* IntentHandler.swift */,
 				384F58DC25D0640100A2B991 /* Info.plist */,
 			);
-			path = FavoriteIntent;
+			path = Intent;
 			sourceTree = "<group>";
 		};
 		3882A5BC25B3103300FF111D /* Utils */ = {
@@ -460,7 +467,7 @@
 			children = (
 				38CA52CF253C50D000AD5AEC /* App */,
 				384C11FE25D050A9008327EF /* Widget */,
-				384F58D925D0640100A2B991 /* FavoriteIntent */,
+				384F58D925D0640100A2B991 /* Intent */,
 				38CA533D253C6CAC00AD5AEC /* Frameworks */,
 				EF8E4F971375E09648571BD1 /* Pods */,
 				38CA52CE253C50D000AD5AEC /* Products */,
@@ -471,8 +478,8 @@
 			isa = PBXGroup;
 			children = (
 				38CA52CD253C50D000AD5AEC /* App.app */,
-				384C11F925D050A9008327EF /* WidgetExtension.appex */,
-				384F58D625D0640100A2B991 /* FavoriteIntent.appex */,
+				384C11F925D050A9008327EF /* Widget.appex */,
+				384F58D625D0640100A2B991 /* Intent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -506,8 +513,8 @@
 				384C11FA25D050A9008327EF /* WidgetKit.framework */,
 				384C11FC25D050A9008327EF /* SwiftUI.framework */,
 				384F58D725D0640100A2B991 /* Intents.framework */,
-				0734449700E80B9B645C224C /* Pods_FavoriteIntent.framework */,
-				29FC12BD5ABD582ED701BA14 /* Pods_WidgetExtension.framework */,
+				30A3D8DBE7A46A3DACE188B5 /* Pods_Intent.framework */,
+				F43D5C877EE8CF0ADBA1DEA0 /* Pods_Widget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -517,10 +524,10 @@
 			children = (
 				45E517D43A3897C444F27E8A /* Pods-App.debug.xcconfig */,
 				D5555032B6B9E71D42F0C2B9 /* Pods-App.release.xcconfig */,
-				BB55A2E367DA23BC5BEF829F /* Pods-FavoriteIntent.debug.xcconfig */,
-				BB0D3B11EE073C675E8DDEBC /* Pods-FavoriteIntent.release.xcconfig */,
-				E2BA342D7AEB807F6FC551F6 /* Pods-WidgetExtension.debug.xcconfig */,
-				C0402B4DB1E4F80B3BCA1236 /* Pods-WidgetExtension.release.xcconfig */,
+				81CD6F020339D6F3A9520628 /* Pods-Intent.debug.xcconfig */,
+				356CBD2A5FD4B29F120E7D74 /* Pods-Intent.release.xcconfig */,
+				F60B76A3C382427EF7062C32 /* Pods-Widget.debug.xcconfig */,
+				0976ED719652819C4CACC89A /* Pods-Widget.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -529,9 +536,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		384C11F825D050A9008327EF /* WidgetExtension */ = {
+		384C11F825D050A9008327EF /* Widget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 384C120D25D050AA008327EF /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
+			buildConfigurationList = 384C120D25D050AA008327EF /* Build configuration list for PBXNativeTarget "Widget" */;
 			buildPhases = (
 				4E816A0C5C51EE566EE47BF5 /* [CP] Check Pods Manifest.lock */,
 				384C11F525D050A9008327EF /* Sources */,
@@ -543,14 +550,14 @@
 			);
 			dependencies = (
 			);
-			name = WidgetExtension;
-			productName = WidgetExtension;
-			productReference = 384C11F925D050A9008327EF /* WidgetExtension.appex */;
+			name = Widget;
+			productName = Widget;
+			productReference = 384C11F925D050A9008327EF /* Widget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		384F58D525D0640100A2B991 /* FavoriteIntent */ = {
+		384F58D525D0640100A2B991 /* Intent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 384F58E225D0640100A2B991 /* Build configuration list for PBXNativeTarget "FavoriteIntent" */;
+			buildConfigurationList = 384F58E225D0640100A2B991 /* Build configuration list for PBXNativeTarget "Intent" */;
 			buildPhases = (
 				A10B3F1651C25D62875960FD /* [CP] Check Pods Manifest.lock */,
 				384F58D225D0640100A2B991 /* Sources */,
@@ -562,9 +569,9 @@
 			);
 			dependencies = (
 			);
-			name = FavoriteIntent;
-			productName = FavoriteIntent;
-			productReference = 384F58D625D0640100A2B991 /* FavoriteIntent.appex */;
+			name = Intent;
+			productName = Intent;
+			productReference = 384F58D625D0640100A2B991 /* Intent.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		38CA52CC253C50D000AD5AEC /* App */ = {
@@ -626,8 +633,8 @@
 			projectRoot = "";
 			targets = (
 				38CA52CC253C50D000AD5AEC /* App */,
-				384C11F825D050A9008327EF /* WidgetExtension */,
-				384F58D525D0640100A2B991 /* FavoriteIntent */,
+				384C11F825D050A9008327EF /* Widget */,
+				384F58D525D0640100A2B991 /* Intent */,
 			);
 		};
 /* End PBXProject section */
@@ -637,7 +644,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384C120325D050AA008327EF /* Assets.xcassets in Resources */,
+				38A9EC0125D17256000544EC /* Assets.xcassets in Resources */,
 				384C120F25D050E9008327EF /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,7 +705,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WidgetExtension-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Widget-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -742,7 +749,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FavoriteIntent-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Intent-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -781,6 +788,7 @@
 				384C122725D05469008327EF /* FavoriteWidgetView.swift in Sources */,
 				384F58EC25D0643000A2B991 /* IntentHandler.swift in Sources */,
 				384C121125D050F0008327EF /* L10n.swift in Sources */,
+				38A9EC0025D1724C000544EC /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,12 +860,12 @@
 /* Begin PBXTargetDependency section */
 		384C120825D050AA008327EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 384C11F825D050A9008327EF /* WidgetExtension */;
+			target = 384C11F825D050A9008327EF /* Widget */;
 			targetProxy = 384C120725D050AA008327EF /* PBXContainerItemProxy */;
 		};
 		384F58DE25D0640100A2B991 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 384F58D525D0640100A2B991 /* FavoriteIntent */;
+			target = 384F58D525D0640100A2B991 /* Intent */;
 			targetProxy = 384F58DD25D0640100A2B991 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -897,10 +905,8 @@
 /* Begin XCBuildConfiguration section */
 		384C120B25D050AA008327EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2BA342D7AEB807F6FC551F6 /* Pods-WidgetExtension.debug.xcconfig */;
+			baseConfigurationReference = F60B76A3C382427EF7062C32 /* Pods-Widget.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
@@ -923,10 +929,8 @@
 		};
 		384C120C25D050AA008327EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0402B4DB1E4F80B3BCA1236 /* Pods-WidgetExtension.release.xcconfig */;
+			baseConfigurationReference = 0976ED719652819C4CACC89A /* Pods-Widget.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
@@ -949,13 +953,13 @@
 		};
 		384F58E025D0640100A2B991 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB55A2E367DA23BC5BEF829F /* Pods-FavoriteIntent.debug.xcconfig */;
+			baseConfigurationReference = 81CD6F020339D6F3A9520628 /* Pods-Intent.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 99R4D8SSEQ;
-				INFOPLIST_FILE = FavoriteIntent/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Intent/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -963,7 +967,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba.FavoriteIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba.Intent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -973,13 +977,13 @@
 		};
 		384F58E125D0640100A2B991 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB0D3B11EE073C675E8DDEBC /* Pods-FavoriteIntent.release.xcconfig */;
+			baseConfigurationReference = 356CBD2A5FD4B29F120E7D74 /* Pods-Intent.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 99R4D8SSEQ;
-				INFOPLIST_FILE = FavoriteIntent/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Intent/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -987,7 +991,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba.FavoriteIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba.Intent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1119,7 +1123,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
@@ -1143,7 +1146,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
@@ -1164,7 +1166,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		384C120D25D050AA008327EF /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
+		384C120D25D050AA008327EF /* Build configuration list for PBXNativeTarget "Widget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				384C120B25D050AA008327EF /* Debug */,
@@ -1173,7 +1175,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		384F58E225D0640100A2B991 /* Build configuration list for PBXNativeTarget "FavoriteIntent" */ = {
+		384F58E225D0640100A2B991 /* Build configuration list for PBXNativeTarget "Intent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				384F58E025D0640100A2B991 /* Debug */,
