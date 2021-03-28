@@ -16,4 +16,6 @@
 "search_scope_line" = "Line";
 
 "favorite_stop" = "Favorite stop";
-"favorite_stop_description" = "Śledź odjazdy z wybranego przystanku.";
+"favorite_stop_description" = "Departures from a selected stop.";
+
+"edit_to_select_stop" = "Edit to select a stop";

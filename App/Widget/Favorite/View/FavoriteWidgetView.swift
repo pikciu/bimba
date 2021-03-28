@@ -8,36 +8,24 @@ struct FavoriteWidgetView: View {
     
     let entry: FavoriteWidgetEntry
     
-    var elementsCount: Int {
+    @ViewBuilder
+    private var widgetView: some View {
         switch widgetFamily {
-        case .systemSmall, .systemMedium:
-            return 2
+        case .systemSmall:
+            FavoriteWidgetSmallView(entry: entry)
+        case .systemMedium:
+            FavoriteWidgetMediumView(entry: entry)
         case .systemLarge:
-            return 6
+            FavoriteWidgetLargeView(entry: entry)
         @unknown default:
-            return 6
+            FavoriteWidgetLargeView(entry: entry)
         }
     }
     
     var body: some View {
-        GeometryReader { (geometry) in
-            VStack(alignment: .leading, spacing: 4) {
-                Text(entry.stopPoint.name)
-                    .frame(width: geometry.size.width, alignment: .center)
-                    .foregroundColor(.white)
-                    .padding([.top, .bottom], Constants.UI.systemSpacing)
-                    .font(Font(AppFont.titleFont))
-                ForEach(entry.times.prefix(elementsCount), id: \.self) { (time) in
-                    if case .systemSmall = widgetFamily {
-                        DepartureTimeSmallView(time: time)
-                    } else {
-                        DepartureTimeView(time: time)
-                    }
-                }
-                Spacer()
-            }
+        widgetView
             .background(Color(Asset.backgroundColor.color))
-        }
-        .widgetURL(DeepLink.stop(entry.stopPoint).url)
+            .widgetURL(DeepLink.stop(entry.stopPoint).url)
     }
+    
 }

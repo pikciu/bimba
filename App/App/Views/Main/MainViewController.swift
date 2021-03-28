@@ -1,6 +1,7 @@
 import UIKit
 import Domain
 import RxSwift
+import WidgetKit
 
 final class MainViewController: UITabBarController {
     let disposeBag = DisposeBag()
@@ -31,6 +32,14 @@ final class MainViewController: UITabBarController {
                 switch deepLink {
                 case .stop(let stopPoint):
                     context.showTimes(stop: stopPoint)
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification)
+            .subscribe(onNext: { _ in
+                if #available(iOS 14.0, *) {
+                    WidgetCenter.shared.reloadAllTimelines()
                 }
             })
             .disposed(by: disposeBag)

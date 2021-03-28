@@ -11,7 +11,7 @@ struct FavoriteWidgetEntry: TimelineEntry {
     static var placeholder: FavoriteWidgetEntry {
         FavoriteWidgetEntry(
             date: Date(),
-            stopPoint: StopPoint(id: "", name: "Ratajczaka"),
+            stopPoint: StopPoint(id: "", name: L10n.editToSelectStop),
             times: DepartureTimeFactory.create(count: 3)
         )
     }

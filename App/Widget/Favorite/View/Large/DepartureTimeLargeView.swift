@@ -3,7 +3,7 @@ import SwiftUI
 import Intents
 import Domain
 
-struct DepartureTimeSmallView: View {
+struct DepartureTimeLargeView: View {
     
     let time: DepartureTime
     
@@ -12,14 +12,20 @@ struct DepartureTimeSmallView: View {
             Text(time.line)
                 .font(Font(AppFont.heavy(size: 30)))
                 .foregroundColor(Color(Asset.primaryColor.color))
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
-            Text(time.departure, style: .time)
+                .frame(width: 74, alignment: .center)
+            Text(time.direction)
                 .foregroundColor(Color(Asset.secondaryColor.color))
                 .font(Font(AppFont.titleFont))
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                .lineLimit(2)
+            Spacer()
+            Text(time.departure, style: .time)
+                .foregroundColor(Color(Asset.primaryColor.color))
+                .padding([.trailing], Constants.UI.systemSpacing)
+                .font(Font(AppFont.titleFont))
         }
         .background(Color.white)
         .cornerRadius(Constants.UI.cornerRadius)
         .padding([.leading, .trailing, .bottom], Constants.UI.systemSpacing)
+        
     }
 }

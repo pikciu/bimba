@@ -17,3 +17,5 @@
 
 "favorite_stop" = "Ulubiony przystanek";
 "favorite_stop_description" = "Śledź odjazdy z wybranego przystanku.";
+
+"edit_to_select_stop" = "Edytuj, aby wybrać przystanek";

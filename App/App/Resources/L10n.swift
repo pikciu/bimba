@@ -10,13 +10,15 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// Edit to select a stop
+  internal static let editToSelectStop = L10n.tr("Localizable", "edit_to_select_stop")
   /// There was a problem processing your request. Please make sure you are connected to the Internet or try in a moment.
   internal static let errorPlaceholder = L10n.tr("Localizable", "error_placeholder")
   /// Add stop to favorite to check it without searching.
   internal static let favoritePlaceholder = L10n.tr("Localizable", "favorite_placeholder")
   /// Favorite stop
   internal static let favoriteStop = L10n.tr("Localizable", "favorite_stop")
-  /// Śledź odjazdy z wybranego przystanku.
+  /// Departures from a selected stop.
   internal static let favoriteStopDescription = L10n.tr("Localizable", "favorite_stop_description")
   /// Drives away!
   internal static let isDrivingAway = L10n.tr("Localizable", "is_driving_away")

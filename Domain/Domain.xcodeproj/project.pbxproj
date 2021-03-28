@@ -172,10 +172,10 @@
 				384A327B253CE7E300438F7D /* DateTimeFormatter.swift */,
 				38C8F82C257E6EE90010FEC8 /* Decorable.swift */,
 				38C8F829257E6ED90010FEC8 /* Decorator.swift */,
+				389D9FB025D3166C00FA0FC4 /* DeepLinkHandler.swift */,
 				38E9BEFE258695D8001B9F19 /* LoggerObserver.swift */,
 				384A325A253CE35F00438F7D /* Mapper.swift */,
 				38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */,
-				389D9FB025D3166C00FA0FC4 /* DeepLinkHandler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -195,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				384A3268253CE40500438F7D /* AppError.swift */,
+				389D9FAD25D315FE00FA0FC4 /* DeepLink.swift */,
 				384A3275253CE5B500438F7D /* DepartureTime.swift */,
 				383293752540B29E002E1271 /* Direction.swift */,
 				383293642540AAFB002E1271 /* Route.swift */,
@@ -204,7 +205,6 @@
 				38216DB02585432C00DA8EA1 /* StopPointDirections.swift */,
 				38338D0C253DF69B00F55D60 /* StopPointGroup.swift */,
 				38338D09253DF64A00F55D60 /* Street.swift */,
-				389D9FAD25D315FE00FA0FC4 /* DeepLink.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
