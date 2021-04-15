@@ -12,7 +12,7 @@ struct FavoriteWidgetEntry: TimelineEntry {
         FavoriteWidgetEntry(
             date: Date(),
             stopPoint: StopPoint(id: "", name: L10n.editToSelectStop),
-            times: DepartureTimeFactory.create(count: 3)
+            times: DepartureTimeFactory.create(count: 7)
         )
     }
 }

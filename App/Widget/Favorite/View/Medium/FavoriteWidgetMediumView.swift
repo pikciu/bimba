@@ -7,40 +7,54 @@ struct FavoriteWidgetMediumView: View {
     
     let entry: FavoriteWidgetEntry
     
+    var items: [Item] {
+        Item.items(from: entry, count: 3)
+    }
+    
+    var spacing: CGFloat {
+        Constants.UI.systemSpacing
+    }
+    
+    var smallSpacing: CGFloat {
+        spacing / 2
+    }
+    
+    var addSpacing: Bool {
+        items.allSatisfy({ $0.addSpacing })
+    }
+    
+    var minSpacerSize: CGFloat {
+        if addSpacing {
+            return spacing
+        }
+        return smallSpacing
+    }
+    
     var body: some View {
-        GeometryReader { (geometry) in
-            VStack(alignment: .leading, spacing: 0) {
-                Text(entry.stopPoint.name)
-                    .frame(width: geometry.size.width, alignment: .center)
-                    .foregroundColor(.white)
-                    .padding(.vertical, Constants.UI.systemSpacing / 2)
-                    .font(Font(AppFont.regular(size: .small)))
-                
-                if entry.times.count > 3 {
-                    HStack(spacing: Constants.UI.systemSpacing) {
-                        VStack(spacing: Constants.UI.defaultSpacing / 2) {
-                            ForEach(entry.times.prefix(3), id: \.self) { (time) in
-                                DepartureTimeSmallView(time: time)
-                            }
-                            Spacer()
-                        }
-                        VStack(spacing: Constants.UI.defaultSpacing / 2) {
-                            ForEach(entry.times.suffix(from: 3).prefix(3), id: \.self) { (time) in
-                                DepartureTimeSmallView(time: time)
-                            }
-                            Spacer()
-                        }
-                    }
-                    .padding(.horizontal, Constants.UI.defaultSpacing / 2)
-                } else {
-                    ForEach(entry.times.prefix(3), id: \.self) { (time) in
-                        DepartureTimeLargeView(time: time)
+        VStack(spacing: smallSpacing) {
+            Text(entry.stopPoint.name)
+                .frame(alignment: .center)
+                .foregroundColor(.white)
+                .font(Font(AppFont.regular(size: .small)))
+            
+            VStack(spacing: 0) {
+                ForEach(items, id: \.self) { (item) in
+                    DepartureTimeLargeView(time: item.time)
+                    if item.addSpacing {
+                        Spacer(minLength: minSpacerSize)
                     }
                 }
-                
-                
-                Spacer()
+            }
+            
+            if addSpacing {
+                Spacer(minLength: 0).layoutPriority(1)
             }
         }
+        .padding(EdgeInsets(
+            top: smallSpacing,
+            leading: spacing,
+            bottom: spacing,
+            trailing: spacing
+        ))
     }
 }

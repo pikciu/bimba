@@ -25,7 +25,5 @@ struct DepartureTimeLargeView: View {
         }
         .background(Color.white)
         .cornerRadius(Constants.UI.cornerRadius)
-        .padding([.leading, .trailing, .bottom], Constants.UI.systemSpacing)
-        
     }
 }

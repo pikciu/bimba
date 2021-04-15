@@ -75,6 +75,7 @@
 		38BD757F257D42FC00D2F1A8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38BD7581257D42FC00D2F1A8 /* Localizable.strings */; };
 		38BD7585257D444800D2F1A8 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7583257D444800D2F1A8 /* L10n.swift */; };
 		38BD7586257D444800D2F1A8 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7584257D444800D2F1A8 /* Assets.swift */; };
+		38BE762A26286A950088048E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE762926286A950088048E /* Item.swift */; };
 		38C8F81C257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */; };
 		38C8F81F257E3F980010FEC8 /* StopPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */; };
 		38C8F821257E3FB60010FEC8 /* StopPointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */; };
@@ -210,6 +211,7 @@
 		38BD7580257D42FC00D2F1A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38BD7583257D444800D2F1A8 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		38BD7584257D444800D2F1A8 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		38BE762926286A950088048E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointAnnotation.swift; sourceTree = "<group>"; };
 		38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointAnnotationView.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 		3816CA8D25D2F2880069CED4 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				38BE762826286A8A0088048E /* Model */,
 				38D294A925D30AAA00F2AFF6 /* View */,
 				38D294AC25D30B0800F2AFF6 /* DepartureTimeFactory.swift */,
 				384C121B25D052C2008327EF /* FavoriteTimelineProvider.swift */,
@@ -463,6 +466,14 @@
 				38BD7576257D419400D2F1A8 /* UIView+AutoLayout.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		38BE762826286A8A0088048E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38BE762926286A950088048E /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		38C8F81D257E3F8D0010FEC8 /* Annotations */ = {
@@ -812,6 +823,7 @@
 				384C121425D05139008327EF /* Widgets.swift in Sources */,
 				384C121C25D052C2008327EF /* FavoriteTimelineProvider.swift in Sources */,
 				384C122725D05469008327EF /* FavoriteWidgetView.swift in Sources */,
+				38BE762A26286A950088048E /* Item.swift in Sources */,
 				38D294AB25D30AB700F2AFF6 /* DepartureTimeLargeView.swift in Sources */,
 				384F58EC25D0643000A2B991 /* IntentHandler.swift in Sources */,
 				381BF3A525D3C51C0083C936 /* DepartureTimeSmallView.swift in Sources */,
@@ -1156,14 +1168,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 99R4D8SSEQ;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1179,14 +1191,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 99R4D8SSEQ;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pikciu.bimba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

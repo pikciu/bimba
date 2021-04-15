@@ -7,20 +7,41 @@ struct FavoriteWidgetLargeView: View {
     
     let entry: FavoriteWidgetEntry
     
+    var items: [Item] {
+        Item.items(from: entry, count: 7)
+    }
+    
+    var addSpacing: Bool {
+        items.allSatisfy({ $0.addSpacing })
+    }
+    
+    var minSpacerSize: CGFloat {
+        if addSpacing {
+            return Constants.UI.systemSpacing
+        }
+        return Constants.UI.systemSpacing / 2
+    }
+    
     var body: some View {
-        GeometryReader { (geometry) in
-            VStack(alignment: .leading, spacing: 0) {
-                Text(entry.stopPoint.name)
-                    .frame(width: geometry.size.width, alignment: .center)
-                    .foregroundColor(.white)
-                    .padding([.top, .bottom], Constants.UI.systemSpacing)
-                    .font(Font(AppFont.titleFont))
-                
-                ForEach(entry.times.prefix(7), id: \.self) { (time) in
-                    DepartureTimeLargeView(time: time)
+        VStack(spacing: Constants.UI.systemSpacing) {
+            Text(entry.stopPoint.name)
+                .frame(alignment: .center)
+                .foregroundColor(.white)
+                .font(Font(AppFont.titleFont))
+            
+            VStack(spacing: 0) {
+                ForEach(items, id: \.self) { (item) in
+                    DepartureTimeLargeView(time: item.time)
+                    if item.addSpacing {
+                        Spacer(minLength: minSpacerSize)
+                    }
                 }
-                Spacer()
+            }
+            
+            if addSpacing {
+                Spacer(minLength: 0).layoutPriority(1)
             }
         }
+        .padding(Constants.UI.systemSpacing)
     }
 }
