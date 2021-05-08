@@ -1,5 +1,6 @@
 import Foundation
 import RxSwiftUtilities
+import CoreLocation
 
 public struct DomainModule: Module {
     
@@ -9,5 +10,8 @@ public struct DomainModule: Module {
         
         container.register(DeepLinkHandler.self) { _ in DeepLinkHandler() }
             .inObjectScope(.container)
+        
+        container.register(CLLocationManager.self) { _ in CLLocationManager() }
+            .inObjectScope(.weak)
     }
 }

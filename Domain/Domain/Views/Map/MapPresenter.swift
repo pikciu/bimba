@@ -8,7 +8,7 @@ import RxOptional
 public final class MapPresenter {
     private let disposeBag = DisposeBag()
     private let activityIndicator = SharedActivityIndicator()
-    private let locationManager = CLLocationManager()
+    private let locationManager = Container.resolve(CLLocationManager.self)
 
     public unowned let view: MapView
     
@@ -19,7 +19,7 @@ public final class MapPresenter {
         
         locationManager.requestWhenInUseAuthorization()
         
-        Observable.merge(locationManager.rx.didChangeAuthorization.map({ $0.status }), locationManager.rx.status)
+        locationManager.rx.statusChanges
             .map({ $0 == .authorizedWhenInUse })
             .bind(to: view.showUserTrackingButton)
             .disposed(by: disposeBag)
@@ -38,5 +38,15 @@ public final class MapPresenter {
             .execute()
             .bind(to: stopPoints)
             .disposed(by: disposeBag)
+    }
+}
+
+extension Reactive where Base: CLLocationManager {
+    
+    var statusChanges: Observable<CLAuthorizationStatus> {
+        Observable.merge(
+            didChangeAuthorization.map({ $0.status }),
+            status
+        )
     }
 }

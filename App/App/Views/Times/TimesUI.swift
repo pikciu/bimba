@@ -19,4 +19,8 @@ final class TimesUI: View {
         tableView.apply(DefaultTableViewStyle())
         tableView.allowsSelection = false
     }
+    
+    override func localizeInterface() {
+        favoriteButton.accessibilityLabel = L10n.star
+    }
 }

@@ -6,6 +6,7 @@
 "search_placeholder" = "Wyszukaj przystanek, linię lub ulicę i sprawdź kiedy odjedzie Twój autobus lub tramwaj.";
 "error_placeholder" = "Wystąpił problem z przetwarzaniem Twojego żądania. Upewnij się, że masz połączenie z Internetem lub spróbuj za chwilę.";
 "search_no_result_placeholder" = "Nie możemy znaleźć tego, czego szukasz. Sprawdź, czy Twoje zapytanie jest poprawne.";
+"no_location_permissions_placeholder" = "Aplikacja nie ma uprawnień do określenia Twojej pozycji.\nWłącz dostęp do lokalizacji w ustawieniach iPhone'a, aby zobaczyć pobliskie przystanki.";
 
 "is_driving_away" = "Odjeżdża!";
 "minutes_format" = "%d min";
@@ -19,3 +20,10 @@
 "favorite_stop_description" = "Śledź odjazdy z wybranego przystanku.";
 
 "edit_to_select_stop" = "Edytuj, aby wybrać przystanek";
+
+"favorite" = "Ulubione";
+"nearby" = "Najbliższe";
+
+"add_to_favorites" = "Dodaj do ulubionych";
+"remove_from_favorites" = "Usuń z ulubionych";
+"star" = "Gwiazdka";

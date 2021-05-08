@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38193B952646836D0062E9FA /* GetNearbyStopPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38193B942646836D0062E9FA /* GetNearbyStopPoints.swift */; };
 		38216D9925851CB300DA8EA1 /* SearchResultDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D9725851CB300DA8EA1 /* SearchResultDetailsPresenter.swift */; };
 		38216D9A25851CB300DA8EA1 /* SearchResultDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216D9825851CB300DA8EA1 /* SearchResultDetailsView.swift */; };
 		38216DA725853AF000DA8EA1 /* SharedActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38193B942646836D0062E9FA /* GetNearbyStopPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNearbyStopPoints.swift; sourceTree = "<group>"; };
 		38216D9725851CB300DA8EA1 /* SearchResultDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailsPresenter.swift; sourceTree = "<group>"; };
 		38216D9825851CB300DA8EA1 /* SearchResultDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDetailsView.swift; sourceTree = "<group>"; };
 		38216DA625853AF000DA8EA1 /* SharedActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedActivityIndicator.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				383D00CA258679F800E2D969 /* StopPointIsFavorite.swift */,
 				383D00CD25867A6A00E2D969 /* ToggleFavorite.swift */,
 				384A328C253CEE2100438F7D /* UseCase.swift */,
+				38193B942646836D0062E9FA /* GetNearbyStopPoints.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				384A3276253CE5B500438F7D /* DepartureTime.swift in Sources */,
 				38216DB7258545E900DA8EA1 /* GetStopPointsByStreet.swift in Sources */,
 				383D00CB258679F800E2D969 /* StopPointIsFavorite.swift in Sources */,
+				38193B952646836D0062E9FA /* GetNearbyStopPoints.swift in Sources */,
 				383293762540B29E002E1271 /* Direction.swift in Sources */,
 				3882A5AF25B2494A00FF111D /* DateExtensions.swift in Sources */,
 				383293652540AAFB002E1271 /* Route.swift in Sources */,

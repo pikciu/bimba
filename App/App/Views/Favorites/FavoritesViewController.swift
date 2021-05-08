@@ -11,8 +11,16 @@ final class FavoritesViewController: ViewController<FavoritesUI>, FavoritesView 
         ui.tableView.rx.cells(type: FavoriteStopPointCell.self).disposed(by: disposeBag)
     }
     
+    var selectedViewIndex: Observable<Int> {
+        ui.segmentedControl.rx.selectedSegmentIndex.asObservable()
+    }
+    
     var isEmpty: AnyObserver<Bool> {
         ui.apply(PlaceholderDecorator(style: .favorites))
+    }
+    
+    var noPermissions: AnyObserver<Bool> {
+        ui.apply(PlaceholderDecorator(style: .noLocationPermissions))
     }
 
     override func viewDidLoad() {

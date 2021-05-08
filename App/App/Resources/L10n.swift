@@ -10,10 +10,14 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// Add to favorites
+  internal static let addToFavorites = L10n.tr("Localizable", "add_to_favorites")
   /// Edit to select a stop
   internal static let editToSelectStop = L10n.tr("Localizable", "edit_to_select_stop")
   /// There was a problem processing your request. Please make sure you are connected to the Internet or try in a moment.
   internal static let errorPlaceholder = L10n.tr("Localizable", "error_placeholder")
+  /// Favorite
+  internal static let favorite = L10n.tr("Localizable", "favorite")
   /// Add stop to favorite to check it without searching.
   internal static let favoritePlaceholder = L10n.tr("Localizable", "favorite_placeholder")
   /// Favorite stop
@@ -26,6 +30,12 @@ internal enum L10n {
   internal static func minutesFormat(_ p1: Int) -> String {
     return L10n.tr("Localizable", "minutes_format", p1)
   }
+  /// Nearby
+  internal static let nearby = L10n.tr("Localizable", "nearby")
+  /// The app doesn't have permission to determine your position.\nEnable location access in iPhone settings to see nearby stops.
+  internal static let noLocationPermissionsPlaceholder = L10n.tr("Localizable", "no_location_permissions_placeholder")
+  /// Remove from favorites
+  internal static let removeFromFavorites = L10n.tr("Localizable", "remove_from_favorites")
   /// We couldn't find what you're looking for. Check if your query is correct.
   internal static let searchNoResultPlaceholder = L10n.tr("Localizable", "search_no_result_placeholder")
   /// Search for stop, line or street to check when your bus or tram is leaving.
@@ -38,6 +48,8 @@ internal enum L10n {
   internal static let searchScopeStopPoint = L10n.tr("Localizable", "search_scope_stop_point")
   /// Street
   internal static let searchScopeStreet = L10n.tr("Localizable", "search_scope_street")
+  /// Star
+  internal static let star = L10n.tr("Localizable", "star")
   /// My stops
   internal static let tabFavorites = L10n.tr("Localizable", "tab_favorites")
   /// Map

@@ -45,6 +45,7 @@ final class PlaceholderView: View, Configurable {
 enum Placeholder: PlaceholderViewModelType {
     case favorites
     case search
+    case noLocationPermissions
     case noResults
     case error
     
@@ -54,6 +55,8 @@ enum Placeholder: PlaceholderViewModelType {
             return Asset.starPlaceholder.image
         case .search:
             return Asset.searchPlaceholder.image
+        case .noLocationPermissions:
+            return Asset.errorPlaceholder.image
         case .noResults:
             return Asset.errorPlaceholder.image
         case .error:
@@ -67,6 +70,8 @@ enum Placeholder: PlaceholderViewModelType {
             return L10n.favoritePlaceholder
         case .search:
             return L10n.searchPlaceholder
+        case .noLocationPermissions:
+            return L10n.noLocationPermissionsPlaceholder
         case .noResults:
             return L10n.searchNoResultPlaceholder
         case .error:

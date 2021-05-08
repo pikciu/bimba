@@ -12,7 +12,7 @@ struct PlaceholderDecorator<T: UIView>: Decorator {
         object.add(subviews: placeholder)
         
         NSLayoutConstraint.activate([
-            placeholder.bottomAnchor.constraint(equalTo: object.centerYAnchor),
+            placeholder.centerYAnchor.constraint(equalTo: object.centerYAnchor),
             placeholder.leadingAnchor.constraint(equalTo: object.leadingAnchor, constant: Constants.UI.defaultSpacing).with(priority: .defaultHigh),
             placeholder.trailingAnchor.constraint(equalTo: object.trailingAnchor, constant: -Constants.UI.defaultSpacing).with(priority: .defaultHigh)
         ])

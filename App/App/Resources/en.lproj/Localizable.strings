@@ -6,6 +6,7 @@
 "search_placeholder" = "Search for stop, line or street to check when your bus or tram is leaving.";
 "error_placeholder" = "There was a problem processing your request. Please make sure you are connected to the Internet or try in a moment.";
 "search_no_result_placeholder" = "We couldn't find what you're looking for. Check if your query is correct.";
+"no_location_permissions_placeholder" = "The app doesn't have permission to determine your position.\nEnable location access in iPhone settings to see nearby stops.";
 
 "is_driving_away" = "Drives away!";
 "minutes_format" = "%d min";
@@ -19,3 +20,10 @@
 "favorite_stop_description" = "Departures from a selected stop.";
 
 "edit_to_select_stop" = "Edit to select a stop";
+
+"favorite" = "Favorite";
+"nearby" = "Nearby";
+
+"add_to_favorites" = "Add to favorites";
+"remove_from_favorites" = "Remove from favorites";
+"star" = "Star";
