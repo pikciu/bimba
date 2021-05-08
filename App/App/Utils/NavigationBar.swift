@@ -1,7 +1,7 @@
 import UIKit
 import Domain
 
-protocol NavigationBar: class {
+protocol NavigationBar: AnyObject {
     var barTintColor: UIColor? { get set }
     var barStyle: UIBarStyle { get set }
     var tintColor: UIColor! { get set }

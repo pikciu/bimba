@@ -3,7 +3,7 @@ import RxSwift
 import RxCocoa
 import CoreLocation
 
-public protocol MapView: class {
+public protocol MapView: AnyObject {
     var showUserTrackingButton: AnyObserver<Bool> { get }
     
     func display(stopPoints: [StopPointDetails])

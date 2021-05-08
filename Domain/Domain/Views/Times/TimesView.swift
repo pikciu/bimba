@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-public protocol TimesView: class {
+public protocol TimesView: AnyObject {
     var isBusy: AnyObserver<Bool> { get }
     var stopPoint: StopPointType { get }
     var times: AnyObserver<[DepartureTime]> { get }

@@ -2,7 +2,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-public protocol SearchResultDetailsView: class {
+public protocol SearchResultDetailsView: AnyObject {
     var isBusy: AnyObserver<Bool> { get }
     var searchResult: SearchResult { get }
     var routes: AnyObserver<[Route]> { get }
