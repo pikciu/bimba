@@ -231,6 +231,7 @@
 				383D00C72586783E00E2D969 /* FavoriteStopPoints.swift */,
 				384A328F253CEE2E00438F7D /* GetDepartureTimes.swift */,
 				3896D3D025B34E7D004341A9 /* GetMessage.swift */,
+				38193B942646836D0062E9FA /* GetNearbyStopPoints.swift */,
 				383293682540AC9E002E1271 /* GetRoutes.swift */,
 				383D00C12586688400E2D969 /* GetStopPoints.swift */,
 				38216DB3258545AA00DA8EA1 /* GetStopPointsByName.swift */,
@@ -240,7 +241,6 @@
 				383D00CA258679F800E2D969 /* StopPointIsFavorite.swift */,
 				383D00CD25867A6A00E2D969 /* ToggleFavorite.swift */,
 				384A328C253CEE2100438F7D /* UseCase.swift */,
-				38193B942646836D0062E9FA /* GetNearbyStopPoints.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";

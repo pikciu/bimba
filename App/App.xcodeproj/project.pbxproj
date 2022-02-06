@@ -79,6 +79,7 @@
 		38C5C67727B0444A00F30286 /* TabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5C67627B0444A00F30286 /* TabBarStyle.swift */; };
 		38C5C67927B0447900F30286 /* BarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5C67827B0447900F30286 /* BarAppearance.swift */; };
 		38C5C67B27B0457000F30286 /* RemoteLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5C67A27B0457000F30286 /* RemoteLogDestination.swift */; };
+		38C5C67D27B049D000F30286 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5C67C27B049D000F30286 /* NavigationController.swift */; };
 		38C8F81C257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */; };
 		38C8F81F257E3F980010FEC8 /* StopPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */; };
 		38C8F821257E3FB60010FEC8 /* StopPointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */; };
@@ -218,6 +219,7 @@
 		38C5C67627B0444A00F30286 /* TabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarStyle.swift; sourceTree = "<group>"; };
 		38C5C67827B0447900F30286 /* BarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarAppearance.swift; sourceTree = "<group>"; };
 		38C5C67A27B0457000F30286 /* RemoteLogDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLogDestination.swift; sourceTree = "<group>"; };
+		38C5C67C27B049D000F30286 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointAnnotation.swift; sourceTree = "<group>"; };
 		38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointAnnotationView.swift; sourceTree = "<group>"; };
@@ -399,14 +401,14 @@
 		3882A5BC25B3103300FF111D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				38C5C67827B0447900F30286 /* BarAppearance.swift */,
 				3882A5C925B3119800FF111D /* DefaultTableViewStyle.swift */,
 				3882A5A825B2261600FF111D /* FooterLoader.swift */,
 				3882A5BF25B3109A00FF111D /* NavigationBar.swift */,
 				3882A5BD25B3103C00FF111D /* PlaceholderDecorator.swift */,
+				38C5C67A27B0457000F30286 /* RemoteLogDestination.swift */,
 				3896D3D525B369FA004341A9 /* SegmentedControlStyle.swift */,
 				38C5C67627B0444A00F30286 /* TabBarStyle.swift */,
-				38C5C67827B0447900F30286 /* BarAppearance.swift */,
-				38C5C67A27B0457000F30286 /* RemoteLogDestination.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -425,6 +427,7 @@
 		38BD754F257D3DD100D2F1A8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				38C5C67C27B049D000F30286 /* NavigationController.swift */,
 				38216D782585066700DA8EA1 /* TableViewCell.swift */,
 				38BD7550257D3DD700D2F1A8 /* View.swift */,
 				38BD7552257D3E0B00D2F1A8 /* ViewController.swift */,
@@ -878,6 +881,7 @@
 				38BD7568257D400000D2F1A8 /* SearchViewController.swift in Sources */,
 				384A31ED253C726500438F7D /* MainViewController.swift in Sources */,
 				38BD7551257D3DD700D2F1A8 /* View.swift in Sources */,
+				38C5C67D27B049D000F30286 /* NavigationController.swift in Sources */,
 				38BD7586257D444800D2F1A8 /* Assets.swift in Sources */,
 				38C8F823257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift in Sources */,
 				3882A5C825B3116C00FF111D /* NSAttributedStringExtensions.swift in Sources */,
