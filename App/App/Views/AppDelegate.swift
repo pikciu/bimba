@@ -21,6 +21,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         
 #if DEBUG
         log.logLevel = .debug
+        log.add(destination: ConsoleLogDestination())
+#else
+        log.logLevel = .warning
+        log.add(destination: RemoteLogDestination())
 #endif
         
         return true

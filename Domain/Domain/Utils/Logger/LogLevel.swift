@@ -7,7 +7,7 @@ public enum LogLevel: Int {
     case warning
     case error
     
-    var label: String {
+    public var label: String {
         "\(self)".uppercased()
     }
 }

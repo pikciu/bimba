@@ -1,18 +1,17 @@
 import Foundation
 
-public let log = Logger(destinations: ConsoleLogDestination())
+public let log = Logger()
 
 public final class Logger {
     
-    private let destinations: [LogDestination]
-    private let dateFormatter: DateFormatter = {
-       let formatter = DateFormatter()
-       formatter.dateFormat = "yyyy-MM-dd hh:mm:ss.SSS"
-       return formatter
-    }()
+    private var destinations: [LogDestination]
     
     init(destinations: LogDestination...) {
         self.destinations = destinations
+    }
+    
+    public func add(destination: LogDestination) {
+        destinations.append(destination)
     }
     
     public var logLevel: LogLevel?
@@ -27,13 +26,9 @@ public final class Logger {
         guard let logLevel = logLevel, level.rawValue >= logLevel.rawValue else {
             return
         }
-        let date = dateFormatter.string(from: Date())
-        let file = filename.components(separatedBy: "/").last ?? ""
-        
-        let message = "\(date) \(level.label) \(file):\(line) \(function)\n\(object())"
         
         destinations.forEach { (destination) in
-            destination.log(message: message)
+            destination.log(object, level: level, filename: filename, line: line, function: function)
         }
     }
     

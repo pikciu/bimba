@@ -45,7 +45,6 @@ public final class FavoritesPresenter {
         
         view.selectedViewIndex.map({ View(rawValue: $0) })
             .filterNil()
-            .debug()
             .bind(to: selectedView)
             .disposed(by: disposeBag)
         

@@ -76,6 +76,9 @@
 		38BD7585257D444800D2F1A8 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7583257D444800D2F1A8 /* L10n.swift */; };
 		38BD7586257D444800D2F1A8 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BD7584257D444800D2F1A8 /* Assets.swift */; };
 		38BE762A26286A950088048E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BE762926286A950088048E /* Item.swift */; };
+		38C5C67727B0444A00F30286 /* TabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5C67627B0444A00F30286 /* TabBarStyle.swift */; };
+		38C5C67927B0447900F30286 /* BarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5C67827B0447900F30286 /* BarAppearance.swift */; };
+		38C5C67B27B0457000F30286 /* RemoteLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5C67A27B0457000F30286 /* RemoteLogDestination.swift */; };
 		38C8F81C257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */; };
 		38C8F81F257E3F980010FEC8 /* StopPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */; };
 		38C8F821257E3FB60010FEC8 /* StopPointAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */; };
@@ -212,6 +215,9 @@
 		38BD7583257D444800D2F1A8 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		38BD7584257D444800D2F1A8 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		38BE762926286A950088048E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		38C5C67627B0444A00F30286 /* TabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarStyle.swift; sourceTree = "<group>"; };
+		38C5C67827B0447900F30286 /* BarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarAppearance.swift; sourceTree = "<group>"; };
+		38C5C67A27B0457000F30286 /* RemoteLogDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLogDestination.swift; sourceTree = "<group>"; };
 		38C8F81B257E3F720010FEC8 /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		38C8F81E257E3F980010FEC8 /* StopPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointAnnotation.swift; sourceTree = "<group>"; };
 		38C8F820257E3FB60010FEC8 /* StopPointAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPointAnnotationView.swift; sourceTree = "<group>"; };
@@ -398,6 +404,9 @@
 				3882A5BF25B3109A00FF111D /* NavigationBar.swift */,
 				3882A5BD25B3103C00FF111D /* PlaceholderDecorator.swift */,
 				3896D3D525B369FA004341A9 /* SegmentedControlStyle.swift */,
+				38C5C67627B0444A00F30286 /* TabBarStyle.swift */,
+				38C5C67827B0447900F30286 /* BarAppearance.swift */,
+				38C5C67A27B0457000F30286 /* RemoteLogDestination.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -856,6 +865,7 @@
 				38E9BF0225869F32001B9F19 /* Constants.swift in Sources */,
 				38BD755D257D3F8B00D2F1A8 /* FavoritesViewController.swift in Sources */,
 				38D6E75F258E5D9C0010956B /* PlaceholderView.swift in Sources */,
+				38C5C67B27B0457000F30286 /* RemoteLogDestination.swift in Sources */,
 				383D00D125867C0500E2D969 /* FavoriteStopPointCell.swift in Sources */,
 				3896D3D625B369FA004341A9 /* SegmentedControlStyle.swift in Sources */,
 				38216D792585066700DA8EA1 /* TableViewCell.swift in Sources */,
@@ -872,10 +882,12 @@
 				38C8F823257E3FED0010FEC8 /* StopPointClusterAnnotationView.swift in Sources */,
 				3882A5C825B3116C00FF111D /* NSAttributedStringExtensions.swift in Sources */,
 				38BD7577257D419400D2F1A8 /* UIView+AutoLayout.swift in Sources */,
+				38C5C67727B0444A00F30286 /* TabBarStyle.swift in Sources */,
 				38216DA125851D3200DA8EA1 /* SearchResultDetailsUI.swift in Sources */,
 				3882A5BB25B3100500FF111D /* VehicleTypeView.swift in Sources */,
 				385D300925D167760060B448 /* Widget.intentdefinition in Sources */,
 				3896D3D825B36A23004341A9 /* SearchBarStyle.swift in Sources */,
+				38C5C67927B0447900F30286 /* BarAppearance.swift in Sources */,
 				38216D7B258506D900DA8EA1 /* TimeCell.swift in Sources */,
 				38BD755E257D3F8B00D2F1A8 /* FavoritesUI.swift in Sources */,
 				3896D3D425B35FA1004341A9 /* MessageView.swift in Sources */,
