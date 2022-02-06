@@ -3,6 +3,7 @@ import RxSwift
 import RxCocoa
 import CoreLocation
 import RxCoreLocation
+import DependencyContainer
 
 public final class FavoritesPresenter {
     enum View: Int {

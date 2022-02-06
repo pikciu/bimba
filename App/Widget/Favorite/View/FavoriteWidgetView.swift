@@ -17,6 +17,8 @@ struct FavoriteWidgetView: View {
             FavoriteWidgetMediumView(entry: entry)
         case .systemLarge:
             FavoriteWidgetLargeView(entry: entry)
+        case .systemExtraLarge:
+            FavoriteWidgetLargeView(entry: entry)
         @unknown default:
             FavoriteWidgetLargeView(entry: entry)
         }

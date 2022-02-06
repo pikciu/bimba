@@ -11,11 +11,16 @@ def shared_pods
 	pod 'RxCocoa'
 	pod 'RxRelay'
 	pod 'RxOptional'
-	pod 'RxSwiftExt'
-	pod 'RxSwiftUtilities'
+	pod 'RxSwiftExt', :git => 'https://github.com/RxSwiftCommunity/RxSwiftExt.git'
+	pod 'RxSwiftUtilities', :git => 'https://github.com/RxSwiftCommunity/RxSwiftUtilities.git'
 	pod 'RxCoreLocation'
 
-	pod 'Swinject'
+	pod 'DependencyContainer'
+end
+
+def realm
+	pod 'RealmSwift', '~> 10.14.0'
+	pod 'RxRealm'
 end
 
 target 'App' do
@@ -25,8 +30,7 @@ target 'App' do
 
 	pod 'RxCells'
 	
-	pod 'RealmSwift'
-	pod 'RxRealm'
+	realm
 
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Crashlytics'
@@ -42,9 +46,7 @@ target 'Data' do
 	project 'Data/Data.xcodeproj'
 
 	shared_pods
-	
-	pod 'RealmSwift'
-	pod 'RxRealm'
+	realm
 end
 
 target 'Widget' do

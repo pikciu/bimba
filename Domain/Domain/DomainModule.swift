@@ -1,17 +1,13 @@
 import Foundation
 import RxSwiftUtilities
 import CoreLocation
+import DependencyContainer
 
 public struct DomainModule: Module {
     
-    public static func register(in container: SwinjectContainer) {
-        container.register(ActivityIndicator.self) { _ in ActivityIndicator() }
-            .inObjectScope(.weak)
-        
-        container.register(DeepLinkHandler.self) { _ in DeepLinkHandler() }
-            .inObjectScope(.container)
-        
-        container.register(CLLocationManager.self) { _ in CLLocationManager() }
-            .inObjectScope(.weak)
+    public static func register(in container: Container) {
+        container.registerWeak(ActivityIndicator.self) { _ in ActivityIndicator() }
+        container.registerShared(DeepLinkHandler.self) { _ in DeepLinkHandler() }
+        container.registerWeak(CLLocationManager.self) { _ in CLLocationManager() }
     }
 }

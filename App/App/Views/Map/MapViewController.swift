@@ -8,6 +8,14 @@ final class MapViewController: ViewController<MapUI>, MapView, MKMapViewDelegate
 
     private lazy var presenter = MapPresenter(view: self)
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if #available(iOS 13.0, *) {
+            return .darkContent
+        } else {
+            return .default
+        }
+    }
+    
     var showUserTrackingButton: AnyObserver<Bool> {
         ui.userLocationButtonHeightConstraint.rx.constant.mapObserver({ $0 ? 40 : 0 })
     }

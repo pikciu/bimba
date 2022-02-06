@@ -29,7 +29,7 @@ final class SearchViewController: ViewController<SearchUI>, SearchView {
             search.searchBar.scopeButtonTitles = scopes.map({ $0.title })
         }.asObserver()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.initialize()

@@ -2,6 +2,7 @@ import UIKit
 import Domain
 import RxSwift
 import WidgetKit
+import DependencyContainer
 
 final class MainViewController: UITabBarController {
     let disposeBag = DisposeBag()
@@ -20,13 +21,13 @@ final class MainViewController: UITabBarController {
             .subscribe(LoggerObserver())
             .disposed(by: disposeBag)
         
-        tabBar.apply(AppNavigationStyle())
+        tabBar.apply(TabBarStyle())
         
         activityIndicator.shared.drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible)
             .disposed(by: disposeBag)
         
         deepLinkHandler.observe()
-            .observeOn(MainScheduler.asyncInstance)
+            .observe(on: MainScheduler.asyncInstance)
             .withUnretained(self)
             .subscribe(onNext: { (context, deepLink) in
                 switch deepLink {
@@ -62,19 +63,34 @@ final class MainViewController: UITabBarController {
         ]
         
         let viewControllers = items.map({ (item) -> UIViewController in
-            let viewController = item.viewController
+            let viewController = item.createViewController()
             viewController.title = item.title
-            let navigationController = UINavigationController(rootViewController: viewController)
-            navigationController.navigationBar.apply(AppNavigationStyle())
-            return navigationController
+            return NavigationController(rootViewController: viewController)
         })
-        
-        tabBar.unselectedItemTintColor = Asset.secondaryColor.color.withAlphaComponent(0.5)
         
         setViewControllers(viewControllers, animated: false)
         zip(tabBar.items ?? [], items).forEach { (tabBarItem, item) in
             tabBarItem.title = item.title
             tabBarItem.image = item.image
+        }
+    }
+}
+
+final class NavigationController: UINavigationController {
+    
+    override var childForStatusBarStyle: UIViewController? {
+        nil
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        topViewController?.preferredStatusBarStyle ?? .lightContent
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationBar.apply(AppNavigationStyle())
+        if #available(iOS 13.0, *) {
+            navigationBar.apply(AppNavigationAppearanceStyle())
         }
     }
 }

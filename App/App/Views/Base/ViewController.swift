@@ -5,6 +5,10 @@ import RxCocoa
 class ViewController<UI: View>: UIViewController {
     let disposeBag = DisposeBag()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     var ui: UI {
         view as! UI
     }

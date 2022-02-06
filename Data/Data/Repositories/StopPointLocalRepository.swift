@@ -60,7 +60,7 @@ final class RealmContext {
                 configuration.deleteRealmIfMigrationNeeded = true
                 observer(.success(try Realm(configuration: configuration)))
             } catch {
-                observer(.error(error))
+                observer(.failure(error))
             }
             return Disposables.create()
         }

@@ -1,5 +1,6 @@
 import UIKit
 import Domain
+import RxSwift
 import RxCocoa
 
 final class MessageView: View {
@@ -55,7 +56,7 @@ final class MessageView: View {
 
 struct MessageHeaderDecorator: Decorator {
     
-    func apply(on object: UITableView) -> Binder<String?> {
+    func apply(on object: UITableView) -> RxSwift.Binder<String?> {
         let messageView = MessageView()
         messageView.frame.size.height = 45
         

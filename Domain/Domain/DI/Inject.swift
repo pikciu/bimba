@@ -1,9 +1,9 @@
-import Foundation
+import DependencyContainer
 
 @propertyWrapper
 public final class Inject<T> {
     
-    private lazy var value: T = Container.resolve()
+    private lazy var value = Container.resolve(T.self)
     
     public init() {
         

@@ -2,6 +2,7 @@ import UIKit
 import Domain
 import Data
 import Firebase
+import DependencyContainer
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,7 +12,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     override init() {
         super.init()
         
-        Container.register(modules: DataModule.self, DomainModule.self)
+        Container.register(modules: [DataModule.self, DomainModule.self])
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -1,4 +1,4 @@
-import Foundation
+import DependencyContainer
 import RxSwift
 import Domain
 
@@ -16,7 +16,7 @@ final class HTTPClient {
                 log.verbose(request.resource)
                 
                 if let error = error {
-                    observer(.error(HTTPError.networkError(error)))
+                    observer(.failure(HTTPError.networkError(error)))
                     return
                 }
                 
@@ -24,14 +24,14 @@ final class HTTPClient {
                     let httpResponse = urlResponse as? HTTPURLResponse,
                     let data = data
                 else {
-                    observer(.error(HTTPError.noResponse))
+                    observer(.failure(HTTPError.noResponse))
                     return
                 }
           
                 guard 200..<300 ~= httpResponse.statusCode else {
                     let json = String(bytes: data, encoding: .utf8) ?? ""
                     log.verbose(json)
-                    observer(.error(HTTPError.httpError(status: httpResponse.statusCode, data: data)))
+                    observer(.failure(HTTPError.httpError(status: httpResponse.statusCode, data: data)))
                     return
                 }
                 
@@ -48,7 +48,7 @@ final class HTTPClient {
             }
         }
         
-        return observable.observeOn(MainScheduler.instance)
+        return observable.observe(on: MainScheduler.instance)
             .do(onError: { (error) in
                 log.error(error)
             })

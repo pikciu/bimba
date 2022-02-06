@@ -17,11 +17,11 @@ struct SearchFooterDecorator: Decorator {
         
         NSLayoutConstraint.activate([
             activityIndicator.centerXAnchor.constraint(equalTo: container.centerXAnchor),
-            activityIndicator.centerYAnchor.constraint(equalTo: container.topAnchor, constant: 50),
+            activityIndicator.centerYAnchor.constraint(equalTo: container.centerYAnchor),
             
             placeholderView.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: Constants.UI.defaultSpacing).with(priority: .defaultHigh),
             placeholderView.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -Constants.UI.defaultSpacing).with(priority: .defaultHigh),
-            placeholderView.bottomAnchor.constraint(equalTo: container.centerYAnchor)
+            placeholderView.centerYAnchor.constraint(equalTo: container.centerYAnchor)
         ])
         
         return Binder(object) { (tableView, state) in

@@ -2,19 +2,20 @@ import Intents
 import Domain
 import Data
 import RxSwift
+import DependencyContainer
 
 final class IntentHandler: INExtension, ConfigurationIntentHandling {
     
     override init() {
         super.init()
-        Container.register(modules: DataModule.self)
+        Container.register(modules: [DataModule.self])
     }
     
     func provideFavoriteOptionsCollection(for intent: ConfigurationIntent, with completion: @escaping (INObjectCollection<FavoriteStopPoint>?, Error?) -> Void) {
         
         _ = FavoriteStopPoints()
             .execute()
-            .subscribeOn(MainScheduler.asyncInstance)
+            .subscribe(on: MainScheduler.asyncInstance)
             .take(1)
             .map({ (stopPoints) in
                 stopPoints.map({ (stopPoint) in

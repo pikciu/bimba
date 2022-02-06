@@ -45,7 +45,7 @@ public final class TimesPresenter {
         GetMessage(stopPointID: view.stopPoint.id)
             .execute()
             .map({ $0 as String? })
-            .catchErrorJustReturn(nil)
+            .catchAndReturn(nil)
             .asObservable()
             .startWith(nil)
             .bind(to: view.message)

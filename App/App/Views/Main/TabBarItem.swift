@@ -5,17 +5,6 @@ enum TabBarItem {
     case search
     case map
     
-    var viewController: UIViewController {
-        switch self {
-        case .favorites:
-            return FavoritesViewController()
-        case .search:
-            return SearchViewController()
-        case .map:
-            return MapViewController()
-        }
-    }
-    
     var title: String {
         switch self {
         case .favorites:
@@ -35,6 +24,17 @@ enum TabBarItem {
             return Asset.search.image
         case .map:
             return Asset.map.image
+        }
+    }
+    
+    func createViewController() -> UIViewController {
+        switch self {
+        case .favorites:
+            return FavoritesViewController()
+        case .search:
+            return SearchViewController()
+        case .map:
+            return MapViewController()
         }
     }
 }

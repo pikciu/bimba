@@ -4,6 +4,7 @@ import RxCocoa
 import CoreLocation
 import RxCoreLocation
 import RxOptional
+import DependencyContainer
 
 public final class MapPresenter {
     private let disposeBag = DisposeBag()

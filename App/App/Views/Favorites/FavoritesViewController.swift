@@ -35,6 +35,11 @@ final class FavoritesViewController: ViewController<FavoritesUI>, FavoritesView 
             }).disposed(by: disposeBag)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
+    }
+    
     private func showTimes(for stopPoint: StopPointType) {
         let timesViewController = TimesViewController(stopPoint: stopPoint)
         show(timesViewController, sender: nil)

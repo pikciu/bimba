@@ -9,6 +9,7 @@ struct DefaultTableViewStyle: Decorator {
         object.tableFooterView = UIView(frame: frame)
         object.tableHeaderView = UIView(frame: frame)
         object.separatorStyle = .none
+        object.indicatorStyle = .white
     }
 }
 
