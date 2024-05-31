@@ -11,7 +11,9 @@ struct StopPointLocalRepository: Domain.StopPointLocalRepository {
     func saveStopPoints(stopPoints: [StopPointDetails]) -> Completable {
         context.write { (realm) in
             let old = realm.objects(StopPointRealm.self)
-            let new = stopPoints.map(StopPointDetailsToRealmMapper().map(from:))
+            let new = Dictionary(grouping: stopPoints, by: \.id)
+                .compactMap(\.value.first)
+                .map(StopPointDetailsToRealmMapper().map(from:))
             try realm.write {
                 realm.delete(old)
                 realm.add(new)
