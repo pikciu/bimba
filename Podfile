@@ -19,7 +19,7 @@ def shared_pods
 end
 
 def realm
-	pod 'RealmSwift', '~> 10.14.0'
+	pod 'RealmSwift'
 	pod 'RxRealm'
 end
 
